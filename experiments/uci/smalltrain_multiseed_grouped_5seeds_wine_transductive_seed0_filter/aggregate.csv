@@ -1,0 +1,2 @@
+dataset,method,n_seeds,rmse_mean,rmse_std,mean_crps_mean,mean_crps_std,wall_sec_mean,wall_sec_std,coverage_90_mean,coverage_90_std,mean_width_90_mean,mean_width_90_std,coverage_95_mean,coverage_95_std,mean_width_95_mean,mean_width_95_std
+Wine Quality,lmjgp_transductive,1,0.7522343411231961,0.0,0.41947540640830994,0.0,46.361267000000225,0.0,0.875,0.0,2.080437386034053,0.0,0.91,0.0,2.4789940465855795,0.0

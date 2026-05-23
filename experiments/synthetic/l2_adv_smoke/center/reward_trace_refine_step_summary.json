@@ -1,0 +1,18 @@
+[
+  {
+    "phase": "refine",
+    "step": 1,
+    "reward_mean_over_samples": -0.5544212578543404,
+    "reward_std_over_samples": 0.012146074756917978,
+    "reward_range_over_samples": 0.03358515154687014,
+    "reward_spread_mean_over_anchors": 0.042426838387413665
+  },
+  {
+    "phase": "refine",
+    "step": 2,
+    "reward_mean_over_samples": -0.5583157283074827,
+    "reward_std_over_samples": 0.0060496632064492165,
+    "reward_range_over_samples": 0.0169877458053459,
+    "reward_spread_mean_over_anchors": 0.04041216506804847
+  }
+]

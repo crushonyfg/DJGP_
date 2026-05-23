@@ -1,0 +1,4 @@
+setting,family,seed,variant,mode,background,status,N_train,N_test,n_train_anchors,n_test_eval,Q,observed_dim,n_train_neighbors,n_candidate,m_inducing,init_mode,map_R,error,Q_true,expansion,latent_dim,noise_std,noise_var,prediction_y_scale,standardize_x,standardize_y_for_training
+l2_q2_train1000,L2_phantom,0,pointwise_pca_map_soft,pointwise,uniform,failed,1000,200,8,5,2,20,25,30,8,pca,True,RuntimeError: One of the differentiated Tensors does not require grad,2,rff,2,2.0,4.0,original,True,True
+l2_q2_train1000,L2_phantom,0,pointwise_pairwarm_map_soft,pointwise,uniform,failed,1000,200,8,5,2,20,25,30,8,pairwarm,True,RuntimeError: One of the differentiated Tensors does not require grad,2,rff,2,2.0,4.0,original,True,True
+l2_q2_train1000,L2_phantom,0,anchor_pca_background_map_soft,anchor,normal,failed,1000,200,8,5,2,20,25,30,8,pca,True,RuntimeError: One of the differentiated Tensors does not require grad,2,rff,2,2.0,4.0,original,True,True

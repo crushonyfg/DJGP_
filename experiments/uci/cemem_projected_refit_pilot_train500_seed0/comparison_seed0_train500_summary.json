@@ -1,0 +1,140 @@
+{
+  "Appliances Energy Prediction": {
+    "best_new_rmse": {
+      "source": "new_projected_refit",
+      "dataset": "Appliances Energy Prediction",
+      "seed": 0,
+      "method": "cemem_small_current",
+      "rmse": 107.24128736588243,
+      "mean_crps": 44.749393463134766,
+      "coverage_90": 0.49,
+      "width_90": 68.75838846316172,
+      "wall_sec": 38.19809290001285
+    },
+    "best_new_crps": {
+      "source": "new_projected_refit",
+      "dataset": "Appliances Energy Prediction",
+      "seed": 0,
+      "method": "cemem_large_raw_final",
+      "rmse": 108.11273285310425,
+      "mean_crps": 42.347755432128906,
+      "coverage_90": 0.655,
+      "width_90": 89.98527687268023,
+      "wall_sec": 33.17583600000944
+    },
+    "best_existing_rmse": {
+      "source": "bestpreset_seed0",
+      "dataset": "Appliances Energy Prediction",
+      "seed": 0,
+      "method": "xgb_bootstrap",
+      "rmse": 99.97672588146533,
+      "mean_crps": 43.639198303222656,
+      "coverage_90": 0.875,
+      "width_90": 170.81917448550078,
+      "wall_sec": 10.108233299979474
+    },
+    "best_existing_crps": {
+      "source": "bestpreset_seed0",
+      "dataset": "Appliances Energy Prediction",
+      "seed": 0,
+      "method": "lmjgp_supervised",
+      "rmse": 102.91276141318836,
+      "mean_crps": 38.79152297973633,
+      "coverage_90": 0.86,
+      "width_90": 142.9203649565364,
+      "wall_sec": 90.28877569999895
+    }
+  },
+  "Parkinsons Telemonitoring": {
+    "best_new_rmse": {
+      "source": "new_projected_refit",
+      "dataset": "Parkinsons Telemonitoring",
+      "seed": 0,
+      "method": "cemem_large_raw_final",
+      "rmse": 10.08258623344695,
+      "mean_crps": 6.90402364730835,
+      "coverage_90": 0.465,
+      "width_90": 15.533036558677349,
+      "wall_sec": 37.773532099992735
+    },
+    "best_new_crps": {
+      "source": "new_projected_refit",
+      "dataset": "Parkinsons Telemonitoring",
+      "seed": 0,
+      "method": "cemem_large_raw_final",
+      "rmse": 10.08258623344695,
+      "mean_crps": 6.90402364730835,
+      "coverage_90": 0.465,
+      "width_90": 15.533036558677349,
+      "wall_sec": 37.773532099992735
+    },
+    "best_existing_rmse": {
+      "source": "inductive_old_seed0",
+      "dataset": "Parkinsons Telemonitoring",
+      "seed": 0,
+      "method": "xgboost",
+      "rmse": 4.63594344541674,
+      "mean_crps": 2.740567922592163,
+      "coverage_90": 0.65,
+      "width_90": 8.555764096479535,
+      "wall_sec": 6.044334099999105
+    },
+    "best_existing_crps": {
+      "source": "inductive_old_seed0",
+      "dataset": "Parkinsons Telemonitoring",
+      "seed": 0,
+      "method": "xgboost",
+      "rmse": 4.63594344541674,
+      "mean_crps": 2.740567922592163,
+      "coverage_90": 0.65,
+      "width_90": 8.555764096479535,
+      "wall_sec": 6.044334099999105
+    }
+  },
+  "Wine Quality": {
+    "best_new_rmse": {
+      "source": "new_projected_refit",
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cemem_large_raw_final",
+      "rmse": 0.779954305914229,
+      "mean_crps": 0.47873687744140625,
+      "coverage_90": 0.635,
+      "width_90": 1.4027992841290984,
+      "wall_sec": 18.206120799994096
+    },
+    "best_new_crps": {
+      "source": "new_projected_refit",
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cemem_large_raw_final",
+      "rmse": 0.779954305914229,
+      "mean_crps": 0.47873687744140625,
+      "coverage_90": 0.635,
+      "width_90": 1.4027992841290984,
+      "wall_sec": 18.206120799994096
+    },
+    "best_existing_rmse": {
+      "source": "bestpreset_seed0",
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "lmjgp_supervised_residual_ridge",
+      "rmse": 0.6968397612006003,
+      "mean_crps": 0.39499831199645996,
+      "coverage_90": 0.805,
+      "width_90": 1.8836693765852714,
+      "wall_sec": 53.07276819998515
+    },
+    "best_existing_crps": {
+      "source": "bestpreset_seed0",
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "lmjgp_supervised_residual_ridge",
+      "rmse": 0.6968397612006003,
+      "mean_crps": 0.39499831199645996,
+      "coverage_90": 0.805,
+      "width_90": 1.8836693765852714,
+      "wall_sec": 53.07276819998515
+    }
+  }
+}

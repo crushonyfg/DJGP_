@@ -1,0 +1,34 @@
+{
+  "args": {
+    "num_exp": 5,
+    "train_sizes": "500",
+    "datasets": "Wine Quality,Parkinsons Telemonitoring,Appliances Energy Prediction",
+    "methods": "jgp_pca,jgp_sir",
+    "max_test_anchors": 200,
+    "train_subject_frac": 0.8,
+    "out_dir": "experiments\\uci\\smalltrain_jgp_projection_train500_5seeds"
+  },
+  "preset_policy": {
+    "Wine Quality": {
+      "n": 25,
+      "standardize_x": true,
+      "standardize_y": false,
+      "split": "random_row"
+    },
+    "Parkinsons Telemonitoring": {
+      "n": 25,
+      "standardize_x": false,
+      "standardize_y": false,
+      "split": "subject_grouped"
+    },
+    "Appliances Energy Prediction": {
+      "n": 35,
+      "standardize_x": true,
+      "standardize_y": true,
+      "split": "random_row"
+    }
+  },
+  "metrics": "metrics.csv",
+  "aggregate": "aggregate.csv",
+  "diagnostics": "diagnostics.csv"
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Best-current-preset summary for train=200, 500, and 1000 UCI small-train multiseed runs. Parkinsons LMJGP rows use subject-grouped std_x results; Parkinsons XGB/DKL rows remain from raw grouped comparisons.",
+  "rows_aggregate": 54,
+  "rows_metrics": 270,
+  "source_runs": {
+    "200": {
+      "all": "experiments/uci/smalltrain_multiseed_grouped_5seeds_with_residual",
+      "park_stdx_lmjgp": "experiments/uci/parkinsons_grouped_stdx_lmjgp_train200_5seeds"
+    },
+    "500": {
+      "all": "experiments/uci/smalltrain_multiseed_grouped_train500_5seeds_with_residual",
+      "park_stdx_lmjgp": "experiments/uci/parkinsons_grouped_stdx_lmjgp_train500_5seeds"
+    },
+    "1000": {
+      "wine_appliances_all": "experiments/uci/smalltrain_multiseed_train1000_wine_appliances_5seeds",
+      "park_raw_xgb_dkl": "experiments/uci/parkinsons_grouped_raw_xgb_dkl_train1000_5seeds",
+      "park_stdx_lmjgp": "experiments/uci/parkinsons_grouped_stdx_lmjgp_train1000_5seeds"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+Using device: cuda
+device=cuda
+[PDEBench-Burgers] seed=1
+[Step 1/300] ELBO=-199.1863, LR=1.00e-02
+[Step 60/300] ELBO=-65.4147, LR=1.00e-02
+[Step 120/300] ELBO=-24.8173, LR=1.00e-02
+[Step 180/300] ELBO=-11.2932, LR=1.00e-02
+[Step 240/300] ELBO=-6.8351, LR=1.00e-02
+[Step 300/300] ELBO=-4.9011, LR=1.00e-02
+[PDEBench-Burgers] seed=2
+[Step 1/300] ELBO=-206.2450, LR=1.00e-02
+[Step 60/300] ELBO=-70.5423, LR=1.00e-02
+[Step 120/300] ELBO=-27.4449, LR=1.00e-02
+[Step 180/300] ELBO=-12.3316, LR=1.00e-02
+[Step 240/300] ELBO=-7.1242, LR=1.00e-02
+[Step 300/300] ELBO=-3.8113, LR=1.00e-02
+[PDEBench-Burgers] seed=3
+[Step 1/300] ELBO=-209.3762, LR=1.00e-02
+[Step 60/300] ELBO=-72.3354, LR=1.00e-02
+[Step 120/300] ELBO=-29.0538, LR=1.00e-02
+[Step 180/300] ELBO=-13.3946, LR=1.00e-02
+[Step 240/300] ELBO=-7.2618, LR=1.00e-02
+[Step 300/300] ELBO=1.2367, LR=1.00e-02
+[PDEBench-Burgers] seed=4
+[Step 1/300] ELBO=-200.0557, LR=1.00e-02
+[Step 60/300] ELBO=-66.0271, LR=1.00e-02
+[Step 120/300] ELBO=-25.7827, LR=1.00e-02
+[Step 180/300] ELBO=-12.0320, LR=1.00e-02
+[Step 240/300] ELBO=-7.1137, LR=1.00e-02
+[Step 300/300] ELBO=-5.0148, LR=1.00e-02
+Wrote pickle: C:\Users\yxu59\files\spring2026\park\DJGP\results\pdebench_burgers_balanced_delta01_n2000_xgb_dkl_lmjgp_q3_n25_seeds1to4.pkl
+Wrote json: C:\Users\yxu59\files\spring2026\park\DJGP\results\pdebench_burgers_balanced_delta01_n2000_xgb_dkl_lmjgp_q3_n25_seeds1to4.json

@@ -1,0 +1,193 @@
+{
+  "_meta": {
+    "methods": [
+      "lmjgp_transductive",
+      "cem_em_transductive",
+      "lmjgp_supervised",
+      "cem_em_supervised"
+    ],
+    "num_exp": 1,
+    "datasets": [
+      "Wine Quality"
+    ],
+    "max_test_anchors": 6,
+    "max_train_anchors": 8,
+    "neighbor_pool": "base",
+    "scaling_preset": "uci_empirical",
+    "standardize_x": true,
+    "standardize_y": true,
+    "n": 6,
+    "m1": 2,
+    "m2": 10,
+    "MC_num": 1,
+    "lmjgp_supervised_train_mc": 1,
+    "lmjgp_supervised_kl_weight": 0.001,
+    "lmjgp_supervised_pred_var_floor": 0.05,
+    "cem_em": {
+      "n_outer": 1,
+      "n_m_steps": 2,
+      "lr": 0.01,
+      "lambda_gate": 0.1,
+      "lambda_smooth": 0.01,
+      "lambda_scale": 0.0,
+      "lambda_anchor_pred": 1.0,
+      "anchor_pred_var_floor": 0.05,
+      "target_row_norm_sq": 1.0,
+      "normalize_smoothness": true,
+      "grad_clip": 10.0,
+      "anchor_kernel_lengthscale": null,
+      "snapshot_after_each_outer": false,
+      "cem_progress": false,
+      "verbose": true,
+      "track_best_W": true,
+      "best_metric_key": "loss"
+    }
+  },
+  "Wine Quality": {
+    "0": {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "Q": 3,
+      "D": 11,
+      "split": {
+        "n_base": 5839,
+        "n_anchor": 8,
+        "n_test": 6,
+        "test_indices": [
+          131,
+          306,
+          336,
+          391,
+          531,
+          548
+        ]
+      },
+      "scaling": {
+        "standardize_x": true,
+        "standardize_y": false
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601683844
+      },
+      "metrics": {
+        "lmjgp_transductive": [
+          0.3469620177608847,
+          0.10632625967264175,
+          1.0343796000015573,
+          0.8333333333333334,
+          0.9579262194260328,
+          0.8333333333333334,
+          1.1414394929482856
+        ],
+        "cem_em_transductive": [
+          0.6158914142315296,
+          0.4220784902572632,
+          0.9066666999933659,
+          0.6666666666666666,
+          0.8418537041229323,
+          0.6666666666666666,
+          1.0031305602497032
+        ],
+        "lmjgp_supervised": [
+          1.2604173655926962,
+          0.7908753752708435,
+          0.988949099999445,
+          0.5,
+          0.6467309323925999,
+          0.5,
+          0.7706274372430236
+        ],
+        "cem_em_supervised": [
+          1.1391943198934709,
+          0.6487920880317688,
+          0.7560738000029232,
+          0.5,
+          0.6695736332398976,
+          0.5,
+          0.7978461941200733
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_transductive": {
+          "train_time_sec": 2.102855199998885,
+          "mu_W_shape": [
+            6,
+            3,
+            11
+          ],
+          "total_wall_sec": 3.220163699996192
+        },
+        "cem_em_transductive": {
+          "median_trace_WWT": 2.999999523162842,
+          "median_eff_rank_WWT": 2.99369478225708,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.08285894244909286,
+          "cosine_to_ref_median": 0.5757043568319399,
+          "train_time_sec": 0.8692850000006729,
+          "jgp_elapsed_sec": 0.9066666999933659,
+          "best_outer": 1,
+          "total_wall_sec": 1.8490726000018185
+        },
+        "lmjgp_supervised": {
+          "train_time_sec": 0.5306005999955232,
+          "best_loss": 0.5847532153129578,
+          "train_mc": 1,
+          "kl_weight": 0.001,
+          "pred_var_floor": 0.05,
+          "local_gp_lengthscale": [
+            0.9786605834960938,
+            1.0302505493164062,
+            1.0251439809799194
+          ],
+          "local_gp_signal_var": 0.27874326705932617,
+          "local_gp_noise_var": 0.0146693866699934,
+          "history": [
+            {
+              "step": 1.0,
+              "loss": 1.2932171821594238,
+              "pred_nll": 1.2172050476074219,
+              "kl_v_per_anchor": 76.01216125488281
+            }
+          ],
+          "strict_leave_one_anchor_objective": true,
+          "mu_W_shape": [
+            6,
+            3,
+            11
+          ],
+          "total_wall_sec": 1.5623592999982066
+        },
+        "cem_em_supervised": {
+          "median_trace_WWT": 3.0,
+          "median_eff_rank_WWT": 2.992125988006592,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.08006270974874496,
+          "cosine_to_ref_median": 0.5757271654895199,
+          "train_time_sec": 1.572795699998096,
+          "jgp_elapsed_sec": 0.7560738000029232,
+          "best_outer": 1,
+          "coeff_gp_lengthscale": 4.712976455688477,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.25656893849372864,
+          "total_wall_sec": 2.3647375000000466
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "args": {
+    "bundle_dir": "experiments\\synthetic\\dmgp_residual_bundle_lh_seed0_20260517",
+    "out_dir": "experiments\\synthetic\\dmgp_uncertain_w_cem_head_lh_seed0_20260517",
+    "settings": "lh_q5_train1000",
+    "seed": 0,
+    "seeds": "",
+    "variants": "fit,oof",
+    "max_test": 200,
+    "n_neighbors": 35,
+    "cem_updates": 2,
+    "kcov": 0.1,
+    "local_noise_std_floor": 0.1,
+    "hyper_steps": 10,
+    "hyper_lr": 0.04,
+    "gate_steps": 20,
+    "gate_lr": 0.05,
+    "gate_l2": 0.001,
+    "gate_max_norm": 8.0,
+    "gh_points": 20,
+    "min_inliers": 2,
+    "max_inlier_frac": 0.95,
+    "outlier_sigma_mult": 2.5,
+    "background_scale_mult": 3.0,
+    "min_noise_var": 1e-05,
+    "max_noise_var": 10.0,
+    "min_signal_var": 0.0001,
+    "max_signal_var": 100.0,
+    "min_lengthscale": 0.001,
+    "max_lengthscale": 20.0
+  },
+  "device": "cuda",
+  "settings": {
+    "lh_q5_train1000": {
+      "family": "LH",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 5,
+      "H": 30,
+      "Q_true": 5,
+      "Q": 5,
+      "n": 35,
+      "caseno": 0,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "rff",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0
+    }
+  },
+  "n_rows": 3
+}

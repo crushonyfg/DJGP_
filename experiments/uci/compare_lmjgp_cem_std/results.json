@@ -1,0 +1,454 @@
+{
+  "_meta": {
+    "seed": 0,
+    "max_anchors": 200,
+    "n": 35,
+    "lmjgp_steps": 300,
+    "MC_num": 3,
+    "modes": [
+      "raw",
+      "std_x",
+      "std_xy"
+    ],
+    "debug_std_xy": 0,
+    "lmjgp_var_diag": true
+  },
+  "Wine Quality": {
+    "raw": {
+      "mode": "raw",
+      "standardize_x": false,
+      "standardize_y": false,
+      "K": 3,
+      "lmjgp": {
+        "metrics_7": [
+          0.746760550798012,
+          0.3867753744125366,
+          113.15849790000357,
+          0.875,
+          2.024481377004136,
+          0.91,
+          2.412318349356217
+        ],
+        "train_time_sec": 27.878845699997328,
+        "predict_wall_sec": 113.15849790000357,
+        "total_wall_sec": 141.12034729999868,
+        "metrics_on_original_y_scale": false,
+        "variance_decomposition": {
+          "median_sigma_train": 0.643591970205307,
+          "p90_sigma_train": 0.8365756869316101,
+          "median_var_within_train": 0.3278861343860626,
+          "median_var_between_train": 0.02502456121146679,
+          "mean_var_within_train": 0.3424423756032548,
+          "mean_var_between_train": 0.08795678609992405,
+          "median_sigma_orig": 0.643591970205307,
+          "p90_sigma_orig": 0.8365756869316101,
+          "median_var_within_orig": 0.3278861343860626,
+          "median_var_between_orig": 0.02502456121146679
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          0.7809771831909313,
+          0.39676788449287415,
+          59.931340700000874,
+          0.765,
+          1.3332222059339882,
+          0.8,
+          1.5886322431392568
+        ],
+        "train_time_sec": 555.5674482999966,
+        "predict_wall_sec": 59.931340700000874,
+        "total_wall_sec": 615.8606331999981,
+        "metrics_on_original_y_scale": false
+      }
+    },
+    "std_x": {
+      "mode": "std_x",
+      "standardize_x": true,
+      "standardize_y": false,
+      "K": 3,
+      "lmjgp": {
+        "metrics_7": [
+          0.7074908835368761,
+          0.37213030457496643,
+          131.38366820000374,
+          0.865,
+          1.8852865808319839,
+          0.905,
+          2.2464575196370133
+        ],
+        "train_time_sec": 71.73106250000274,
+        "predict_wall_sec": 131.38366820000374,
+        "total_wall_sec": 203.430537799999,
+        "metrics_on_original_y_scale": false,
+        "variance_decomposition": {
+          "median_sigma_train": 0.5495108664035797,
+          "p90_sigma_train": 0.7860216200351715,
+          "median_var_within_train": 0.2778186947107315,
+          "median_var_between_train": 0.011867939960211515,
+          "mean_var_within_train": 0.305277696228821,
+          "mean_var_between_train": 0.05970631713941506,
+          "median_sigma_orig": 0.5495108664035797,
+          "p90_sigma_orig": 0.7860216200351715,
+          "median_var_within_orig": 0.2778186947107315,
+          "median_var_between_orig": 0.011867939960211515
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          0.7259178415891236,
+          0.3782414197921753,
+          64.29301499999565,
+          0.76,
+          1.147197179119167,
+          0.79,
+          1.3669697518354615
+        ],
+        "train_time_sec": 679.3095590999947,
+        "predict_wall_sec": 64.29301499999565,
+        "total_wall_sec": 743.7440659999993,
+        "metrics_on_original_y_scale": false
+      }
+    },
+    "std_xy": {
+      "mode": "std_xy",
+      "standardize_x": true,
+      "standardize_y": true,
+      "K": 3,
+      "lmjgp": {
+        "metrics_7": [
+          0.6740178018453267,
+          0.6668177843093872,
+          147.23592859999917,
+          0.835,
+          5.995082185005569,
+          0.89,
+          7.143581030213622
+        ],
+        "train_time_sec": 73.64147050000611,
+        "predict_wall_sec": 147.23592859999917,
+        "total_wall_sec": 221.18410260000383,
+        "metrics_on_original_y_scale": true,
+        "variance_decomposition": {
+          "median_sigma_train": 0.6119012534618378,
+          "p90_sigma_train": 0.9030859231948851,
+          "median_var_within_train": 0.32260867953300476,
+          "median_var_between_train": 0.020367627032101154,
+          "mean_var_within_train": 431.0288765257769,
+          "mean_var_between_train": 0.0756931310007177,
+          "median_sigma_orig": 0.5322686867928381,
+          "p90_sigma_orig": 0.7855587085016783,
+          "median_var_within_orig": 0.24410416911806146,
+          "median_var_between_orig": 0.015411310944189812
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          0.7535434638560623,
+          0.42336058616638184,
+          60.38601030000427,
+          0.69,
+          1.2380491956211457,
+          0.74,
+          1.4752266066394606
+        ],
+        "train_time_sec": 652.3437750000012,
+        "predict_wall_sec": 60.38601030000427,
+        "total_wall_sec": 712.9262346999967,
+        "metrics_on_original_y_scale": true
+      }
+    }
+  },
+  "Parkinsons Telemonitoring": {
+    "raw": {
+      "mode": "raw",
+      "standardize_x": false,
+      "standardize_y": false,
+      "K": 5,
+      "lmjgp": {
+        "metrics_7": [
+          4.172361435604744,
+          1.5167046785354614,
+          375.13263970000116,
+          0.97,
+          9.108019001754338,
+          0.975,
+          10.852874031733904
+        ],
+        "train_time_sec": 144.55691440000373,
+        "predict_wall_sec": 375.13263970000116,
+        "total_wall_sec": 520.1549203000031,
+        "metrics_on_original_y_scale": false,
+        "variance_decomposition": {
+          "median_sigma_train": 1.1959806084632874,
+          "p90_sigma_train": 7.170148277282714,
+          "median_var_within_train": 0.7199036180973053,
+          "median_var_between_train": 0.21510329097509384,
+          "mean_var_within_train": 6.4149484950802185,
+          "mean_var_between_train": 10.459415241785482,
+          "median_sigma_orig": 1.1959806084632874,
+          "p90_sigma_orig": 7.170148277282714,
+          "median_var_within_orig": 0.7199036180973053,
+          "median_var_between_orig": 0.21510329097509384
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          3.9584987706162917,
+          1.0011862516403198,
+          67.15990379999857,
+          0.665,
+          1.2783978925339516,
+          0.735,
+          1.5233050444265301
+        ],
+        "train_time_sec": 462.36568770000304,
+        "predict_wall_sec": 67.15990379999857,
+        "total_wall_sec": 529.6767544000031,
+        "metrics_on_original_y_scale": false
+      }
+    },
+    "std_x": {
+      "mode": "std_x",
+      "standardize_x": true,
+      "standardize_y": false,
+      "K": 5,
+      "lmjgp": {
+        "metrics_7": [
+          5.50590513594645,
+          2.8289716243743896,
+          105.28571530000045,
+          0.915,
+          15.387095431330108,
+          0.94,
+          18.334855076425335
+        ],
+        "train_time_sec": 55.279673099998035,
+        "predict_wall_sec": 105.28571530000045,
+        "total_wall_sec": 160.80824569999822,
+        "metrics_on_original_y_scale": false,
+        "variance_decomposition": {
+          "median_sigma_train": 4.879323244094849,
+          "p90_sigma_train": 7.966930055618286,
+          "median_var_within_train": 16.266474723815918,
+          "median_var_between_train": 1.390540897846222,
+          "mean_var_within_train": 21.96018996734172,
+          "mean_var_between_train": 6.448883627715807,
+          "median_sigma_orig": 4.879323244094849,
+          "p90_sigma_orig": 7.966930055618286,
+          "median_var_within_orig": 16.266474723815918,
+          "median_var_between_orig": 1.390540897846222
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          5.431580358585572,
+          2.5179483890533447,
+          39.426072999995085,
+          0.52,
+          6.2053306199407965,
+          0.555,
+          7.394107492585045
+        ],
+        "train_time_sec": 389.1756605999981,
+        "predict_wall_sec": 39.426072999995085,
+        "total_wall_sec": 428.7496475000007,
+        "metrics_on_original_y_scale": false
+      }
+    },
+    "std_xy": {
+      "mode": "std_xy",
+      "standardize_x": true,
+      "standardize_y": true,
+      "K": 5,
+      "lmjgp": {
+        "metrics_7": [
+          5.212555823280084,
+          2.646576166152954,
+          100.96242959999654,
+          0.94,
+          15.828684757387641,
+          0.95,
+          18.86104121289887
+        ],
+        "train_time_sec": 60.71799800000008,
+        "predict_wall_sec": 100.96242959999654,
+        "total_wall_sec": 161.97827300000063,
+        "metrics_on_original_y_scale": true,
+        "variance_decomposition": {
+          "median_sigma_train": 0.6210961043834686,
+          "p90_sigma_train": 1.0117852807044982,
+          "median_var_within_train": 0.2191593199968338,
+          "median_var_between_train": 0.04068949073553085,
+          "mean_var_within_train": 0.30163588704308497,
+          "mean_var_between_train": 0.15498182331279464,
+          "median_sigma_orig": 5.046234436239925,
+          "p90_sigma_orig": 8.22047617033422,
+          "median_var_within_orig": 14.466956632369621,
+          "median_var_between_orig": 2.685959683907737
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          5.7218705940715635,
+          2.512110471725464,
+          43.482618300004106,
+          0.48,
+          5.503882813609197,
+          0.52,
+          6.558280878643352
+        ],
+        "train_time_sec": 406.0585166000019,
+        "predict_wall_sec": 43.482618300004106,
+        "total_wall_sec": 449.65378639999835,
+        "metrics_on_original_y_scale": true
+      }
+    }
+  },
+  "Appliances Energy Prediction": {
+    "raw": {
+      "mode": "raw",
+      "standardize_x": false,
+      "standardize_y": false,
+      "K": 5,
+      "lmjgp": {
+        "metrics_7": [
+          100.50526439559886,
+          38.5359992980957,
+          130.99162459999934,
+          0.81,
+          153.10360288987596,
+          0.86,
+          182.43419514697803
+        ],
+        "train_time_sec": 97.37169820000418,
+        "predict_wall_sec": 130.99162459999934,
+        "total_wall_sec": 228.6864024000024,
+        "metrics_on_original_y_scale": false,
+        "variance_decomposition": {
+          "median_sigma_train": 21.379634857177734,
+          "p90_sigma_train": 132.5724746704101,
+          "median_var_within_train": 327.71856689453125,
+          "median_var_between_train": 95.45453262329102,
+          "mean_var_within_train": 2426.608974206448,
+          "mean_var_between_train": 3106.108933581873,
+          "median_sigma_orig": 21.379634857177734,
+          "p90_sigma_orig": 132.5724746704101,
+          "median_var_within_orig": 327.71856689453125,
+          "median_var_between_orig": 95.45453262329102
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          104.38242685763502,
+          42.608734130859375,
+          58.795457699998224,
+          0.505,
+          75.74031823077623,
+          0.57,
+          90.25015568409817
+        ],
+        "train_time_sec": 441.463943499999,
+        "predict_wall_sec": 58.795457699998224,
+        "total_wall_sec": 500.5579266000059,
+        "metrics_on_original_y_scale": false
+      }
+    },
+    "std_x": {
+      "mode": "std_x",
+      "standardize_x": true,
+      "standardize_y": false,
+      "K": 5,
+      "lmjgp": {
+        "metrics_7": [
+          97.12644805637497,
+          32.623069763183594,
+          123.83567929999845,
+          0.86,
+          98.06749417940468,
+          0.88,
+          116.8546267560349
+        ],
+        "train_time_sec": 106.79462760000024,
+        "predict_wall_sec": 123.83567929999845,
+        "total_wall_sec": 231.00907800000277,
+        "metrics_on_original_y_scale": false,
+        "variance_decomposition": {
+          "median_sigma_train": 14.111193180084229,
+          "p90_sigma_train": 92.49697494506836,
+          "median_var_within_train": 158.34722137451172,
+          "median_var_between_train": 15.177305221557617,
+          "mean_var_within_train": 1523.2956466388703,
+          "mean_var_between_train": 886.8588556124845,
+          "median_sigma_orig": 14.111193180084229,
+          "p90_sigma_orig": 92.49697494506836,
+          "median_var_within_orig": 158.34722137451172,
+          "median_var_between_orig": 15.177305221557617
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          111.10102097537347,
+          42.442447662353516,
+          40.62762599999405,
+          0.585,
+          58.61939659099384,
+          0.62,
+          69.84931925326117
+        ],
+        "train_time_sec": 357.1843869000004,
+        "predict_wall_sec": 40.62762599999405,
+        "total_wall_sec": 398.1411662000028,
+        "metrics_on_original_y_scale": false
+      }
+    },
+    "std_xy": {
+      "mode": "std_xy",
+      "standardize_x": true,
+      "standardize_y": true,
+      "K": 5,
+      "lmjgp": {
+        "metrics_7": [
+          94.25832928631038,
+          31.56182098388672,
+          95.65087219999987,
+          0.84,
+          99.64654944830116,
+          0.87,
+          118.73618716112169
+        ],
+        "train_time_sec": 75.26707290000195,
+        "predict_wall_sec": 95.65087219999987,
+        "total_wall_sec": 171.21336419999716,
+        "metrics_on_original_y_scale": true,
+        "variance_decomposition": {
+          "median_sigma_train": 0.14425165206193924,
+          "p90_sigma_train": 0.8777378201484679,
+          "median_var_within_train": 0.014514982234686613,
+          "median_var_between_train": 0.002669650479219854,
+          "mean_var_within_train": 0.12442721698316746,
+          "mean_var_between_train": 0.11295172716233415,
+          "median_sigma_orig": 14.786872895563334,
+          "p90_sigma_orig": 89.97468934769122,
+          "median_var_within_orig": 152.52028104739497,
+          "median_var_between_orig": 28.052107457347912
+        }
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          92.5428702368368,
+          34.149314880371094,
+          39.125698299998476,
+          0.555,
+          56.69028483242857,
+          0.65,
+          67.55064081343657
+        ],
+        "train_time_sec": 349.83516800000507,
+        "predict_wall_sec": 39.125698299998476,
+        "total_wall_sec": 389.20094690000406,
+        "metrics_on_original_y_scale": true
+      }
+    }
+  }
+}

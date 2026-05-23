@@ -1,0 +1,24 @@
+{
+  "args": {
+    "num_exp": 1,
+    "train_sizes": "80",
+    "datasets": "Wine Quality",
+    "max_test_anchors": 20,
+    "train_subject_frac": 0.8,
+    "cal_frac": 0.2,
+    "n_estimators": 5,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "reg_lambda": 1.0,
+    "n_jobs": -1,
+    "out_dir": "experiments\\uci\\xgb_conformal_quantile_smoke"
+  },
+  "preset_policy": {
+    "Wine Quality": "std_x, random-row",
+    "Parkinsons Telemonitoring": "raw X, subject-grouped",
+    "Appliances Energy Prediction": "std_x,std_y, random-row"
+  },
+  "note": "CQR intervals are direct conformal intervals, not Gaussian predictive posteriors; mean_crps is NaN by design."
+}

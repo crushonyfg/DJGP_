@@ -1,0 +1,47 @@
+{
+  "args": {
+    "manifest": "experiments/uci/dmgp_smalltrain_smoke_20260517/manifest.json",
+    "out_dir": "experiments/uci/dmgp_smalltrain_smoke_20260517",
+    "Q": 0,
+    "m_u": 10,
+    "m_v": 8,
+    "steps1": 2,
+    "steps2": 2,
+    "lr": 0.01,
+    "initial_noise_var": 0.01,
+    "save_w": 0,
+    "resume": 0
+  },
+  "manifest_meta": {
+    "benchmark": "uci",
+    "args": {
+      "datasets": "Wine Quality",
+      "train_sizes": "80",
+      "num_exp": 1,
+      "max_test_anchors": 20,
+      "train_subject_frac": 0.8,
+      "parkinsons_standardize_x": 1,
+      "out_dir": "experiments/uci/dmgp_smalltrain_smoke_20260517"
+    },
+    "presets": {
+      "Wine Quality": {
+        "split_type": "random_row",
+        "standardize_x": true,
+        "standardize_y_for_baseline": false
+      },
+      "Parkinsons Telemonitoring": {
+        "split_type": "subject_grouped",
+        "standardize_x": true,
+        "standardize_y_for_baseline": false
+      },
+      "Appliances Energy Prediction": {
+        "split_type": "random_row",
+        "standardize_x": true,
+        "standardize_y_for_baseline": true
+      }
+    }
+  },
+  "external_repo": "C:\\Users\\yxu59\\files\\spring2026\\park\\external\\DeepMahalanobisGP",
+  "n_entries": 1,
+  "n_metric_rows": 1
+}

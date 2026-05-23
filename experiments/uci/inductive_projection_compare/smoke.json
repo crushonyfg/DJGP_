@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "methods": [
+      "lmjgp_transductive",
+      "cem_em_transductive",
+      "lmjgp_supervised",
+      "cem_em_supervised"
+    ],
+    "num_exp": 1,
+    "datasets": [
+      "Wine Quality"
+    ],
+    "max_test_anchors": 6,
+    "max_train_anchors": 8,
+    "neighbor_pool": "base",
+    "standardize_x": true,
+    "standardize_y": false,
+    "n": 6,
+    "m1": 2,
+    "m2": 10,
+    "MC_num": 1,
+    "cem_em": {
+      "n_outer": 1,
+      "n_m_steps": 2,
+      "lr": 0.01,
+      "lambda_gate": 0.1,
+      "lambda_smooth": 0.01,
+      "lambda_scale": 0.0,
+      "lambda_anchor_pred": 1.0,
+      "target_row_norm_sq": 1.0,
+      "normalize_smoothness": true,
+      "grad_clip": 10.0,
+      "anchor_kernel_lengthscale": null,
+      "snapshot_after_each_outer": false,
+      "cem_progress": false,
+      "verbose": true,
+      "track_best_W": true,
+      "best_metric_key": "loss"
+    }
+  },
+  "Wine Quality": {
+    "0": {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "Q": 3,
+      "D": 11,
+      "split": {
+        "n_base": 5839,
+        "n_anchor": 8,
+        "n_test": 6,
+        "test_indices": [
+          131,
+          306,
+          336,
+          391,
+          531,
+          548
+        ]
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601683844
+      },
+      "metrics": {
+        "lmjgp_transductive": [
+          0.3469620177608847,
+          0.10632625967264175,
+          0.9477565999986837,
+          0.8333333333333334,
+          0.9579262194260328,
+          0.8333333333333334,
+          1.1414394929482856
+        ],
+        "cem_em_transductive": [
+          0.6158914142315296,
+          0.4220784902572632,
+          0.7169741999969119,
+          0.6666666666666666,
+          0.8418537041229323,
+          0.6666666666666666,
+          1.0031305602497032
+        ],
+        "lmjgp_supervised": [
+          1.010573606522236,
+          0.6370071768760681,
+          1.0003963999988628,
+          0.5,
+          0.2644192662671818,
+          0.5,
+          0.3150749891725611
+        ],
+        "cem_em_supervised": [
+          1.1390135837792297,
+          0.6487210392951965,
+          0.8111605999947642,
+          0.5,
+          0.6695529245031847,
+          0.5,
+          0.7978215181382972
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_transductive": {
+          "train_time_sec": 1.7724818999995477,
+          "mu_W_shape": [
+            6,
+            3,
+            11
+          ],
+          "total_wall_sec": 2.791527200002747
+        },
+        "cem_em_transductive": {
+          "median_trace_WWT": 2.999999523162842,
+          "median_eff_rank_WWT": 2.99369478225708,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.08285894244909286,
+          "cosine_to_ref_median": 0.5757043568319399,
+          "train_time_sec": 0.876192900002934,
+          "jgp_elapsed_sec": 0.7169741999969119,
+          "best_outer": 1,
+          "total_wall_sec": 1.6432248999990406
+        },
+        "lmjgp_supervised": {
+          "train_time_sec": 0.3778743000002578,
+          "mu_W_shape": [
+            6,
+            3,
+            11
+          ],
+          "total_wall_sec": 1.4157640999983414
+        },
+        "cem_em_supervised": {
+          "median_trace_WWT": 3.0,
+          "median_eff_rank_WWT": 2.9921205043792725,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.08006851375102997,
+          "cosine_to_ref_median": 0.5757263510006203,
+          "train_time_sec": 1.4287594000052195,
+          "jgp_elapsed_sec": 0.8111605999947642,
+          "best_outer": 1,
+          "coeff_gp_lengthscale": 4.712976455688477,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.25656893849372864,
+          "total_wall_sec": 2.29350610000256
+        }
+      }
+    }
+  }
+}

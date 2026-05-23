@@ -1,0 +1,24 @@
+{
+  "setting": "l2_q2_train500",
+  "seed": 0,
+  "n_test": 200,
+  "n_neighbors": 35,
+  "standardize_y": false,
+  "global_phantom_jump": 10.0,
+  "config_noise_std": 0.5,
+  "y_train_min": -6.278619289398193,
+  "y_train_max": 6.272048473358154,
+  "z_train_range": [
+    -0.4994540214538574,
+    0.49980857968330383
+  ],
+  "meanw_cem_failed": 0,
+  "meanw_cem_inlier_rate": 0.9128571428571429,
+  "local_y_jump_mean": 0.19741159787706594,
+  "local_y_jump_median": 0.1370835145314535,
+  "local_y_jump_min": 0.0006250091221025045,
+  "local_y_jump_max": 0.9617413773256187,
+  "frac_local_jump_below_3": 1.0,
+  "frac_local_jump_below_5": 1.0,
+  "mean_inlier_frac": 0.9128571428571428
+}

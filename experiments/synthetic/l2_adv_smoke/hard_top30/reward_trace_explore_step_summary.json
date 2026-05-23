@@ -1,0 +1,34 @@
+[
+  {
+    "phase": "explore",
+    "step": 1,
+    "reward_mean_over_samples": -0.5610464276528433,
+    "reward_std_over_samples": 0.0069796316973871775,
+    "reward_range_over_samples": 0.019885704489299383,
+    "reward_spread_mean_over_anchors": 0.03995143244393407
+  },
+  {
+    "phase": "explore",
+    "step": 2,
+    "reward_mean_over_samples": -0.5610012217042613,
+    "reward_std_over_samples": 0.007232609435084079,
+    "reward_range_over_samples": 0.020084986563987717,
+    "reward_spread_mean_over_anchors": 0.05243199890849095
+  },
+  {
+    "phase": "explore",
+    "step": 3,
+    "reward_mean_over_samples": -0.5636894225654357,
+    "reward_std_over_samples": 0.0018155029598482166,
+    "reward_range_over_samples": 0.004948721964894709,
+    "reward_spread_mean_over_anchors": 0.035026266672101916
+  },
+  {
+    "phase": "explore",
+    "step": 4,
+    "reward_mean_over_samples": -0.5660056468535588,
+    "reward_std_over_samples": 0.0036351482561047155,
+    "reward_range_over_samples": 0.009085226672385538,
+    "reward_spread_mean_over_anchors": 0.035553276264101
+  }
+]

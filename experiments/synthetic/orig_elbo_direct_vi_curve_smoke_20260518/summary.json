@@ -1,0 +1,26 @@
+{
+  "args": {
+    "setting": "lh_q5_train500",
+    "seed": 0,
+    "max_test": 40,
+    "m1": 2,
+    "m2": 40,
+    "lr": 0.01,
+    "num_steps": 900,
+    "eval_every": 150,
+    "log_interval": 50,
+    "out_dir": "experiments/synthetic/orig_elbo_direct_vi_curve_smoke_20260518"
+  },
+  "device": "cuda",
+  "train_wall_sec": 301.0464393000002,
+  "eval_steps": [
+    150,
+    300,
+    450,
+    600,
+    750,
+    900
+  ],
+  "final_rmse": 810.5253644207476,
+  "final_crps": 805.2874755859375
+}

@@ -1,0 +1,15 @@
+{
+  "args": {
+    "split_dir": "experiments\\synthetic\\deep_mahalanobis_gp_paper_train1000_5seeds",
+    "w_dir": "experiments\\synthetic\\deep_mahalanobis_gp_global_z_jgp_train1000_5seeds",
+    "out_dir": "experiments\\synthetic\\deep_mahalanobis_gp_global_z_jgp_train1000_5seeds",
+    "settings": "l2_q2_train1000,lh_q5_train1000",
+    "seed": 0,
+    "seeds": "0,1,2,3,4",
+    "n": 0,
+    "row_normalize_w": false,
+    "resume": true
+  },
+  "device": "cuda",
+  "n_rows": 10
+}

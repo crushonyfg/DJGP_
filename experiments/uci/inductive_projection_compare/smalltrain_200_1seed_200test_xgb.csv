@@ -1,0 +1,106 @@
+dataset,seed,method,metric,value
+Wine Quality,0,lmjgp_transductive,rmse,0.7721849091552577
+Wine Quality,0,lmjgp_transductive,mean_crps,0.42712637782096863
+Wine Quality,0,lmjgp_transductive,wall_sec,49.543149200006155
+Wine Quality,0,lmjgp_transductive,coverage_90,0.865
+Wine Quality,0,lmjgp_transductive,mean_width_90,2.143367775559789
+Wine Quality,0,lmjgp_transductive,coverage_95,0.915
+Wine Quality,0,lmjgp_transductive,mean_width_95,2.5539802307557276
+Wine Quality,0,cem_em_transductive,rmse,0.8193930607201704
+Wine Quality,0,cem_em_transductive,mean_crps,0.5203604102134705
+Wine Quality,0,cem_em_transductive,wall_sec,22.47315510000044
+Wine Quality,0,cem_em_transductive,coverage_90,0.585
+Wine Quality,0,cem_em_transductive,mean_width_90,1.2928724654389567
+Wine Quality,0,cem_em_transductive,coverage_95,0.635
+Wine Quality,0,cem_em_transductive,mean_width_95,1.5405525618472677
+Wine Quality,0,lmjgp_supervised,rmse,0.7559946670919666
+Wine Quality,0,lmjgp_supervised,mean_crps,0.42675846815109253
+Wine Quality,0,lmjgp_supervised,wall_sec,55.06223380001029
+Wine Quality,0,lmjgp_supervised,coverage_90,0.87
+Wine Quality,0,lmjgp_supervised,mean_width_90,2.1556362523190966
+Wine Quality,0,lmjgp_supervised,coverage_95,0.905
+Wine Quality,0,lmjgp_supervised,mean_width_95,2.5685990224824877
+Wine Quality,0,cem_em_supervised,rmse,0.8018057064743986
+Wine Quality,0,cem_em_supervised,mean_crps,0.45641037821769714
+Wine Quality,0,cem_em_supervised,wall_sec,53.56252399999357
+Wine Quality,0,cem_em_supervised,coverage_90,0.81
+Wine Quality,0,cem_em_supervised,mean_width_90,1.9915947349040206
+Wine Quality,0,cem_em_supervised,coverage_95,0.865
+Wine Quality,0,cem_em_supervised,mean_width_95,2.373131498299964
+Wine Quality,0,xgboost,rmse,0.7282766272830983
+Wine Quality,0,xgboost,mean_crps,0.43276238441467285
+Wine Quality,0,xgboost,wall_sec,4.366742400001385
+Wine Quality,0,xgboost,coverage_90,0.665
+Wine Quality,0,xgboost,mean_width_90,1.3041066381736501
+Wine Quality,0,xgboost,coverage_95,0.73
+Wine Quality,0,xgboost,mean_width_95,1.553938904312834
+Parkinsons Telemonitoring,0,lmjgp_transductive,rmse,8.345848893937614
+Parkinsons Telemonitoring,0,lmjgp_transductive,mean_crps,4.797343730926514
+Parkinsons Telemonitoring,0,lmjgp_transductive,wall_sec,110.00889250000182
+Parkinsons Telemonitoring,0,lmjgp_transductive,coverage_90,0.78
+Parkinsons Telemonitoring,0,lmjgp_transductive,mean_width_90,20.867895273352477
+Parkinsons Telemonitoring,0,lmjgp_transductive,coverage_95,0.85
+Parkinsons Telemonitoring,0,lmjgp_transductive,mean_width_95,24.865630897946858
+Parkinsons Telemonitoring,0,cem_em_transductive,rmse,8.138879748339974
+Parkinsons Telemonitoring,0,cem_em_transductive,mean_crps,4.632725238800049
+Parkinsons Telemonitoring,0,cem_em_transductive,wall_sec,33.22418639999523
+Parkinsons Telemonitoring,0,cem_em_transductive,coverage_90,0.755
+Parkinsons Telemonitoring,0,cem_em_transductive,mean_width_90,18.04101919690804
+Parkinsons Telemonitoring,0,cem_em_transductive,coverage_95,0.845
+Parkinsons Telemonitoring,0,cem_em_transductive,mean_width_95,21.49720029244809
+Parkinsons Telemonitoring,0,lmjgp_supervised,rmse,8.208601287201787
+Parkinsons Telemonitoring,0,lmjgp_supervised,mean_crps,4.698371410369873
+Parkinsons Telemonitoring,0,lmjgp_supervised,wall_sec,101.64471339999
+Parkinsons Telemonitoring,0,lmjgp_supervised,coverage_90,0.8
+Parkinsons Telemonitoring,0,lmjgp_supervised,mean_width_90,22.13308706311138
+Parkinsons Telemonitoring,0,lmjgp_supervised,coverage_95,0.875
+Parkinsons Telemonitoring,0,lmjgp_supervised,mean_width_95,26.373199900338328
+Parkinsons Telemonitoring,0,cem_em_supervised,rmse,8.45750929249489
+Parkinsons Telemonitoring,0,cem_em_supervised,mean_crps,4.958591461181641
+Parkinsons Telemonitoring,0,cem_em_supervised,wall_sec,101.58940069998789
+Parkinsons Telemonitoring,0,cem_em_supervised,coverage_90,0.725
+Parkinsons Telemonitoring,0,cem_em_supervised,mean_width_90,18.29374038294246
+Parkinsons Telemonitoring,0,cem_em_supervised,coverage_95,0.79
+Parkinsons Telemonitoring,0,cem_em_supervised,mean_width_95,21.79833615927639
+Parkinsons Telemonitoring,0,xgboost,rmse,5.558470022396831
+Parkinsons Telemonitoring,0,xgboost,mean_crps,3.393463373184204
+Parkinsons Telemonitoring,0,xgboost,wall_sec,5.322524699993664
+Parkinsons Telemonitoring,0,xgboost,coverage_90,0.63
+Parkinsons Telemonitoring,0,xgboost,mean_width_90,10.520714445284217
+Parkinsons Telemonitoring,0,xgboost,coverage_95,0.73
+Parkinsons Telemonitoring,0,xgboost,mean_width_95,12.536204478330587
+Appliances Energy Prediction,0,lmjgp_transductive,rmse,107.42466439105462
+Appliances Energy Prediction,0,lmjgp_transductive,mean_crps,40.99546813964844
+Appliances Energy Prediction,0,lmjgp_transductive,wall_sec,92.36537900000985
+Appliances Energy Prediction,0,lmjgp_transductive,coverage_90,0.855
+Appliances Energy Prediction,0,lmjgp_transductive,mean_width_90,124.44469663160027
+Appliances Energy Prediction,0,lmjgp_transductive,coverage_95,0.89
+Appliances Energy Prediction,0,lmjgp_transductive,mean_width_95,148.2850020624634
+Appliances Energy Prediction,0,cem_em_transductive,rmse,114.92093431974997
+Appliances Energy Prediction,0,cem_em_transductive,mean_crps,52.6035041809082
+Appliances Energy Prediction,0,cem_em_transductive,wall_sec,37.53689970000414
+Appliances Energy Prediction,0,cem_em_transductive,coverage_90,0.365
+Appliances Energy Prediction,0,cem_em_transductive,mean_width_90,50.85290783653919
+Appliances Energy Prediction,0,cem_em_transductive,coverage_95,0.41
+Appliances Energy Prediction,0,cem_em_transductive,mean_width_95,60.594977106550786
+Appliances Energy Prediction,0,lmjgp_supervised,rmse,105.6526543637148
+Appliances Energy Prediction,0,lmjgp_supervised,mean_crps,39.8330192565918
+Appliances Energy Prediction,0,lmjgp_supervised,wall_sec,100.49948569999833
+Appliances Energy Prediction,0,lmjgp_supervised,coverage_90,0.865
+Appliances Energy Prediction,0,lmjgp_supervised,mean_width_90,124.46999023034016
+Appliances Energy Prediction,0,lmjgp_supervised,coverage_95,0.885
+Appliances Energy Prediction,0,lmjgp_supervised,mean_width_95,148.31514124430748
+Appliances Energy Prediction,0,cem_em_supervised,rmse,108.67842871053058
+Appliances Energy Prediction,0,cem_em_supervised,mean_crps,42.46393585205078
+Appliances Energy Prediction,0,cem_em_supervised,wall_sec,101.31648029999633
+Appliances Energy Prediction,0,cem_em_supervised,coverage_90,0.825
+Appliances Energy Prediction,0,cem_em_supervised,mean_width_90,122.9846370190434
+Appliances Energy Prediction,0,cem_em_supervised,coverage_95,0.85
+Appliances Energy Prediction,0,cem_em_supervised,mean_width_95,146.54523372745555
+Appliances Energy Prediction,0,xgboost,rmse,103.25991124490987
+Appliances Energy Prediction,0,xgboost,mean_crps,41.900306701660156
+Appliances Energy Prediction,0,xgboost,wall_sec,5.962983799996437
+Appliances Energy Prediction,0,xgboost,coverage_90,0.865
+Appliances Energy Prediction,0,xgboost,mean_width_90,123.5756949164965
+Appliances Energy Prediction,0,xgboost,coverage_95,0.9
+Appliances Energy Prediction,0,xgboost,mean_width_95,147.24952265189506

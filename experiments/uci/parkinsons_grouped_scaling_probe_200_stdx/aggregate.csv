@@ -1,0 +1,5 @@
+dataset,method,n_seeds,rmse_mean,rmse_std,mean_crps_mean,mean_crps_std,wall_sec_mean,wall_sec_std,coverage_90_mean,coverage_90_std,mean_width_90_mean,mean_width_90_std,coverage_95_mean,coverage_95_std,mean_width_95_mean,mean_width_95_std
+Parkinsons Telemonitoring,lmjgp_supervised,1,8.34973603266713,0.0,5.121851921081543,0.0,71.73036660000798,0.0,0.715,0.0,22.997234638686887,0.0,0.775,0.0,27.402895246905217,0.0
+Parkinsons Telemonitoring,lmjgp_supervised_residual_ridge,1,8.75959459403955,0.0,5.467884540557861,0.0,65.50006690001464,0.0,0.685,0.0,21.821851756359756,0.0,0.76,0.0,26.002340158197605,0.0
+Parkinsons Telemonitoring,lmjgp_transductive,1,8.537232845678142,0.0,5.351074695587158,0.0,67.9700333000219,0.0,0.68,0.0,22.301965467932344,0.0,0.755,0.0,26.57443093135057,0.0
+Parkinsons Telemonitoring,lmjgp_transductive_residual_ridge,1,8.808524777935405,0.0,5.462689399719238,0.0,67.61986410000827,0.0,0.71,0.0,22.94705423304639,0.0,0.81,0.0,27.343101605590604,0.0

@@ -1,0 +1,9 @@
+dataset,train_size,method,n,rmse_mean,rmse_std,crps_mean,crps_std,cov90_mean,cov90_std,width90_mean,width90_std,cov95_mean,cov95_std,width95_mean,width95_std
+Wine Quality,120,cem_em_supervised_gp_cond_ensemble,1,1.0324117882735961,0.0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,120,cem_em_supervised_laplace_ensemble,1,0.7061698181812067,0.0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,120,cem_em_supervised_vi_fullcov_ensemble,1,0.7763726984932591,0.0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,120,cem_em_transductive_gp_cond_ensemble,1,0.6994530740520591,0.0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,120,cem_em_transductive_laplace_ensemble,1,0.9345072162967119,0.0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,120,cem_em_transductive_vi_fullcov_ensemble,1,0.6975603331026471,0.0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,120,lmjgp_lowrank_pls_pca,1,0.8519089136640067,0.0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,120,lmjgp_supervised_reparam,1,0.8367644662410528,0.0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan

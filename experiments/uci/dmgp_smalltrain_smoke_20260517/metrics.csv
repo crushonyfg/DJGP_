@@ -1,0 +1,2 @@
+benchmark,dataset,train_size,setting,seed,method,subset,n_eval,N_train,N_test,Q,D,rmse,mean_crps,wall_sec,coverage_90,mean_width_90,coverage_95,mean_width_95,train_sec,predict_sec,m_u,m_v,steps1,steps2,lr,split_type,standardize_x,standardize_y_for_baseline,y_standardized_for_dmgp,status
+uci,Wine Quality,80,uci_wine_quality_train80,0,deep_mahalanobis_gp,all,20,80,20,3,11,0.6987551773532206,0.40165516703858806,5.434117,1.0,2.392677708413854,1.0,2.8510513387106005,4.5268194,0.9072975999999997,10,8,2,2,0.01,random_row,True,False,True,ok

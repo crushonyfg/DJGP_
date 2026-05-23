@@ -1,0 +1,2 @@
+benchmark,dataset,train_size,method,subset,n_seeds,seeds,source,rmse_mean,rmse_std,mean_crps_mean,mean_crps_std,wall_sec_mean,wall_sec_std,coverage_90_mean,coverage_90_std,mean_width_90_mean,mean_width_90_std,coverage_95_mean,coverage_95_std,mean_width_95_mean,mean_width_95_std
+uci,Wine Quality,80,deep_mahalanobis_gp,all,1,0,deep_mahalanobis_gp_npz,0.6987551773532206,0.0,0.40165516703858806,0.0,5.434117,0.0,1.0,0.0,2.392677708413854,0.0,1.0,0.0,2.8510513387106005,0.0

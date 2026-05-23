@@ -1,0 +1,9 @@
+setting,family,seed,variant,status,projection_init,cem_updates,N_train,N_test,n_test_eval,Q,observed_dim,latent_dim,n_neighbors,m_inducing,standardize_x,standardize_y_for_head,init_sec,error,batch_hyperopt,early_stopping,early_stopping_metric,eval_each_step,eval_ensemble_samples,eval_gate_steps,eval_hyper_steps,expansion,final_ensemble_samples,final_gate_steps,final_hyper_steps,gate_basis,gate_steps,hyper_steps,inducing_l2,inducing_lr_mult,learn_inducing,learn_outlier_constant,mc_beta_kl,mc_lr,mc_ortho_weight,mc_restore_state,mc_reward_mode,mc_samples,mc_steps,outlier_constant_l2,outlier_mode,qr_w_lengthscale,r_init,r_init_resolved,reselect_neighbors_after_train,reward_anchor_count,traceback
+lh_q5_train1000,LH,0,B,failed,pls,1,1000,200,40,5,30,5,35,40,True,True,7.221023899997817,TypeError: MCCEMQRMstepConfig.__init__() got an unexpected keyword argument 'restore_state',True,False,eval_rmse,False,1,,,rff,3,,,linear,1,1,0.0,0.1,False,True,0.05,0.01,0.0,final,supervised_anchor,3,30,5.0,constant,7.817970815716798,pca,pca,none,200,"Traceback (most recent call last):
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\experiments\synthetic\compare_mc_cem_qr_lh.py"", line 820, in main
+    _run_variant(
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\experiments\synthetic\compare_mc_cem_qr_lh.py"", line 412, in _run_variant
+    cfg = MCCEMQRMstepConfig(
+          ^^^^^^^^^^^^^^^^^^^
+TypeError: MCCEMQRMstepConfig.__init__() got an unexpected keyword argument 'restore_state'
+"

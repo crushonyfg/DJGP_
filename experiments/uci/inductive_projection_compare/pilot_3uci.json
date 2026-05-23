@@ -1,0 +1,430 @@
+{
+  "_meta": {
+    "methods": [
+      "lmjgp_transductive",
+      "cem_em_transductive",
+      "lmjgp_supervised",
+      "cem_em_supervised"
+    ],
+    "num_exp": 1,
+    "datasets": [
+      "Wine Quality",
+      "Parkinsons Telemonitoring",
+      "Appliances Energy Prediction"
+    ],
+    "max_test_anchors": 12,
+    "max_train_anchors": 24,
+    "neighbor_pool": "base",
+    "standardize_x": true,
+    "standardize_y": false,
+    "n": 12,
+    "m1": 2,
+    "m2": 20,
+    "MC_num": 2,
+    "cem_em": {
+      "n_outer": 2,
+      "n_m_steps": 10,
+      "lr": 0.01,
+      "lambda_gate": 0.1,
+      "lambda_smooth": 0.01,
+      "lambda_scale": 0.0,
+      "lambda_anchor_pred": 1.0,
+      "target_row_norm_sq": 1.0,
+      "normalize_smoothness": true,
+      "grad_clip": 10.0,
+      "anchor_kernel_lengthscale": null,
+      "snapshot_after_each_outer": false,
+      "cem_progress": false,
+      "verbose": true,
+      "track_best_W": true,
+      "best_metric_key": "loss"
+    }
+  },
+  "Wine Quality": {
+    "0": {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "Q": 3,
+      "D": 11,
+      "split": {
+        "n_base": 5823,
+        "n_anchor": 24,
+        "n_test": 12,
+        "test_indices": [
+          124,
+          130,
+          131,
+          134,
+          192,
+          303,
+          325,
+          333,
+          342,
+          387,
+          526,
+          543
+        ]
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601683844
+      },
+      "metrics": {
+        "lmjgp_transductive": [
+          0.8188384942428607,
+          0.42852112650871277,
+          3.7613125999996555,
+          0.9166666666666666,
+          2.2757613143591495,
+          0.9166666666666666,
+          2.711736862458866
+        ],
+        "cem_em_transductive": [
+          0.8143301837337774,
+          0.3534574508666992,
+          2.3322389000022667,
+          0.8333333333333334,
+          1.6409826816174462,
+          0.9166666666666666,
+          1.9553514686805886
+        ],
+        "lmjgp_supervised": [
+          1.013414706062108,
+          0.5573251247406006,
+          3.6125456000008853,
+          0.6666666666666666,
+          1.9867525925412337,
+          0.75,
+          2.367361729802892
+        ],
+        "cem_em_supervised": [
+          0.9336515500419333,
+          0.46266841888427734,
+          3.8097836000015377,
+          0.75,
+          1.7190000768119258,
+          0.8333333333333334,
+          2.048314928920032
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_transductive": {
+          "train_time_sec": 4.527425599997514,
+          "mu_W_shape": [
+            12,
+            3,
+            11
+          ],
+          "total_wall_sec": 8.360467700003937
+        },
+        "cem_em_transductive": {
+          "median_trace_WWT": 3.0,
+          "median_eff_rank_WWT": 2.5483927726745605,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.38700222969055176,
+          "cosine_to_ref_median": 0.531643747499124,
+          "train_time_sec": 5.20010679999541,
+          "jgp_elapsed_sec": 2.3322389000022667,
+          "best_outer": 2,
+          "total_wall_sec": 7.59575799999584
+        },
+        "lmjgp_supervised": {
+          "train_time_sec": 3.679276299997582,
+          "mu_W_shape": [
+            12,
+            3,
+            11
+          ],
+          "total_wall_sec": 7.363666499993997
+        },
+        "cem_em_supervised": {
+          "median_trace_WWT": 2.999999761581421,
+          "median_eff_rank_WWT": 2.9013309478759766,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.29821017384529114,
+          "cosine_to_ref_median": 0.5468795893202932,
+          "train_time_sec": 15.03218090000155,
+          "jgp_elapsed_sec": 3.8097836000015377,
+          "best_outer": 2,
+          "coeff_gp_lengthscale": 4.463984489440918,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.06501056253910065,
+          "total_wall_sec": 18.911254700004065
+        }
+      }
+    }
+  },
+  "Parkinsons Telemonitoring": {
+    "0": {
+      "dataset": "Parkinsons Telemonitoring",
+      "seed": 0,
+      "Q": 5,
+      "D": 18,
+      "split": {
+        "n_base": 5263,
+        "n_anchor": 24,
+        "n_test": 12,
+        "test_indices": [
+          112,
+          117,
+          118,
+          121,
+          174,
+          274,
+          294,
+          301,
+          309,
+          350,
+          475,
+          491
+        ]
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601683578
+      },
+      "metrics": {
+        "lmjgp_transductive": [
+          4.85639150093821,
+          2.210759401321411,
+          2.2113449000025867,
+          0.75,
+          11.80679072061904,
+          0.8333333333333334,
+          14.068658880184811
+        ],
+        "cem_em_transductive": [
+          5.5483708157718015,
+          3.105722665786743,
+          3.1629868999953032,
+          0.25,
+          3.1279032367313877,
+          0.4166666666666667,
+          3.7271265908821523
+        ],
+        "lmjgp_supervised": [
+          5.433159617628002,
+          2.41276216506958,
+          7.00665619999927,
+          0.8333333333333334,
+          10.378108040723925,
+          0.9166666666666666,
+          12.366278466481775
+        ],
+        "cem_em_supervised": [
+          5.787734636624409,
+          2.967175245285034,
+          6.636238799997955,
+          0.5833333333333334,
+          9.82449557872375,
+          0.8333333333333334,
+          11.706608530425571
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_transductive": {
+          "train_time_sec": 5.413357899997209,
+          "mu_W_shape": [
+            12,
+            5,
+            18
+          ],
+          "total_wall_sec": 7.680580799999007
+        },
+        "cem_em_transductive": {
+          "median_trace_WWT": 5.0,
+          "median_eff_rank_WWT": 4.666667938232422,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 0.34241801500320435,
+          "cosine_to_ref_median": 0.44152198925503183,
+          "train_time_sec": 3.216525299998466,
+          "jgp_elapsed_sec": 3.1629868999953032,
+          "best_outer": 1,
+          "total_wall_sec": 6.413073399999121
+        },
+        "lmjgp_supervised": {
+          "train_time_sec": 8.6522496999969,
+          "mu_W_shape": [
+            12,
+            5,
+            18
+          ],
+          "total_wall_sec": 15.777612199999567
+        },
+        "cem_em_supervised": {
+          "median_trace_WWT": 5.000000953674316,
+          "median_eff_rank_WWT": 4.436153888702393,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 0.5339891910552979,
+          "cosine_to_ref_median": 0.42044304566776913,
+          "train_time_sec": 20.058007699997688,
+          "jgp_elapsed_sec": 6.636238799997955,
+          "best_outer": 2,
+          "coeff_gp_lengthscale": 4.499135971069336,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.04151012748479843,
+          "total_wall_sec": 26.75045240000327
+        }
+      }
+    }
+  },
+  "Appliances Energy Prediction": {
+    "0": {
+      "dataset": "Appliances Energy Prediction",
+      "seed": 0,
+      "Q": 5,
+      "D": 27,
+      "split": {
+        "n_base": 19118,
+        "n_anchor": 24,
+        "n_test": 12,
+        "test_indices": [
+          113,
+          118,
+          119,
+          122,
+          175,
+          276,
+          296,
+          303,
+          312,
+          353,
+          479,
+          495
+        ]
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601682236
+      },
+      "metrics": {
+        "lmjgp_transductive": [
+          167.196069712132,
+          71.30341339111328,
+          6.364389700000174,
+          0.5833333333333334,
+          144.59804692566578,
+          0.5833333333333334,
+          172.29920010231945
+        ],
+        "cem_em_transductive": [
+          159.80636133808707,
+          61.95988464355469,
+          3.4721056999987923,
+          0.5,
+          124.69482790199963,
+          0.6666666666666666,
+          148.5830518544675
+        ],
+        "lmjgp_supervised": [
+          151.88212051956774,
+          66.88707733154297,
+          6.105933799997729,
+          0.5833333333333334,
+          179.3827470936252,
+          0.6666666666666666,
+          213.74772684362094
+        ],
+        "cem_em_supervised": [
+          168.2517686483712,
+          79.42203521728516,
+          5.6769142000048305,
+          0.4166666666666667,
+          146.61753146031091,
+          0.5,
+          174.70556434676345
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_transductive": {
+          "train_time_sec": 11.505075699998997,
+          "mu_W_shape": [
+            12,
+            5,
+            27
+          ],
+          "total_wall_sec": 17.96125110000139
+        },
+        "cem_em_transductive": {
+          "median_trace_WWT": 5.000000953674316,
+          "median_eff_rank_WWT": 4.539618015289307,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 0.3201620578765869,
+          "cosine_to_ref_median": 0.4348313203917473,
+          "train_time_sec": 8.590544800004864,
+          "jgp_elapsed_sec": 3.4721056999987923,
+          "best_outer": 1,
+          "total_wall_sec": 12.124592699998175
+        },
+        "lmjgp_supervised": {
+          "train_time_sec": 10.587797700005467,
+          "mu_W_shape": [
+            12,
+            5,
+            27
+          ],
+          "total_wall_sec": 16.833879299992986
+        },
+        "cem_em_supervised": {
+          "median_trace_WWT": 5.000000953674316,
+          "median_eff_rank_WWT": 4.4631500244140625,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 0.3386007249355316,
+          "cosine_to_ref_median": 0.4322205655016753,
+          "train_time_sec": 18.26347530000203,
+          "jgp_elapsed_sec": 5.6769142000048305,
+          "best_outer": 1,
+          "coeff_gp_lengthscale": 6.986691474914551,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.10404634475708008,
+          "total_wall_sec": 24.03382359999523
+        }
+      }
+    }
+  }
+}

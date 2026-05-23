@@ -1,0 +1,8 @@
+Using device: cuda
+Device: cuda
+
+======================================================================
+  D3_snfix0.3_exploreW_inner20_lrW1_decay: {"explicit_mj": true, "learn_mj": true, "proj_kind": "lowrank", "rank": 3, "lambda_s": 0.1, "sigma_max": 0.05, "w0_init": "pls", "basis_mode": "pca_residual", "init_c_w0": true, "lambda_cov": 0.0, "lambda_ridge": 0.0, "ridge_lambda": 0.01, "cov_clip": 1.0, "align_proj_only": true, "diag_tau": true, "use_mixture_elbo": true, "sigma_n_fixed": 0.3, "fix_u": 0.05, "lambda_rho_floor": 0.0, "rho_floor_min": null, "diag_shrinkage": true, "diag_mixture": true, "rho_warmup_pure_steps": 120, "rho_blend": true, "rho_init": "uniform", "rho_init_uniform_value": 1.0, "rho_blend_alpha_end": 0.5, "rho_blend_start_step": 121, "rho_blend_end_step": 600, "rho_blend_linear_data": true, "refresh_star": "tilde", "refresh_alpha": 0.3, "refresh_mu_u_every": 0, "explore_w_profile": true, "explore_phase_a_end": 80, "explore_phase_b_end": 300, "explore_inner_mu_a": 20, "explore_inner_mu_b": 8, "explore_inner_mu_c": 5, "explore_lr_W_a": 1.0, "explore_lr_W_b": 0.1, "explore_lr_W_c": 0.03, "explore_freeze_W_phase_c": true, "explore_phase_a_freeze_mj": true, "explore_phase_a_freeze_gate": true, "rho_blend_alpha_cap": 0.3, "rho_blend_alpha_cap_until_step": 200, "slow_update_every": 1, "refresh_before_W": true, "refresh_after_W": false}
+======================================================================
+  rho0 quality: B0/Bp=1.000  z*0/r=0.0100  corr0(|r|)=nan
+  [D3_snfix0.3_exploreW_inner20_lrW1_decay] explore_w_profile: A<= 80  B<= 300  rho_cap=0.3

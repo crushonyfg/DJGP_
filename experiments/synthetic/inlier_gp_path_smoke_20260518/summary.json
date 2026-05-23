@@ -1,0 +1,18 @@
+{
+  "args": {
+    "setting": "lh_q5_train500",
+    "seed": 0,
+    "max_test": 30,
+    "num_steps": 120,
+    "eval_every": 60,
+    "lr": 0.01,
+    "m1": 2,
+    "m2": 40,
+    "modes": "mixture_ab,pure_inlier,fixedW_inlier,fixedW_predict",
+    "lambda_s": 0.1,
+    "no_ab": false,
+    "run_jumpgp": false,
+    "out_dir": "experiments/synthetic/inlier_gp_path_smoke_20260518"
+  },
+  "n_records": 7
+}

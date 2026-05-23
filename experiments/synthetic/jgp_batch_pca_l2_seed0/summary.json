@@ -1,0 +1,31 @@
+{
+  "seed": 0,
+  "setting": "l2_q2_train1000",
+  "pca_dim": 2,
+  "pca_explained_variance": 0.829740986331302,
+  "n_neighbors": 25,
+  "max_mu_diff_seq_vs_batch": 0.0,
+  "speedup_seq_over_batch": 0.7674007588972561,
+  "results": [
+    {
+      "method": "jgp_cem_sequential",
+      "wall_s": 7.6628284600010375,
+      "rmse": 0.508905421056373,
+      "crps": 0.291523137627091,
+      "n_test": 200,
+      "n_train": 1000,
+      "n_neighbors": 25,
+      "pca_dim": 2
+    },
+    {
+      "method": "jgp_cem_batch",
+      "wall_s": 9.985432476001733,
+      "rmse": 0.508905421056373,
+      "crps": 0.291523137627091,
+      "n_test": 200,
+      "n_train": 1000,
+      "n_neighbors": 25,
+      "pca_dim": 2
+    }
+  ]
+}

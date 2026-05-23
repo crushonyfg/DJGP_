@@ -1,0 +1,150 @@
+# High-Noise Orthogonal Synthetic Expansions
+
+Purpose: seed-level stress-test of noisy observed expansions for paper L2/LH
+latent synthetic generators.
+
+Settings and args:
+
+```json
+{
+  "args": {
+    "num_exp": 1,
+    "seed_start": 0,
+    "settings": "l2_linear_noise3_train1000,l2_nonlinear_noise3_train1000,lh_linear_noise3_train1000,lh_nonlinear_noise3_train1000",
+    "methods": "xgb_bootstrap,dkl_svgp,lmjgp_baseline,lmjgp_pls_kl",
+    "xgb_boots": 30,
+    "dkl_epochs": 80,
+    "lmjgp_steps": 300,
+    "MC_num": 3,
+    "standardize_y": true,
+    "only_export_dmgp": false,
+    "resume": true,
+    "out_dir": "experiments\\synthetic\\high_noise_expansions_seed0"
+  },
+  "device": "cuda",
+  "settings": {
+    "l2_linear_noise3_train1000": {
+      "family": "L2_phantom",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 2,
+      "H": 20,
+      "Q_true": 2,
+      "Q": 2,
+      "n": 25,
+      "caseno": 6,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "linear_noise",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0,
+      "base_setting": "l2_q2_train1000",
+      "eta_sigma": 3.0,
+      "signal_scale": 1.0,
+      "observed_dim": 20
+    },
+    "l2_nonlinear_noise3_train1000": {
+      "family": "L2_phantom",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 2,
+      "H": 20,
+      "Q_true": 2,
+      "Q": 2,
+      "n": 25,
+      "caseno": 6,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "nonlinear_noise",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0,
+      "base_setting": "l2_q2_train1000",
+      "eta_sigma": 3.0,
+      "signal_scale": 1.0,
+      "observed_dim": 20
+    },
+    "lh_linear_noise3_train1000": {
+      "family": "LH",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 5,
+      "H": 30,
+      "Q_true": 5,
+      "Q": 5,
+      "n": 35,
+      "caseno": 0,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "linear_noise",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0,
+      "base_setting": "lh_q5_train1000",
+      "eta_sigma": 3.0,
+      "signal_scale": 1.0,
+      "observed_dim": 30
+    },
+    "lh_nonlinear_noise3_train1000": {
+      "family": "LH",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 5,
+      "H": 30,
+      "Q_true": 5,
+      "Q": 5,
+      "n": 35,
+      "caseno": 0,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "nonlinear_noise",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0,
+      "base_setting": "lh_q5_train1000",
+      "eta_sigma": 3.0,
+      "signal_scale": 1.0,
+      "observed_dim": 30
+    }
+  },
+  "exports": [
+    {
+      "setting": "l2_linear_noise3_train1000",
+      "seed": 0,
+      "path": "experiments\\synthetic\\high_noise_expansions_seed0\\dmgp_data\\l2_linear_noise3_train1000_seed0.npz",
+      "standardize_x": true,
+      "standardize_y": true
+    },
+    {
+      "setting": "l2_nonlinear_noise3_train1000",
+      "seed": 0,
+      "path": "experiments\\synthetic\\high_noise_expansions_seed0\\dmgp_data\\l2_nonlinear_noise3_train1000_seed0.npz",
+      "standardize_x": true,
+      "standardize_y": true
+    },
+    {
+      "setting": "lh_linear_noise3_train1000",
+      "seed": 0,
+      "path": "experiments\\synthetic\\high_noise_expansions_seed0\\dmgp_data\\lh_linear_noise3_train1000_seed0.npz",
+      "standardize_x": true,
+      "standardize_y": true
+    },
+    {
+      "setting": "lh_nonlinear_noise3_train1000",
+      "seed": 0,
+      "path": "experiments\\synthetic\\high_noise_expansions_seed0\\dmgp_data\\lh_nonlinear_noise3_train1000_seed0.npz",
+      "standardize_x": true,
+      "standardize_y": true
+    }
+  ],
+  "n_rows": 16,
+  "n_ok": 16,
+  "n_errors": 0
+}
+```
+
+Files:
+
+- `metrics.csv`: non-DMGP per-method rows.
+- `aggregate.csv`: aggregate over completed seeds.
+- `dmgp_data/*.npz`: standardized X/Y exports for DeepMahalanobisGP.
+- `dmgp/`: optional output from `run_deep_mahalanobis_gp_paper.py`.
+
+Metrics are in standardized-y units when `standardize_y=true`.

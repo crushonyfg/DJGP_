@@ -1,0 +1,4 @@
+setting,family,expansion,caseno,seed,method,N_train,N_test,d,D,Q_true,Q,n,standardize_x,noise_std,noise_var,lengthscale,kernel_var,rmse,mean_crps,wall_sec,coverage_90,mean_width_90,coverage_95,mean_width_95,status,dkl_epochs,n_bad_sig2,pca_explained_variance_sum,xgb_boots
+l2_q2_train200,L2_phantom,rff,6,0,xgb_bootstrap,200,200,2,20,2,2,25,True,2.0,4.0,0.5,9.0,2.4929897146254434,1.438686490058899,2.8072894999640994,0.665,4.698487430022322,0.76,5.59859308680577,ok,,,,30
+l2_q2_train200,L2_phantom,rff,6,0,dkl_svgp,200,200,2,20,2,2,25,True,2.0,4.0,0.5,9.0,2.462644338607788,1.6954138278961182,1.0913037999998778,0.3,2.0135706142637493,0.355,2.3993173736677886,ok,80,,,
+l2_q2_train200,L2_phantom,rff,6,0,jgp_pca,200,200,2,20,2,2,25,True,2.0,4.0,0.5,9.0,3.2735917007229314,1.7400071620941162,12.732368400029372,0.71,6.6326501538638105,0.785,7.90329012297618,ok,,0,0.7984360060696504,

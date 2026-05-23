@@ -1,0 +1,9 @@
+{
+  "source_runs": [
+    "experiments\\uci\\smalltrain_multiseed_grouped_5seeds\\metrics.csv",
+    "experiments\\uci\\smalltrain_multiseed_grouped_5seeds_residual_only\\metrics.csv",
+    "experiments\\uci\\smalltrain_multiseed_grouped_5seeds_wine_transductive_seed0_filter\\metrics.csv"
+  ],
+  "note": "Combined train=200 five-seed run. Wine seed 0 lmjgp_transductive is replaced by the clean rerun because the original run had a non-reproducible variance explosion in CRPS/width.",
+  "n_rows": 90
+}

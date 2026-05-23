@@ -1,0 +1,19 @@
+{
+  "args": {
+    "data_dir": "experiments\\synthetic\\deep_mahalanobis_gp_paper_train1000_seed0",
+    "out_dir": "experiments\\synthetic\\dmgp_residual_bundle_lh_seed0_20260517",
+    "settings": "lh_q5_train1000",
+    "seed": 0,
+    "seeds": "",
+    "Q": 0,
+    "m_u": 50,
+    "m_v": 25,
+    "steps1": 300,
+    "steps2": 700,
+    "lr": 0.01,
+    "initial_noise_var": 0.01,
+    "oof_folds": 3
+  },
+  "external_repo": "C:\\Users\\yxu59\\files\\spring2026\\park\\external\\DeepMahalanobisGP",
+  "n_rows": 1
+}

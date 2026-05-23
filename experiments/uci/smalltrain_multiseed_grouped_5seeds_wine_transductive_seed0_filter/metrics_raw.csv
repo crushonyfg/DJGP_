@@ -1,0 +1,2 @@
+dataset,seed,method,split_type,n,metric_policy,n_eval_used,n_numeric_omitted,rmse,mean_crps,wall_sec,coverage_90,mean_width_90,coverage_95,mean_width_95
+Wine Quality,0,lmjgp_transductive,random_row,25,raw,200,0,0.7522343411231961,0.41947540640830994,46.361267000000225,0.875,2.080437386034053,0.91,2.4789940465855795

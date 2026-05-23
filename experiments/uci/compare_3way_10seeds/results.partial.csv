@@ -1,0 +1,729 @@
+dataset,seed,method,metric,value
+Wine Quality,0,xgb_bootstrap,rmse,0.6673765981664376
+Wine Quality,0,xgb_bootstrap,crps,0.36528274416923523
+Wine Quality,0,xgb_bootstrap,wall_sec,5.586782699996547
+Wine Quality,0,xgb_bootstrap,cov90,0.83
+Wine Quality,0,xgb_bootstrap,w90,1.6675295655466766
+Wine Quality,0,xgb_bootstrap,cov95,0.885
+Wine Quality,0,xgb_bootstrap,w95,1.9869840319375927
+Wine Quality,0,dkl_svgp,rmse,0.7017931938171387
+Wine Quality,0,dkl_svgp,crps,0.4138476550579071
+Wine Quality,0,dkl_svgp,wall_sec,8.158397200000763
+Wine Quality,0,dkl_svgp,cov90,0.6
+Wine Quality,0,dkl_svgp,w90,1.0963885529083386
+Wine Quality,0,dkl_svgp,cov95,0.69
+Wine Quality,0,dkl_svgp,w95,1.3064275395404101
+Wine Quality,0,pls_only,rmse,0.7928147778095657
+Wine Quality,0,pls_only,crps,0.4169369637966156
+Wine Quality,0,pls_only,wall_sec,18.204223900000216
+Wine Quality,0,pls_only,cov90,0.76
+Wine Quality,0,pls_only,w90,1.4591721709989232
+Wine Quality,0,pls_only,cov95,0.82
+Wine Quality,0,pls_only,w95,1.738710883169294
+Wine Quality,0,cem_em_coeff,rmse,0.7809771831909313
+Wine Quality,0,cem_em_coeff,crps,0.39676788449287415
+Wine Quality,0,cem_em_coeff,wall_sec,21.438087099995755
+Wine Quality,0,cem_em_coeff,cov90,0.765
+Wine Quality,0,cem_em_coeff,w90,1.3332222059339882
+Wine Quality,0,cem_em_coeff,cov95,0.8
+Wine Quality,0,cem_em_coeff,w95,1.5886322431392568
+Wine Quality,1,xgb_bootstrap,rmse,0.5906387397355976
+Wine Quality,1,xgb_bootstrap,crps,0.3227345943450928
+Wine Quality,1,xgb_bootstrap,wall_sec,5.537651600003301
+Wine Quality,1,xgb_bootstrap,cov90,0.865
+Wine Quality,1,xgb_bootstrap,w90,1.6883696350735768
+Wine Quality,1,xgb_bootstrap,cov95,0.895
+Wine Quality,1,xgb_bootstrap,w95,2.011816506413597
+Wine Quality,1,dkl_svgp,rmse,0.6464455723762512
+Wine Quality,1,dkl_svgp,crps,0.3761247992515564
+Wine Quality,1,dkl_svgp,wall_sec,7.921944000001531
+Wine Quality,1,dkl_svgp,cov90,0.65
+Wine Quality,1,dkl_svgp,w90,1.0977059316397655
+Wine Quality,1,dkl_svgp,cov95,0.72
+Wine Quality,1,dkl_svgp,w95,1.307997293119263
+Wine Quality,1,pls_only,rmse,0.7218824428702332
+Wine Quality,1,pls_only,crps,0.37287989258766174
+Wine Quality,1,pls_only,wall_sec,18.474826899997424
+Wine Quality,1,pls_only,cov90,0.775
+Wine Quality,1,pls_only,w90,1.5132251628681865
+Wine Quality,1,pls_only,cov95,0.855
+Wine Quality,1,pls_only,w95,1.8031189955900582
+Wine Quality,1,cem_em_coeff,rmse,0.7303993267672455
+Wine Quality,1,cem_em_coeff,crps,0.3967248499393463
+Wine Quality,1,cem_em_coeff,wall_sec,22.109558100004506
+Wine Quality,1,cem_em_coeff,cov90,0.75
+Wine Quality,1,cem_em_coeff,w90,1.3174545467134038
+Wine Quality,1,cem_em_coeff,cov95,0.795
+Wine Quality,1,cem_em_coeff,w95,1.5698439183385124
+Wine Quality,2,xgb_bootstrap,rmse,0.6527217879674101
+Wine Quality,2,xgb_bootstrap,crps,0.3581203818321228
+Wine Quality,2,xgb_bootstrap,wall_sec,6.429049899998063
+Wine Quality,2,xgb_bootstrap,cov90,0.85
+Wine Quality,2,xgb_bootstrap,w90,1.6690868155532854
+Wine Quality,2,xgb_bootstrap,cov95,0.875
+Wine Quality,2,xgb_bootstrap,w95,1.9888396097700929
+Wine Quality,2,dkl_svgp,rmse,0.6682931780815125
+Wine Quality,2,dkl_svgp,crps,0.3992100954055786
+Wine Quality,2,dkl_svgp,wall_sec,7.756915699996171
+Wine Quality,2,dkl_svgp,cov90,0.625
+Wine Quality,2,dkl_svgp,w90,1.0971704282341617
+Wine Quality,2,dkl_svgp,cov95,0.7
+Wine Quality,2,dkl_svgp,w95,1.3073592014548223
+Wine Quality,2,pls_only,rmse,0.7233098214733917
+Wine Quality,2,pls_only,crps,0.3755788803100586
+Wine Quality,2,pls_only,wall_sec,18.583472400001483
+Wine Quality,2,pls_only,cov90,0.82
+Wine Quality,2,pls_only,w90,1.4579522261307938
+Wine Quality,2,pls_only,cov95,0.85
+Wine Quality,2,pls_only,w95,1.7372572291994333
+Wine Quality,2,cem_em_coeff,rmse,0.7612885579844819
+Wine Quality,2,cem_em_coeff,crps,0.3977205753326416
+Wine Quality,2,cem_em_coeff,wall_sec,19.266420399995695
+Wine Quality,2,cem_em_coeff,cov90,0.78
+Wine Quality,2,cem_em_coeff,w90,1.2897290645554909
+Wine Quality,2,cem_em_coeff,cov95,0.825
+Wine Quality,2,cem_em_coeff,w95,1.536806968671307
+Wine Quality,3,xgb_bootstrap,rmse,0.6245807867651815
+Wine Quality,3,xgb_bootstrap,crps,0.3479929268360138
+Wine Quality,3,xgb_bootstrap,wall_sec,5.685453199999756
+Wine Quality,3,xgb_bootstrap,cov90,0.85
+Wine Quality,3,xgb_bootstrap,w90,1.6776889847091982
+Wine Quality,3,xgb_bootstrap,cov95,0.905
+Wine Quality,3,xgb_bootstrap,w95,1.9990897265332228
+Wine Quality,3,dkl_svgp,rmse,0.6879069209098816
+Wine Quality,3,dkl_svgp,crps,0.418863445520401
+Wine Quality,3,dkl_svgp,wall_sec,7.992217400002119
+Wine Quality,3,dkl_svgp,cov90,0.585
+Wine Quality,3,dkl_svgp,w90,1.0880679924171788
+Wine Quality,3,dkl_svgp,cov95,0.675
+Wine Quality,3,dkl_svgp,w95,1.296512980198078
+Wine Quality,3,pls_only,rmse,0.702616389219836
+Wine Quality,3,pls_only,crps,0.3868570625782013
+Wine Quality,3,pls_only,wall_sec,19.636829200004286
+Wine Quality,3,pls_only,cov90,0.815
+Wine Quality,3,pls_only,w90,1.5327080101749566
+Wine Quality,3,pls_only,cov95,0.83
+Wine Quality,3,pls_only,w95,1.8263342400421345
+Wine Quality,3,cem_em_coeff,rmse,0.7226040160831649
+Wine Quality,3,cem_em_coeff,crps,0.4062354266643524
+Wine Quality,3,cem_em_coeff,wall_sec,21.64958949999709
+Wine Quality,3,cem_em_coeff,cov90,0.735
+Wine Quality,3,cem_em_coeff,w90,1.353122766293549
+Wine Quality,3,cem_em_coeff,cov95,0.78
+Wine Quality,3,cem_em_coeff,w95,1.61234522339343
+Wine Quality,4,xgb_bootstrap,rmse,0.6546203912076722
+Wine Quality,4,xgb_bootstrap,crps,0.3584078550338745
+Wine Quality,4,xgb_bootstrap,wall_sec,7.156578199996147
+Wine Quality,4,xgb_bootstrap,cov90,0.84
+Wine Quality,4,xgb_bootstrap,w90,1.664715719702403
+Wine Quality,4,xgb_bootstrap,cov95,0.875
+Wine Quality,4,xgb_bootstrap,w95,1.983631127811379
+Wine Quality,4,dkl_svgp,rmse,0.7073836922645569
+Wine Quality,4,dkl_svgp,crps,0.4121626317501068
+Wine Quality,4,dkl_svgp,wall_sec,8.399009900000237
+Wine Quality,4,dkl_svgp,cov90,0.615
+Wine Quality,4,dkl_svgp,w90,1.0880109223096879
+Wine Quality,4,dkl_svgp,cov95,0.675
+Wine Quality,4,dkl_svgp,w95,1.296444976970652
+Wine Quality,4,pls_only,rmse,0.7689955311308351
+Wine Quality,4,pls_only,crps,0.3996243178844452
+Wine Quality,4,pls_only,wall_sec,19.294413700001314
+Wine Quality,4,pls_only,cov90,0.805
+Wine Quality,4,pls_only,w90,1.436094667315144
+Wine Quality,4,pls_only,cov95,0.845
+Wine Quality,4,pls_only,w95,1.7112123414558116
+Wine Quality,4,cem_em_coeff,rmse,0.7775910781374411
+Wine Quality,4,cem_em_coeff,crps,0.42108696699142456
+Wine Quality,4,cem_em_coeff,wall_sec,20.439140299997234
+Wine Quality,4,cem_em_coeff,cov90,0.745
+Wine Quality,4,cem_em_coeff,w90,1.3995327935261686
+Wine Quality,4,cem_em_coeff,cov95,0.79
+Wine Quality,4,cem_em_coeff,w95,1.6676461817322235
+Wine Quality,5,xgb_bootstrap,rmse,0.5653729548230996
+Wine Quality,5,xgb_bootstrap,crps,0.30953964591026306
+Wine Quality,5,xgb_bootstrap,wall_sec,5.483353199997509
+Wine Quality,5,xgb_bootstrap,cov90,0.875
+Wine Quality,5,xgb_bootstrap,w90,1.6730298855279897
+Wine Quality,5,xgb_bootstrap,cov95,0.93
+Wine Quality,5,xgb_bootstrap,w95,1.993538067439706
+Wine Quality,5,dkl_svgp,rmse,0.6768697500228882
+Wine Quality,5,dkl_svgp,crps,0.4050218164920807
+Wine Quality,5,dkl_svgp,wall_sec,7.889169400004903
+Wine Quality,5,dkl_svgp,cov90,0.605
+Wine Quality,5,dkl_svgp,w90,1.093304661184956
+Wine Quality,5,dkl_svgp,cov95,0.71
+Wine Quality,5,dkl_svgp,w95,1.302752855902296
+Wine Quality,5,pls_only,rmse,0.711607244366375
+Wine Quality,5,pls_only,crps,0.37607342004776
+Wine Quality,5,pls_only,wall_sec,18.18542879999586
+Wine Quality,5,pls_only,cov90,0.815
+Wine Quality,5,pls_only,w90,1.445860496322629
+Wine Quality,5,pls_only,cov95,0.85
+Wine Quality,5,pls_only,w95,1.7228490444549238
+Wine Quality,5,cem_em_coeff,rmse,0.7699766467003537
+Wine Quality,5,cem_em_coeff,crps,0.39780205488204956
+Wine Quality,5,cem_em_coeff,wall_sec,20.194876800000202
+Wine Quality,5,cem_em_coeff,cov90,0.765
+Wine Quality,5,cem_em_coeff,w90,1.3108133105338706
+Wine Quality,5,cem_em_coeff,cov95,0.795
+Wine Quality,5,cem_em_coeff,w95,1.5619303973349241
+Wine Quality,6,xgb_bootstrap,rmse,0.5898372050204278
+Wine Quality,6,xgb_bootstrap,crps,0.3311467468738556
+Wine Quality,6,xgb_bootstrap,wall_sec,5.963606099998287
+Wine Quality,6,xgb_bootstrap,cov90,0.85
+Wine Quality,6,xgb_bootstrap,w90,1.6704144991571297
+Wine Quality,6,xgb_bootstrap,cov95,0.89
+Wine Quality,6,xgb_bootstrap,w95,1.990421642361784
+Wine Quality,6,dkl_svgp,rmse,0.6396665573120117
+Wine Quality,6,dkl_svgp,crps,0.3876817524433136
+Wine Quality,6,dkl_svgp,wall_sec,7.9068990999949165
+Wine Quality,6,dkl_svgp,cov90,0.615
+Wine Quality,6,dkl_svgp,w90,1.0783334466170529
+Wine Quality,6,dkl_svgp,cov95,0.685
+Wine Quality,6,dkl_svgp,w95,1.2849135534396843
+Wine Quality,6,pls_only,rmse,0.7333311798391778
+Wine Quality,6,pls_only,crps,0.4050525724887848
+Wine Quality,6,pls_only,wall_sec,18.632004400002188
+Wine Quality,6,pls_only,cov90,0.775
+Wine Quality,6,pls_only,w90,1.4267272374804854
+Wine Quality,6,pls_only,cov95,0.82
+Wine Quality,6,pls_only,w95,1.7000503603513502
+Wine Quality,6,cem_em_coeff,rmse,0.7824085094499702
+Wine Quality,6,cem_em_coeff,crps,0.4222296476364136
+Wine Quality,6,cem_em_coeff,wall_sec,22.349168299995654
+Wine Quality,6,cem_em_coeff,cov90,0.75
+Wine Quality,6,cem_em_coeff,w90,1.322643144272287
+Wine Quality,6,cem_em_coeff,cov95,0.79
+Wine Quality,6,cem_em_coeff,w95,1.5760265136643543
+Wine Quality,7,xgb_bootstrap,rmse,0.5772606254124067
+Wine Quality,7,xgb_bootstrap,crps,0.32440391182899475
+Wine Quality,7,xgb_bootstrap,wall_sec,5.810516099998495
+Wine Quality,7,xgb_bootstrap,cov90,0.865
+Wine Quality,7,xgb_bootstrap,w90,1.6687747368344572
+Wine Quality,7,xgb_bootstrap,cov95,0.915
+Wine Quality,7,xgb_bootstrap,w95,1.9884677450404769
+Wine Quality,7,dkl_svgp,rmse,0.6253378987312317
+Wine Quality,7,dkl_svgp,crps,0.3763563334941864
+Wine Quality,7,dkl_svgp,wall_sec,8.427315799999633
+Wine Quality,7,dkl_svgp,cov90,0.64
+Wine Quality,7,dkl_svgp,w90,1.081493477406116
+Wine Quality,7,dkl_svgp,cov95,0.72
+Wine Quality,7,dkl_svgp,w95,1.2886789623703743
+Wine Quality,7,pls_only,rmse,0.7026940154828811
+Wine Quality,7,pls_only,crps,0.38520461320877075
+Wine Quality,7,pls_only,wall_sec,21.191858999998658
+Wine Quality,7,pls_only,cov90,0.765
+Wine Quality,7,pls_only,w90,1.4532458386837368
+Wine Quality,7,pls_only,cov95,0.825
+Wine Quality,7,pls_only,w95,1.7316492226617208
+Wine Quality,7,cem_em_coeff,rmse,0.6933244563749058
+Wine Quality,7,cem_em_coeff,crps,0.3728662133216858
+Wine Quality,7,cem_em_coeff,wall_sec,23.058196800004225
+Wine Quality,7,cem_em_coeff,cov90,0.71
+Wine Quality,7,cem_em_coeff,w90,1.258536118336008
+Wine Quality,7,cem_em_coeff,cov95,0.77
+Wine Quality,7,cem_em_coeff,w95,1.4996382807345021
+Wine Quality,8,xgb_bootstrap,rmse,0.568825840595801
+Wine Quality,8,xgb_bootstrap,crps,0.32213202118873596
+Wine Quality,8,xgb_bootstrap,wall_sec,5.64755580000201
+Wine Quality,8,xgb_bootstrap,cov90,0.845
+Wine Quality,8,xgb_bootstrap,w90,1.6776495163988687
+Wine Quality,8,xgb_bootstrap,cov95,0.945
+Wine Quality,8,xgb_bootstrap,w95,1.9990426971407529
+Wine Quality,8,dkl_svgp,rmse,0.6118462085723877
+Wine Quality,8,dkl_svgp,crps,0.3673468828201294
+Wine Quality,8,dkl_svgp,wall_sec,7.922427500001504
+Wine Quality,8,dkl_svgp,cov90,0.61
+Wine Quality,8,dkl_svgp,w90,1.0871077831159164
+Wine Quality,8,dkl_svgp,cov95,0.73
+Wine Quality,8,dkl_svgp,w95,1.2953688202453275
+Wine Quality,8,pls_only,rmse,0.7315229870907488
+Wine Quality,8,pls_only,crps,0.38757267594337463
+Wine Quality,8,pls_only,wall_sec,18.895077400004084
+Wine Quality,8,pls_only,cov90,0.785
+Wine Quality,8,pls_only,w90,1.4514810527668316
+Wine Quality,8,pls_only,cov95,0.825
+Wine Quality,8,pls_only,w95,1.7295463505393132
+Wine Quality,8,cem_em_coeff,rmse,0.7335291329992363
+Wine Quality,8,cem_em_coeff,crps,0.400724321603775
+Wine Quality,8,cem_em_coeff,wall_sec,20.1754809999984
+Wine Quality,8,cem_em_coeff,cov90,0.795
+Wine Quality,8,cem_em_coeff,w90,1.6534815029042031
+Wine Quality,8,cem_em_coeff,cov95,0.84
+Wine Quality,8,cem_em_coeff,w95,1.9702447328409063
+Wine Quality,9,xgb_bootstrap,rmse,0.5550809115099616
+Wine Quality,9,xgb_bootstrap,crps,0.3054204285144806
+Wine Quality,9,xgb_bootstrap,wall_sec,5.399942399999418
+Wine Quality,9,xgb_bootstrap,cov90,0.875
+Wine Quality,9,xgb_bootstrap,w90,1.6755444251466474
+Wine Quality,9,xgb_bootstrap,cov95,0.925
+Wine Quality,9,xgb_bootstrap,w95,1.9965343262006774
+Wine Quality,9,dkl_svgp,rmse,0.5980202555656433
+Wine Quality,9,dkl_svgp,crps,0.3547897934913635
+Wine Quality,9,dkl_svgp,wall_sec,7.891725200002838
+Wine Quality,9,dkl_svgp,cov90,0.675
+Wine Quality,9,dkl_svgp,w90,1.0996350464715519
+Wine Quality,9,dkl_svgp,cov95,0.745
+Wine Quality,9,dkl_svgp,w95,1.3102959752210561
+Wine Quality,9,pls_only,rmse,0.6264704046031595
+Wine Quality,9,pls_only,crps,0.3204840421676636
+Wine Quality,9,pls_only,wall_sec,18.12836960000277
+Wine Quality,9,pls_only,cov90,0.815
+Wine Quality,9,pls_only,w90,1.422322246591454
+Wine Quality,9,pls_only,cov95,0.875
+Wine Quality,9,pls_only,w95,1.6948014899635764
+Wine Quality,9,cem_em_coeff,rmse,0.6979207233691691
+Wine Quality,9,cem_em_coeff,crps,0.3621390163898468
+Wine Quality,9,cem_em_coeff,wall_sec,22.559880600005272
+Wine Quality,9,cem_em_coeff,cov90,0.785
+Wine Quality,9,cem_em_coeff,w90,1.2521449992596525
+Wine Quality,9,cem_em_coeff,cov95,0.83
+Wine Quality,9,cem_em_coeff,w95,1.4920227926416316
+Parkinsons Telemonitoring,0,xgb_bootstrap,rmse,2.4742706628680606
+Parkinsons Telemonitoring,0,xgb_bootstrap,crps,1.3035420179367065
+Parkinsons Telemonitoring,0,xgb_bootstrap,wall_sec,7.619108200000483
+Parkinsons Telemonitoring,0,xgb_bootstrap,cov90,0.845
+Parkinsons Telemonitoring,0,xgb_bootstrap,w90,6.431430293269061
+Parkinsons Telemonitoring,0,xgb_bootstrap,cov95,0.895
+Parkinsons Telemonitoring,0,xgb_bootstrap,w95,7.663521870483817
+Parkinsons Telemonitoring,0,dkl_svgp,rmse,4.851797103881836
+Parkinsons Telemonitoring,0,dkl_svgp,crps,2.7340080738067627
+Parkinsons Telemonitoring,0,dkl_svgp,wall_sec,7.310959299997194
+Parkinsons Telemonitoring,0,dkl_svgp,cov90,0.68
+Parkinsons Telemonitoring,0,dkl_svgp,w90,7.96814515129496
+Parkinsons Telemonitoring,0,dkl_svgp,cov95,0.725
+Parkinsons Telemonitoring,0,dkl_svgp,w95,9.49463056422244
+Parkinsons Telemonitoring,0,pls_only,rmse,7.130757224495248
+Parkinsons Telemonitoring,0,pls_only,crps,3.7980148792266846
+Parkinsons Telemonitoring,0,pls_only,wall_sec,29.047915700000885
+Parkinsons Telemonitoring,0,pls_only,cov90,0.625
+Parkinsons Telemonitoring,0,pls_only,w90,9.99022441008157
+Parkinsons Telemonitoring,0,pls_only,cov95,0.655
+Parkinsons Telemonitoring,0,pls_only,w95,11.90408661317951
+Parkinsons Telemonitoring,0,cem_em_coeff,rmse,3.9584987706162917
+Parkinsons Telemonitoring,0,cem_em_coeff,crps,1.0011862516403198
+Parkinsons Telemonitoring,0,cem_em_coeff,wall_sec,63.3997748000038
+Parkinsons Telemonitoring,0,cem_em_coeff,cov90,0.665
+Parkinsons Telemonitoring,0,cem_em_coeff,w90,1.2783978925339516
+Parkinsons Telemonitoring,0,cem_em_coeff,cov95,0.735
+Parkinsons Telemonitoring,0,cem_em_coeff,w95,1.5233050444265301
+Parkinsons Telemonitoring,1,xgb_bootstrap,rmse,2.5479237213933454
+Parkinsons Telemonitoring,1,xgb_bootstrap,crps,1.2672905921936035
+Parkinsons Telemonitoring,1,xgb_bootstrap,wall_sec,7.800549800005683
+Parkinsons Telemonitoring,1,xgb_bootstrap,cov90,0.87
+Parkinsons Telemonitoring,1,xgb_bootstrap,w90,6.442517471647232
+Parkinsons Telemonitoring,1,xgb_bootstrap,cov95,0.9
+Parkinsons Telemonitoring,1,xgb_bootstrap,w95,7.67673305837028
+Parkinsons Telemonitoring,1,dkl_svgp,rmse,3.968233823776245
+Parkinsons Telemonitoring,1,dkl_svgp,crps,2.1699464321136475
+Parkinsons Telemonitoring,1,dkl_svgp,wall_sec,7.477658700001484
+Parkinsons Telemonitoring,1,dkl_svgp,cov90,0.75
+Parkinsons Telemonitoring,1,dkl_svgp,w90,8.222658899003081
+Parkinsons Telemonitoring,1,dkl_svgp,cov95,0.795
+Parkinsons Telemonitoring,1,dkl_svgp,w95,9.797902400028743
+Parkinsons Telemonitoring,1,pls_only,rmse,6.620813456574768
+Parkinsons Telemonitoring,1,pls_only,crps,3.6408069133758545
+Parkinsons Telemonitoring,1,pls_only,wall_sec,30.35627569999633
+Parkinsons Telemonitoring,1,pls_only,cov90,0.655
+Parkinsons Telemonitoring,1,pls_only,w90,10.572939611140058
+Parkinsons Telemonitoring,1,pls_only,cov95,0.685
+Parkinsons Telemonitoring,1,pls_only,w95,12.598434601720832
+Parkinsons Telemonitoring,1,cem_em_coeff,rmse,4.645280714926151
+Parkinsons Telemonitoring,1,cem_em_coeff,crps,1.3919693231582642
+Parkinsons Telemonitoring,1,cem_em_coeff,wall_sec,92.81420680000156
+Parkinsons Telemonitoring,1,cem_em_coeff,cov90,0.655
+Parkinsons Telemonitoring,1,cem_em_coeff,w90,1.4672089025326014
+Parkinsons Telemonitoring,1,cem_em_coeff,cov95,0.705
+Parkinsons Telemonitoring,1,cem_em_coeff,w95,1.748287239448862
+Parkinsons Telemonitoring,2,xgb_bootstrap,rmse,2.141066571574774
+Parkinsons Telemonitoring,2,xgb_bootstrap,crps,1.0717031955718994
+Parkinsons Telemonitoring,2,xgb_bootstrap,wall_sec,14.715696899998875
+Parkinsons Telemonitoring,2,xgb_bootstrap,cov90,0.92
+Parkinsons Telemonitoring,2,xgb_bootstrap,w90,6.2752350374974455
+Parkinsons Telemonitoring,2,xgb_bootstrap,cov95,0.955
+Parkinsons Telemonitoring,2,xgb_bootstrap,w95,7.477403743708139
+Parkinsons Telemonitoring,2,dkl_svgp,rmse,3.9894161224365234
+Parkinsons Telemonitoring,2,dkl_svgp,crps,2.101947546005249
+Parkinsons Telemonitoring,2,dkl_svgp,wall_sec,9.165057500002149
+Parkinsons Telemonitoring,2,dkl_svgp,cov90,0.775
+Parkinsons Telemonitoring,2,dkl_svgp,w90,7.968143574797029
+Parkinsons Telemonitoring,2,dkl_svgp,cov95,0.805
+Parkinsons Telemonitoring,2,dkl_svgp,w95,9.49462868570929
+Parkinsons Telemonitoring,2,pls_only,rmse,7.441300204583857
+Parkinsons Telemonitoring,2,pls_only,crps,4.187077522277832
+Parkinsons Telemonitoring,2,pls_only,wall_sec,31.481658500000776
+Parkinsons Telemonitoring,2,pls_only,cov90,0.63
+Parkinsons Telemonitoring,2,pls_only,w90,11.779255379303146
+Parkinsons Telemonitoring,2,pls_only,cov95,0.69
+Parkinsons Telemonitoring,2,pls_only,w95,14.035848497305219
+Parkinsons Telemonitoring,2,cem_em_coeff,rmse,2.182810685000069
+Parkinsons Telemonitoring,2,cem_em_coeff,crps,0.4623744487762451
+Parkinsons Telemonitoring,2,cem_em_coeff,wall_sec,52.7963707999952
+Parkinsons Telemonitoring,2,cem_em_coeff,cov90,0.635
+Parkinsons Telemonitoring,2,cem_em_coeff,w90,1.342996795562022
+Parkinsons Telemonitoring,2,cem_em_coeff,cov95,0.675
+Parkinsons Telemonitoring,2,cem_em_coeff,w95,1.6002793850616133
+Parkinsons Telemonitoring,3,xgb_bootstrap,rmse,1.922804081888785
+Parkinsons Telemonitoring,3,xgb_bootstrap,crps,1.0255155563354492
+Parkinsons Telemonitoring,3,xgb_bootstrap,wall_sec,7.282039900004747
+Parkinsons Telemonitoring,3,xgb_bootstrap,cov90,0.915
+Parkinsons Telemonitoring,3,xgb_bootstrap,w90,6.2392580900219015
+Parkinsons Telemonitoring,3,xgb_bootstrap,cov95,0.955
+Parkinsons Telemonitoring,3,xgb_bootstrap,w95,7.434534566675989
+Parkinsons Telemonitoring,3,dkl_svgp,rmse,3.6291122436523438
+Parkinsons Telemonitoring,3,dkl_svgp,crps,1.9979043006896973
+Parkinsons Telemonitoring,3,dkl_svgp,wall_sec,6.986650499995449
+Parkinsons Telemonitoring,3,dkl_svgp,cov90,0.79
+Parkinsons Telemonitoring,3,dkl_svgp,w90,8.23314784955453
+Parkinsons Telemonitoring,3,dkl_svgp,cov95,0.82
+Parkinsons Telemonitoring,3,dkl_svgp,w95,9.810400755493092
+Parkinsons Telemonitoring,3,pls_only,rmse,6.872196214119615
+Parkinsons Telemonitoring,3,pls_only,crps,3.6838772296905518
+Parkinsons Telemonitoring,3,pls_only,wall_sec,26.309860800000024
+Parkinsons Telemonitoring,3,pls_only,cov90,0.65
+Parkinsons Telemonitoring,3,pls_only,w90,9.937494802648164
+Parkinsons Telemonitoring,3,pls_only,cov95,0.705
+Parkinsons Telemonitoring,3,pls_only,w95,11.841255410575814
+Parkinsons Telemonitoring,3,cem_em_coeff,rmse,4.244156184825762
+Parkinsons Telemonitoring,3,cem_em_coeff,crps,1.057715892791748
+Parkinsons Telemonitoring,3,cem_em_coeff,wall_sec,123.40289359999588
+Parkinsons Telemonitoring,3,cem_em_coeff,cov90,0.705
+Parkinsons Telemonitoring,3,cem_em_coeff,w90,1.22770936601785
+Parkinsons Telemonitoring,3,cem_em_coeff,cov95,0.74
+Parkinsons Telemonitoring,3,cem_em_coeff,w95,1.4629059397444366
+Parkinsons Telemonitoring,4,xgb_bootstrap,rmse,2.696070264832833
+Parkinsons Telemonitoring,4,xgb_bootstrap,crps,1.3842092752456665
+Parkinsons Telemonitoring,4,xgb_bootstrap,wall_sec,8.316014699994412
+Parkinsons Telemonitoring,4,xgb_bootstrap,cov90,0.835
+Parkinsons Telemonitoring,4,xgb_bootstrap,w90,6.242080042725046
+Parkinsons Telemonitoring,4,xgb_bootstrap,cov95,0.88
+Parkinsons Telemonitoring,4,xgb_bootstrap,w95,7.437897130720359
+Parkinsons Telemonitoring,4,dkl_svgp,rmse,4.761358737945557
+Parkinsons Telemonitoring,4,dkl_svgp,crps,2.709885597229004
+Parkinsons Telemonitoring,4,dkl_svgp,wall_sec,8.184332600001653
+Parkinsons Telemonitoring,4,dkl_svgp,cov90,0.68
+Parkinsons Telemonitoring,4,dkl_svgp,w90,8.188236494125803
+Parkinsons Telemonitoring,4,dkl_svgp,cov95,0.755
+Parkinsons Telemonitoring,4,dkl_svgp,w95,9.756885574753076
+Parkinsons Telemonitoring,4,pls_only,rmse,7.554679354530586
+Parkinsons Telemonitoring,4,pls_only,crps,4.002237796783447
+Parkinsons Telemonitoring,4,pls_only,wall_sec,33.64915679999831
+Parkinsons Telemonitoring,4,pls_only,cov90,0.62
+Parkinsons Telemonitoring,4,pls_only,w90,9.814938779214497
+Parkinsons Telemonitoring,4,pls_only,cov95,0.68
+Parkinsons Telemonitoring,4,pls_only,w95,11.695220901436166
+Parkinsons Telemonitoring,4,cem_em_coeff,rmse,3.9046821789632817
+Parkinsons Telemonitoring,4,cem_em_coeff,crps,1.022673487663269
+Parkinsons Telemonitoring,4,cem_em_coeff,wall_sec,122.65503020000324
+Parkinsons Telemonitoring,4,cem_em_coeff,cov90,0.605
+Parkinsons Telemonitoring,4,cem_em_coeff,w90,0.7795851544622022
+Parkinsons Telemonitoring,4,cem_em_coeff,cov95,0.645
+Parkinsons Telemonitoring,4,cem_em_coeff,w95,0.9289330069204328
+Parkinsons Telemonitoring,5,xgb_bootstrap,rmse,2.7133361088173427
+Parkinsons Telemonitoring,5,xgb_bootstrap,crps,1.4066596031188965
+Parkinsons Telemonitoring,5,xgb_bootstrap,wall_sec,13.929440200001409
+Parkinsons Telemonitoring,5,xgb_bootstrap,cov90,0.83
+Parkinsons Telemonitoring,5,xgb_bootstrap,w90,6.6048042864975764
+Parkinsons Telemonitoring,5,xgb_bootstrap,cov95,0.91
+Parkinsons Telemonitoring,5,xgb_bootstrap,w95,7.870109725485584
+Parkinsons Telemonitoring,5,dkl_svgp,rmse,4.299378395080566
+Parkinsons Telemonitoring,5,dkl_svgp,crps,2.3666257858276367
+Parkinsons Telemonitoring,5,dkl_svgp,wall_sec,9.75547060000099
+Parkinsons Telemonitoring,5,dkl_svgp,cov90,0.76
+Parkinsons Telemonitoring,5,dkl_svgp,w90,8.089251220428114
+Parkinsons Telemonitoring,5,dkl_svgp,cov95,0.79
+Parkinsons Telemonitoring,5,dkl_svgp,w95,9.63893734624907
+Parkinsons Telemonitoring,5,pls_only,rmse,6.269483714301527
+Parkinsons Telemonitoring,5,pls_only,crps,3.3956246376037598
+Parkinsons Telemonitoring,5,pls_only,wall_sec,53.18379279999499
+Parkinsons Telemonitoring,5,pls_only,cov90,0.655
+Parkinsons Telemonitoring,5,pls_only,w90,10.536878665535149
+Parkinsons Telemonitoring,5,pls_only,cov95,0.695
+Parkinsons Telemonitoring,5,pls_only,w95,12.555465334744126
+Parkinsons Telemonitoring,5,cem_em_coeff,rmse,4.327384047180032
+Parkinsons Telemonitoring,5,cem_em_coeff,crps,1.1953330039978027
+Parkinsons Telemonitoring,5,cem_em_coeff,wall_sec,51.983072999995784
+Parkinsons Telemonitoring,5,cem_em_coeff,cov90,0.64
+Parkinsons Telemonitoring,5,cem_em_coeff,w90,1.0563931688645936
+Parkinsons Telemonitoring,5,cem_em_coeff,cov95,0.67
+Parkinsons Telemonitoring,5,cem_em_coeff,w95,1.2587701000034504
+Parkinsons Telemonitoring,6,xgb_bootstrap,rmse,2.097353648611671
+Parkinsons Telemonitoring,6,xgb_bootstrap,crps,1.1210252046585083
+Parkinsons Telemonitoring,6,xgb_bootstrap,wall_sec,7.258194000001822
+Parkinsons Telemonitoring,6,xgb_bootstrap,cov90,0.895
+Parkinsons Telemonitoring,6,xgb_bootstrap,w90,6.342413653344264
+Parkinsons Telemonitoring,6,xgb_bootstrap,cov95,0.945
+Parkinsons Telemonitoring,6,xgb_bootstrap,w95,7.557452001761985
+Parkinsons Telemonitoring,6,dkl_svgp,rmse,4.153231620788574
+Parkinsons Telemonitoring,6,dkl_svgp,crps,2.270845890045166
+Parkinsons Telemonitoring,6,dkl_svgp,wall_sec,6.7535628999976325
+Parkinsons Telemonitoring,6,dkl_svgp,cov90,0.74
+Parkinsons Telemonitoring,6,dkl_svgp,w90,8.22031048180073
+Parkinsons Telemonitoring,6,dkl_svgp,cov95,0.825
+Parkinsons Telemonitoring,6,dkl_svgp,w95,9.795104088335918
+Parkinsons Telemonitoring,6,pls_only,rmse,6.2512960448814665
+Parkinsons Telemonitoring,6,pls_only,crps,3.4268524646759033
+Parkinsons Telemonitoring,6,pls_only,wall_sec,28.93070450000232
+Parkinsons Telemonitoring,6,pls_only,cov90,0.68
+Parkinsons Telemonitoring,6,pls_only,w90,11.030638260006382
+Parkinsons Telemonitoring,6,pls_only,cov95,0.74
+Parkinsons Telemonitoring,6,pls_only,w95,13.143816180270928
+Parkinsons Telemonitoring,6,cem_em_coeff,rmse,3.4329488780277604
+Parkinsons Telemonitoring,6,cem_em_coeff,crps,0.7638847231864929
+Parkinsons Telemonitoring,6,cem_em_coeff,wall_sec,110.95481730000029
+Parkinsons Telemonitoring,6,cem_em_coeff,cov90,0.66
+Parkinsons Telemonitoring,6,cem_em_coeff,w90,0.8586255907896876
+Parkinsons Telemonitoring,6,cem_em_coeff,cov95,0.695
+Parkinsons Telemonitoring,6,cem_em_coeff,w95,1.0231154958579567
+Parkinsons Telemonitoring,7,xgb_bootstrap,rmse,2.597923243452826
+Parkinsons Telemonitoring,7,xgb_bootstrap,crps,1.3814260959625244
+Parkinsons Telemonitoring,7,xgb_bootstrap,wall_sec,8.481388300002436
+Parkinsons Telemonitoring,7,xgb_bootstrap,cov90,0.845
+Parkinsons Telemonitoring,7,xgb_bootstrap,w90,6.450579836232059
+Parkinsons Telemonitoring,7,xgb_bootstrap,cov95,0.89
+Parkinsons Telemonitoring,7,xgb_bootstrap,w95,7.686339958314186
+Parkinsons Telemonitoring,7,dkl_svgp,rmse,5.006542682647705
+Parkinsons Telemonitoring,7,dkl_svgp,crps,2.8538196086883545
+Parkinsons Telemonitoring,7,dkl_svgp,wall_sec,7.271484100005182
+Parkinsons Telemonitoring,7,dkl_svgp,cov90,0.69
+Parkinsons Telemonitoring,7,dkl_svgp,w90,8.149479088570576
+Parkinsons Telemonitoring,7,dkl_svgp,cov95,0.72
+Parkinsons Telemonitoring,7,dkl_svgp,w95,9.710703277570042
+Parkinsons Telemonitoring,7,pls_only,rmse,6.998324678646892
+Parkinsons Telemonitoring,7,pls_only,crps,3.8648900985717773
+Parkinsons Telemonitoring,7,pls_only,wall_sec,43.94017769999482
+Parkinsons Telemonitoring,7,pls_only,cov90,0.66
+Parkinsons Telemonitoring,7,pls_only,w90,10.443766802531375
+Parkinsons Telemonitoring,7,pls_only,cov95,0.71
+Parkinsons Telemonitoring,7,pls_only,w95,12.444515706746493
+Parkinsons Telemonitoring,7,cem_em_coeff,rmse,3.278947623249602
+Parkinsons Telemonitoring,7,cem_em_coeff,crps,0.6474998593330383
+Parkinsons Telemonitoring,7,cem_em_coeff,wall_sec,133.62393489999522
+Parkinsons Telemonitoring,7,cem_em_coeff,cov90,0.62
+Parkinsons Telemonitoring,7,cem_em_coeff,w90,0.5631231522592802
+Parkinsons Telemonitoring,7,cem_em_coeff,cov95,0.67
+Parkinsons Telemonitoring,7,cem_em_coeff,w95,0.6710026224852751
+Parkinsons Telemonitoring,8,xgb_bootstrap,rmse,2.0356329635188835
+Parkinsons Telemonitoring,8,xgb_bootstrap,crps,1.0640850067138672
+Parkinsons Telemonitoring,8,xgb_bootstrap,wall_sec,21.45540730000357
+Parkinsons Telemonitoring,8,xgb_bootstrap,cov90,0.91
+Parkinsons Telemonitoring,8,xgb_bootstrap,w90,6.325172121582718
+Parkinsons Telemonitoring,8,xgb_bootstrap,cov95,0.945
+Parkinsons Telemonitoring,8,xgb_bootstrap,w95,7.536907449506861
+Parkinsons Telemonitoring,8,dkl_svgp,rmse,4.670454502105713
+Parkinsons Telemonitoring,8,dkl_svgp,crps,2.5613179206848145
+Parkinsons Telemonitoring,8,dkl_svgp,wall_sec,7.912641700000677
+Parkinsons Telemonitoring,8,dkl_svgp,cov90,0.74
+Parkinsons Telemonitoring,8,dkl_svgp,w90,8.194695166931583
+Parkinsons Telemonitoring,8,dkl_svgp,cov95,0.8
+Parkinsons Telemonitoring,8,dkl_svgp,w95,9.764581558079392
+Parkinsons Telemonitoring,8,pls_only,rmse,6.951088053309235
+Parkinsons Telemonitoring,8,pls_only,crps,3.447119951248169
+Parkinsons Telemonitoring,8,pls_only,wall_sec,27.254325900001277
+Parkinsons Telemonitoring,8,pls_only,cov90,0.67
+Parkinsons Telemonitoring,8,pls_only,w90,10.598846802920352
+Parkinsons Telemonitoring,8,pls_only,cov95,0.74
+Parkinsons Telemonitoring,8,pls_only,w95,12.629304924768396
+Parkinsons Telemonitoring,8,cem_em_coeff,rmse,2.753484939361575
+Parkinsons Telemonitoring,8,cem_em_coeff,crps,0.5725030303001404
+Parkinsons Telemonitoring,8,cem_em_coeff,wall_sec,195.34239359999629
+Parkinsons Telemonitoring,8,cem_em_coeff,cov90,0.65
+Parkinsons Telemonitoring,8,cem_em_coeff,w90,0.6088717311615595
+Parkinsons Telemonitoring,8,cem_em_coeff,cov95,0.69
+Parkinsons Telemonitoring,8,cem_em_coeff,w95,0.7255154165255204
+Parkinsons Telemonitoring,9,xgb_bootstrap,rmse,2.739428845820038
+Parkinsons Telemonitoring,9,xgb_bootstrap,crps,1.3801636695861816
+Parkinsons Telemonitoring,9,xgb_bootstrap,wall_sec,14.990343499994196
+Parkinsons Telemonitoring,9,xgb_bootstrap,cov90,0.825
+Parkinsons Telemonitoring,9,xgb_bootstrap,w90,6.22459904300579
+Parkinsons Telemonitoring,9,xgb_bootstrap,cov95,0.875
+Parkinsons Telemonitoring,9,xgb_bootstrap,w95,7.417067234793999
+Parkinsons Telemonitoring,9,dkl_svgp,rmse,4.86126184463501
+Parkinsons Telemonitoring,9,dkl_svgp,crps,2.639404296875
+Parkinsons Telemonitoring,9,dkl_svgp,wall_sec,17.242864299994835
+Parkinsons Telemonitoring,9,dkl_svgp,cov90,0.71
+Parkinsons Telemonitoring,9,dkl_svgp,w90,7.978142732539618
+Parkinsons Telemonitoring,9,dkl_svgp,cov95,0.77
+Parkinsons Telemonitoring,9,dkl_svgp,w95,9.506543417044703
+Parkinsons Telemonitoring,9,pls_only,rmse,6.843281419883341
+Parkinsons Telemonitoring,9,pls_only,crps,3.7205796241760254
+Parkinsons Telemonitoring,9,pls_only,wall_sec,73.3190076000028
+Parkinsons Telemonitoring,9,pls_only,cov90,0.66
+Parkinsons Telemonitoring,9,pls_only,w90,10.75118274013897
+Parkinsons Telemonitoring,9,pls_only,cov95,0.705
+Parkinsons Telemonitoring,9,pls_only,w95,12.810824389848712
+Parkinsons Telemonitoring,9,cem_em_coeff,rmse,4.143622349257127
+Parkinsons Telemonitoring,9,cem_em_coeff,crps,1.0826224088668823
+Parkinsons Telemonitoring,9,cem_em_coeff,wall_sec,56.66091420000157
+Parkinsons Telemonitoring,9,cem_em_coeff,cov90,0.68
+Parkinsons Telemonitoring,9,cem_em_coeff,w90,0.8296004469782305
+Parkinsons Telemonitoring,9,cem_em_coeff,cov95,0.715
+Parkinsons Telemonitoring,9,cem_em_coeff,w95,0.9885299038123065
+Appliances Energy Prediction,0,xgb_bootstrap,rmse,86.83075295649323
+Appliances Energy Prediction,0,xgb_bootstrap,crps,37.48322677612305
+Appliances Energy Prediction,0,xgb_bootstrap,wall_sec,13.648009200005617
+Appliances Energy Prediction,0,xgb_bootstrap,cov90,0.925
+Appliances Energy Prediction,0,xgb_bootstrap,w90,214.10537067860085
+Appliances Energy Prediction,0,xgb_bootstrap,cov95,0.935
+Appliances Energy Prediction,0,xgb_bootstrap,w95,255.12228477399722
+Appliances Energy Prediction,0,dkl_svgp,rmse,84.64244842529297
+Appliances Energy Prediction,0,dkl_svgp,crps,39.09745407104492
+Appliances Energy Prediction,0,dkl_svgp,wall_sec,21.804506200001924
+Appliances Energy Prediction,0,dkl_svgp,cov90,0.89
+Appliances Energy Prediction,0,dkl_svgp,w90,211.3373796422039
+Appliances Energy Prediction,0,dkl_svgp,cov95,0.905
+Appliances Energy Prediction,0,dkl_svgp,w95,251.82402002145355
+Appliances Energy Prediction,0,pls_only,rmse,99.90128043203586
+Appliances Energy Prediction,0,pls_only,crps,39.97509765625
+Appliances Energy Prediction,0,pls_only,wall_sec,35.220024999995076
+Appliances Energy Prediction,0,pls_only,cov90,0.66
+Appliances Energy Prediction,0,pls_only,w90,76.82471063710855
+Appliances Energy Prediction,0,pls_only,cov95,0.715
+Appliances Energy Prediction,0,pls_only,w95,91.54228893334
+Appliances Energy Prediction,0,cem_em_coeff,rmse,104.38242685763502
+Appliances Energy Prediction,0,cem_em_coeff,crps,42.608734130859375
+Appliances Energy Prediction,0,cem_em_coeff,wall_sec,36.689393800006656
+Appliances Energy Prediction,0,cem_em_coeff,cov90,0.505
+Appliances Energy Prediction,0,cem_em_coeff,w90,75.74031823077623
+Appliances Energy Prediction,0,cem_em_coeff,cov95,0.57
+Appliances Energy Prediction,0,cem_em_coeff,w95,90.25015568409817
+Appliances Energy Prediction,1,xgb_bootstrap,rmse,92.69547691467078
+Appliances Energy Prediction,1,xgb_bootstrap,crps,40.611454010009766
+Appliances Energy Prediction,1,xgb_bootstrap,wall_sec,13.585781699999643
+Appliances Energy Prediction,1,xgb_bootstrap,cov90,0.905
+Appliances Energy Prediction,1,xgb_bootstrap,w90,213.1868461414829
+Appliances Energy Prediction,1,xgb_bootstrap,cov95,0.915
+Appliances Energy Prediction,1,xgb_bootstrap,w95,254.02779528133394
+Appliances Energy Prediction,1,dkl_svgp,rmse,97.56012725830078
+Appliances Energy Prediction,1,dkl_svgp,crps,46.08811950683594
+Appliances Energy Prediction,1,dkl_svgp,wall_sec,21.941047300002538
+Appliances Energy Prediction,1,dkl_svgp,cov90,0.855
+Appliances Energy Prediction,1,dkl_svgp,w90,212.34758602631916
+Appliances Energy Prediction,1,dkl_svgp,cov95,0.875
+Appliances Energy Prediction,1,dkl_svgp,w95,253.02775517294424
+Appliances Energy Prediction,1,pls_only,rmse,117.4848163753872
+Appliances Energy Prediction,1,pls_only,crps,46.772010803222656
+Appliances Energy Prediction,1,pls_only,wall_sec,35.86937029999535
+Appliances Energy Prediction,1,pls_only,cov90,0.605
+Appliances Energy Prediction,1,pls_only,w90,64.26853511597805
+Appliances Energy Prediction,1,pls_only,cov95,0.665
+Appliances Energy Prediction,1,pls_only,w95,76.58068298753311
+Appliances Energy Prediction,1,cem_em_coeff,rmse,119.8941462789749
+Appliances Energy Prediction,1,cem_em_coeff,crps,51.701210021972656
+Appliances Energy Prediction,1,cem_em_coeff,wall_sec,33.900309199998446
+Appliances Energy Prediction,1,cem_em_coeff,cov90,0.54
+Appliances Energy Prediction,1,cem_em_coeff,w90,76.07510119317851
+Appliances Energy Prediction,1,cem_em_coeff,cov95,0.6
+Appliances Energy Prediction,1,cem_em_coeff,w95,90.64907418857457
+Appliances Energy Prediction,2,xgb_bootstrap,rmse,68.369581189001
+Appliances Energy Prediction,2,xgb_bootstrap,crps,30.419347763061523
+Appliances Energy Prediction,2,xgb_bootstrap,wall_sec,10.40637450000213
+Appliances Energy Prediction,2,xgb_bootstrap,cov90,0.95
+Appliances Energy Prediction,2,xgb_bootstrap,w90,211.775323904389
+Appliances Energy Prediction,2,xgb_bootstrap,cov95,0.965
+Appliances Energy Prediction,2,xgb_bootstrap,w95,252.34586279643023
+Appliances Energy Prediction,2,dkl_svgp,rmse,72.98854064941406
+Appliances Energy Prediction,2,dkl_svgp,crps,33.305789947509766
+Appliances Energy Prediction,2,dkl_svgp,wall_sec,20.069115400001465
+Appliances Energy Prediction,2,dkl_svgp,cov90,0.9
+Appliances Energy Prediction,2,dkl_svgp,w90,209.92613075717026
+Appliances Energy Prediction,2,dkl_svgp,cov95,0.93
+Appliances Energy Prediction,2,dkl_svgp,w95,250.14241325561946
+Appliances Energy Prediction,2,pls_only,rmse,86.52707949937012
+Appliances Energy Prediction,2,pls_only,crps,31.06220245361328
+Appliances Energy Prediction,2,pls_only,wall_sec,30.88657389999571
+Appliances Energy Prediction,2,pls_only,cov90,0.64
+Appliances Energy Prediction,2,pls_only,w90,63.378008637818546
+Appliances Energy Prediction,2,pls_only,cov95,0.67
+Appliances Energy Prediction,2,pls_only,w95,75.5195552398278
+Appliances Energy Prediction,2,cem_em_coeff,rmse,78.90762952699806
+Appliances Energy Prediction,2,cem_em_coeff,crps,31.402732849121094
+Appliances Energy Prediction,2,cem_em_coeff,wall_sec,34.92950759999803
+Appliances Energy Prediction,2,cem_em_coeff,cov90,0.585
+Appliances Energy Prediction,2,cem_em_coeff,w90,73.74112565964481
+Appliances Energy Prediction,2,cem_em_coeff,cov95,0.625
+Appliances Energy Prediction,2,cem_em_coeff,w95,87.86797080553254
+Appliances Energy Prediction,3,xgb_bootstrap,rmse,84.36159230141443
+Appliances Energy Prediction,3,xgb_bootstrap,crps,34.634613037109375
+Appliances Energy Prediction,3,xgb_bootstrap,wall_sec,14.089518100001442
+Appliances Energy Prediction,3,xgb_bootstrap,cov90,0.925
+Appliances Energy Prediction,3,xgb_bootstrap,w90,211.05441817062433
+Appliances Energy Prediction,3,xgb_bootstrap,cov95,0.935
+Appliances Energy Prediction,3,xgb_bootstrap,w95,251.48685063189743
+Appliances Energy Prediction,3,dkl_svgp,rmse,99.10922241210938
+Appliances Energy Prediction,3,dkl_svgp,crps,41.99016571044922
+Appliances Energy Prediction,3,dkl_svgp,wall_sec,21.70696410000528
+Appliances Energy Prediction,3,dkl_svgp,cov90,0.89
+Appliances Energy Prediction,3,dkl_svgp,w90,210.92293675200176
+Appliances Energy Prediction,3,dkl_svgp,cov95,0.9
+Appliances Energy Prediction,3,dkl_svgp,w95,251.33018085842093
+Appliances Energy Prediction,3,pls_only,rmse,122.55184132091051
+Appliances Energy Prediction,3,pls_only,crps,40.4759407043457
+Appliances Energy Prediction,3,pls_only,wall_sec,35.4511274999968
+Appliances Energy Prediction,3,pls_only,cov90,0.635
+Appliances Energy Prediction,3,pls_only,w90,67.31234520485701
+Appliances Energy Prediction,3,pls_only,cov95,0.685
+Appliances Energy Prediction,3,pls_only,w95,80.20760641234823
+Appliances Energy Prediction,3,cem_em_coeff,rmse,110.8979735172104
+Appliances Energy Prediction,3,cem_em_coeff,crps,42.531734466552734
+Appliances Energy Prediction,3,cem_em_coeff,wall_sec,35.347848299999896
+Appliances Energy Prediction,3,cem_em_coeff,cov90,0.61
+Appliances Energy Prediction,3,cem_em_coeff,w90,77.93062101645603
+Appliances Energy Prediction,3,cem_em_coeff,cov95,0.665
+Appliances Energy Prediction,3,cem_em_coeff,w95,92.86006242888647
+Appliances Energy Prediction,4,xgb_bootstrap,rmse,81.60521848614512
+Appliances Energy Prediction,4,xgb_bootstrap,crps,34.98920822143555
+Appliances Energy Prediction,4,xgb_bootstrap,wall_sec,10.604144099997939
+Appliances Energy Prediction,4,xgb_bootstrap,cov90,0.925
+Appliances Energy Prediction,4,xgb_bootstrap,w90,215.60662787678885
+Appliances Energy Prediction,4,xgb_bootstrap,cov95,0.935
+Appliances Energy Prediction,4,xgb_bootstrap,w95,256.91114306008893
+Appliances Energy Prediction,4,dkl_svgp,rmse,82.86935424804688
+Appliances Energy Prediction,4,dkl_svgp,crps,38.10565185546875
+Appliances Energy Prediction,4,dkl_svgp,wall_sec,21.13806580000528
+Appliances Energy Prediction,4,dkl_svgp,cov90,0.87
+Appliances Energy Prediction,4,dkl_svgp,w90,212.4158006682811
+Appliances Energy Prediction,4,dkl_svgp,cov95,0.915
+Appliances Energy Prediction,4,dkl_svgp,w95,253.10903793225668
+Appliances Energy Prediction,4,pls_only,rmse,105.8638945308306
+Appliances Energy Prediction,4,pls_only,crps,37.016456604003906
+Appliances Energy Prediction,4,pls_only,wall_sec,31.735351100003754
+Appliances Energy Prediction,4,pls_only,cov90,0.67
+Appliances Energy Prediction,4,pls_only,w90,70.32858964238837
+Appliances Energy Prediction,4,pls_only,cov95,0.73
+Appliances Energy Prediction,4,pls_only,w95,83.80168333765336
+Appliances Energy Prediction,4,cem_em_coeff,rmse,104.24632680509521
+Appliances Energy Prediction,4,cem_em_coeff,crps,38.784019470214844
+Appliances Energy Prediction,4,cem_em_coeff,wall_sec,35.562107599995215
+Appliances Energy Prediction,4,cem_em_coeff,cov90,0.58
+Appliances Energy Prediction,4,cem_em_coeff,w90,78.22183738100301
+Appliances Energy Prediction,4,cem_em_coeff,cov95,0.635
+Appliances Energy Prediction,4,cem_em_coeff,w95,93.20706813010416
+Appliances Energy Prediction,5,xgb_bootstrap,rmse,71.64026501259937
+Appliances Energy Prediction,5,xgb_bootstrap,crps,31.65792465209961
+Appliances Energy Prediction,5,xgb_bootstrap,wall_sec,10.692032400002063
+Appliances Energy Prediction,5,xgb_bootstrap,cov90,0.935
+Appliances Energy Prediction,5,xgb_bootstrap,w90,210.60912969172495
+Appliances Energy Prediction,5,xgb_bootstrap,cov95,0.935
+Appliances Energy Prediction,5,xgb_bootstrap,w95,250.95625668294474
+Appliances Energy Prediction,5,dkl_svgp,rmse,81.5774917602539
+Appliances Energy Prediction,5,dkl_svgp,crps,37.09372329711914
+Appliances Energy Prediction,5,dkl_svgp,wall_sec,20.95868299999711
+Appliances Energy Prediction,5,dkl_svgp,cov90,0.885
+Appliances Energy Prediction,5,dkl_svgp,w90,211.10858539940727
+Appliances Energy Prediction,5,dkl_svgp,cov95,0.895
+Appliances Energy Prediction,5,dkl_svgp,w95,251.5513948659967
+Appliances Energy Prediction,5,pls_only,rmse,82.12941104902457
+Appliances Energy Prediction,5,pls_only,crps,31.025304794311523
+Appliances Energy Prediction,5,pls_only,wall_sec,33.777732800001104
+Appliances Energy Prediction,5,pls_only,cov90,0.71
+Appliances Energy Prediction,5,pls_only,w90,66.35287960315881
+Appliances Energy Prediction,5,pls_only,cov95,0.745
+Appliances Energy Prediction,5,pls_only,w95,79.06433263228624
+Appliances Energy Prediction,5,cem_em_coeff,rmse,94.29014421878699
+Appliances Energy Prediction,5,cem_em_coeff,crps,37.88608169555664
+Appliances Energy Prediction,5,cem_em_coeff,wall_sec,121.92321709999669
+Appliances Energy Prediction,5,cem_em_coeff,cov90,0.6
+Appliances Energy Prediction,5,cem_em_coeff,w90,80.4786921744707
+Appliances Energy Prediction,5,cem_em_coeff,cov95,0.665
+Appliances Energy Prediction,5,cem_em_coeff,w95,95.8962764833917

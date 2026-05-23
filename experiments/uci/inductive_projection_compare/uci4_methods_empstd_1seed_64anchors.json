@@ -1,0 +1,779 @@
+{
+  "_meta": {
+    "methods": [
+      "lmjgp_transductive",
+      "cem_em_transductive",
+      "lmjgp_supervised",
+      "cem_em_supervised"
+    ],
+    "num_exp": 1,
+    "datasets": [
+      "Wine Quality",
+      "Parkinsons Telemonitoring",
+      "Appliances Energy Prediction"
+    ],
+    "max_test_anchors": 64,
+    "max_train_anchors": 64,
+    "neighbor_pool": "base",
+    "scaling_preset": "uci_empirical",
+    "global_standardize_x_flag": true,
+    "global_standardize_y_flag": true,
+    "n": 35,
+    "m1": 2,
+    "m2": 40,
+    "MC_num": 3,
+    "lmjgp_supervised_train_mc": 2,
+    "lmjgp_supervised_kl_weight": 0.001,
+    "lmjgp_supervised_pred_var_floor": 0.05,
+    "lmjgp_supervised_grad_check": true,
+    "cem_em": {
+      "n_outer": 5,
+      "n_m_steps": 80,
+      "lr": 0.01,
+      "lambda_gate": 0.1,
+      "lambda_smooth": 0.01,
+      "lambda_scale": 0.0,
+      "lambda_anchor_pred": 1.0,
+      "anchor_pred_var_floor": 0.05,
+      "target_row_norm_sq": 1.0,
+      "normalize_smoothness": true,
+      "grad_clip": 10.0,
+      "anchor_kernel_lengthscale": null,
+      "snapshot_after_each_outer": false,
+      "cem_progress": false,
+      "verbose": true,
+      "track_best_W": true,
+      "best_metric_key": "loss"
+    }
+  },
+  "Wine Quality": {
+    "0": {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "Q": 3,
+      "D": 11,
+      "split": {
+        "n_base": 5783,
+        "n_anchor": 64,
+        "base_anchor_disjoint": true,
+        "n_test": 64,
+        "test_indices": [
+          0,
+          11,
+          73,
+          75,
+          82,
+          88,
+          93,
+          96,
+          112,
+          114,
+          116,
+          119,
+          120,
+          123,
+          126,
+          147,
+          151,
+          157,
+          168,
+          173,
+          177,
+          185,
+          206,
+          223,
+          233,
+          243,
+          265,
+          278,
+          283,
+          290,
+          299,
+          306,
+          315,
+          333,
+          356,
+          388,
+          389,
+          407,
+          412,
+          420,
+          441,
+          453,
+          473,
+          483,
+          484,
+          489,
+          499,
+          508,
+          514,
+          523,
+          533,
+          540,
+          544,
+          560,
+          562,
+          598,
+          604,
+          606,
+          612,
+          630,
+          631,
+          644,
+          645,
+          649
+        ]
+      },
+      "scaling": {
+        "standardize_x": true,
+        "standardize_y": false
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601683844
+      },
+      "metrics": {
+        "lmjgp_transductive": [
+          0.5903540405301416,
+          0.3176417350769043,
+          21.034962099998666,
+          0.875,
+          1.7858224563813723,
+          0.90625,
+          2.1279387052679097
+        ],
+        "cem_em_transductive": [
+          0.6328226515066223,
+          0.3437628448009491,
+          6.290864899994631,
+          0.734375,
+          1.07901478191004,
+          0.765625,
+          1.285725414515813
+        ],
+        "lmjgp_supervised": [
+          0.5590328344366136,
+          0.31061726808547974,
+          13.719111499995051,
+          0.875,
+          1.810488871628886,
+          0.921875,
+          2.157330551886164
+        ],
+        "cem_em_supervised": [
+          0.5193638712872277,
+          0.2731302082538605,
+          13.237810500002524,
+          0.890625,
+          1.6078011267101178,
+          0.9375,
+          1.9158132073400118
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_transductive": {
+          "train_time_sec": 18.972652299999027,
+          "mu_W_shape": [
+            64,
+            3,
+            11
+          ],
+          "total_wall_sec": 40.1082019999958
+        },
+        "cem_em_transductive": {
+          "median_trace_WWT": 3.0,
+          "median_eff_rank_WWT": 2.195688009262085,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 1.3716868162155151,
+          "cosine_to_ref_median": 0.4366044457033489,
+          "train_time_sec": 76.64142169999832,
+          "jgp_elapsed_sec": 6.290864899994631,
+          "best_outer": 5,
+          "total_wall_sec": 83.10821760000545
+        },
+        "lmjgp_supervised": {
+          "train_time_sec": 12.41478669999924,
+          "best_loss": 0.4524841606616974,
+          "train_mc": 2,
+          "kl_weight": 0.001,
+          "pred_var_floor": 0.05,
+          "local_gp_lengthscale": [
+            0.7210898995399475,
+            0.6083741188049316,
+            0.6051151156425476
+          ],
+          "local_gp_signal_var": 0.65814208984375,
+          "local_gp_noise_var": 0.1286323517560959,
+          "history": [
+            {
+              "step": 1.0,
+              "loss": 3.2839324474334717,
+              "pred_nll": 3.2443695068359375,
+              "kl_v_per_anchor": 39.56284713745117
+            },
+            {
+              "step": 50.0,
+              "loss": 2.006495237350464,
+              "pred_nll": 1.9907771348953247,
+              "kl_v_per_anchor": 15.71817398071289
+            },
+            {
+              "step": 100.0,
+              "loss": 1.3842658996582031,
+              "pred_nll": 1.3708500862121582,
+              "kl_v_per_anchor": 13.415849685668945
+            },
+            {
+              "step": 150.0,
+              "loss": 0.768519937992096,
+              "pred_nll": 0.7030608654022217,
+              "kl_v_per_anchor": 65.45906829833984
+            },
+            {
+              "step": 200.0,
+              "loss": 0.5400648713111877,
+              "pred_nll": 0.46057045459747314,
+              "kl_v_per_anchor": 79.49442291259766
+            }
+          ],
+          "strict_leave_one_anchor_objective": true,
+          "kl_scaled_by_n_anchors": true,
+          "anchor_label_used_as_region_observation": false,
+          "training_neighbor_pool": "D_base",
+          "gradient_check": {
+            "predictive_only_loss_before": 2.7037198543548584,
+            "predictive_only_loss_after_one_step": 2.6911911964416504,
+            "predictive_only_loss_decreased": true,
+            "mu_V_grad_norm": 0.03214193135499954,
+            "sigma_V_grad_norm": 0.000482227565953508,
+            "Z_grad_norm": 0.07419203221797943,
+            "has_qV_gradient": true
+          },
+          "mu_W_shape": [
+            64,
+            3,
+            11
+          ],
+          "total_wall_sec": 26.45008420000522
+        },
+        "cem_em_supervised": {
+          "median_trace_WWT": 3.000000238418579,
+          "median_eff_rank_WWT": 2.508063554763794,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 1.3771820068359375,
+          "cosine_to_ref_median": 0.4252434922912169,
+          "train_time_sec": 136.6813211999979,
+          "jgp_elapsed_sec": 13.237810500002524,
+          "best_outer": 4,
+          "coeff_gp_lengthscale": 4.293098449707031,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.02133890800178051,
+          "total_wall_sec": 150.02915270000085
+        }
+      }
+    }
+  },
+  "Parkinsons Telemonitoring": {
+    "0": {
+      "dataset": "Parkinsons Telemonitoring",
+      "seed": 0,
+      "Q": 5,
+      "D": 18,
+      "split": {
+        "n_base": 5223,
+        "n_anchor": 64,
+        "base_anchor_disjoint": true,
+        "n_test": 64,
+        "test_indices": [
+          0,
+          10,
+          65,
+          68,
+          74,
+          79,
+          83,
+          87,
+          101,
+          102,
+          104,
+          106,
+          108,
+          110,
+          113,
+          132,
+          136,
+          140,
+          151,
+          155,
+          158,
+          167,
+          186,
+          201,
+          210,
+          220,
+          239,
+          249,
+          255,
+          261,
+          268,
+          274,
+          282,
+          299,
+          318,
+          350,
+          366,
+          371,
+          377,
+          397,
+          398,
+          406,
+          410,
+          427,
+          433,
+          435,
+          439,
+          447,
+          457,
+          464,
+          469,
+          480,
+          487,
+          489,
+          504,
+          506,
+          536,
+          543,
+          548,
+          551,
+          559,
+          568,
+          582,
+          587
+        ]
+      },
+      "scaling": {
+        "standardize_x": false,
+        "standardize_y": false
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 21417.40788398356
+      },
+      "metrics": {
+        "lmjgp_transductive": [
+          3.237735485347073,
+          1.319425344467163,
+          34.48141229999601,
+          0.96875,
+          9.983576437088656,
+          0.984375,
+          11.896165064767658
+        ],
+        "cem_em_transductive": [
+          3.2011544166773676,
+          0.7040717601776123,
+          17.136765000002924,
+          0.6875,
+          1.438750686818792,
+          0.75,
+          1.7143771838977706
+        ],
+        "lmjgp_supervised": [
+          3.9537368055628175,
+          1.3787705898284912,
+          44.2348845000015,
+          0.953125,
+          9.079120925799247,
+          1.0,
+          10.818439850377928
+        ],
+        "cem_em_supervised": [
+          2.2672922752117954,
+          0.38995563983917236,
+          49.726313899998786,
+          0.921875,
+          1.7788035569634502,
+          0.921875,
+          2.1195751707595334
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_transductive": {
+          "train_time_sec": 28.077265199994144,
+          "mu_W_shape": [
+            64,
+            5,
+            18
+          ],
+          "total_wall_sec": 62.73609629999555
+        },
+        "cem_em_transductive": {
+          "median_trace_WWT": 5.000000953674316,
+          "median_eff_rank_WWT": 3.159531831741333,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 0.9310327172279358,
+          "cosine_to_ref_median": 0.3850462669085333,
+          "train_time_sec": 113.29834729999857,
+          "jgp_elapsed_sec": 17.136765000002924,
+          "best_outer": 5,
+          "total_wall_sec": 130.50123019999592
+        },
+        "lmjgp_supervised": {
+          "train_time_sec": 30.603502500001923,
+          "best_loss": 2.723705530166626,
+          "train_mc": 2,
+          "kl_weight": 0.001,
+          "pred_var_floor": 0.05,
+          "local_gp_lengthscale": [
+            0.5130115151405334,
+            0.47049444913864136,
+            0.4459933638572693,
+            0.4730449318885803,
+            0.47231316566467285
+          ],
+          "local_gp_signal_var": 105.8384017944336,
+          "local_gp_noise_var": 3.6096670627593994,
+          "history": [
+            {
+              "step": 1.0,
+              "loss": 4.298527240753174,
+              "pred_nll": 4.189233779907227,
+              "kl_v_per_anchor": 109.29337310791016
+            },
+            {
+              "step": 50.0,
+              "loss": 3.0463643074035645,
+              "pred_nll": 3.0189051628112793,
+              "kl_v_per_anchor": 27.4591121673584
+            },
+            {
+              "step": 100.0,
+              "loss": 3.0159292221069336,
+              "pred_nll": 3.0069050788879395,
+              "kl_v_per_anchor": 9.024170875549316
+            },
+            {
+              "step": 150.0,
+              "loss": 2.9240992069244385,
+              "pred_nll": 2.9207186698913574,
+              "kl_v_per_anchor": 3.3806426525115967
+            },
+            {
+              "step": 200.0,
+              "loss": 2.818824291229248,
+              "pred_nll": 2.817448139190674,
+              "kl_v_per_anchor": 1.3762372732162476
+            }
+          ],
+          "strict_leave_one_anchor_objective": true,
+          "kl_scaled_by_n_anchors": true,
+          "anchor_label_used_as_region_observation": false,
+          "training_neighbor_pool": "D_base",
+          "gradient_check": {
+            "predictive_only_loss_before": 4.156558990478516,
+            "predictive_only_loss_after_one_step": 4.135881423950195,
+            "predictive_only_loss_decreased": true,
+            "mu_V_grad_norm": 7.896654278738424e-05,
+            "sigma_V_grad_norm": 1.1906862162902598e-08,
+            "Z_grad_norm": 0.00022700504632666707,
+            "has_qV_gradient": true
+          },
+          "mu_W_shape": [
+            64,
+            5,
+            18
+          ],
+          "total_wall_sec": 75.17278420000366
+        },
+        "cem_em_supervised": {
+          "median_trace_WWT": 5.000000953674316,
+          "median_eff_rank_WWT": 3.223949432373047,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 0.9612953662872314,
+          "cosine_to_ref_median": 0.2838833570743585,
+          "train_time_sec": 181.76900519999617,
+          "jgp_elapsed_sec": 49.726313899998786,
+          "best_outer": 5,
+          "coeff_gp_lengthscale": 56.73969268798828,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.0002085389569401741,
+          "total_wall_sec": 231.60786969999754
+        }
+      }
+    }
+  },
+  "Appliances Energy Prediction": {
+    "0": {
+      "dataset": "Appliances Energy Prediction",
+      "seed": 0,
+      "Q": 5,
+      "D": 27,
+      "split": {
+        "n_base": 19078,
+        "n_anchor": 64,
+        "base_anchor_disjoint": true,
+        "n_test": 64,
+        "test_indices": [
+          0,
+          10,
+          66,
+          69,
+          75,
+          80,
+          84,
+          88,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          114,
+          134,
+          137,
+          142,
+          152,
+          157,
+          160,
+          169,
+          187,
+          203,
+          211,
+          222,
+          241,
+          251,
+          258,
+          263,
+          270,
+          276,
+          285,
+          301,
+          321,
+          353,
+          370,
+          374,
+          381,
+          401,
+          410,
+          413,
+          431,
+          437,
+          439,
+          443,
+          451,
+          462,
+          468,
+          474,
+          484,
+          492,
+          493,
+          509,
+          511,
+          541,
+          548,
+          553,
+          556,
+          564,
+          573,
+          574,
+          587,
+          592
+        ]
+      },
+      "scaling": {
+        "standardize_x": true,
+        "standardize_y": true
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601684017
+      },
+      "metrics": {
+        "lmjgp_transductive": [
+          55.4894500265269,
+          19.659454345703125,
+          25.770513900002697,
+          0.84375,
+          116.01776339944897,
+          0.90625,
+          138.24369178140734
+        ],
+        "cem_em_transductive": [
+          76.64152931961328,
+          32.33202362060547,
+          10.202486399997724,
+          0.53125,
+          59.427581629410874,
+          0.546875,
+          70.81233112385374
+        ],
+        "lmjgp_supervised": [
+          62.24452873378614,
+          21.50408172607422,
+          25.68173669999669,
+          0.84375,
+          101.03516814790348,
+          0.875,
+          120.39082839781557
+        ],
+        "cem_em_supervised": [
+          59.664739276789,
+          23.152923583984375,
+          24.45019450000109,
+          0.8125,
+          131.12690531951665,
+          0.875,
+          156.24734482105293
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_transductive": {
+          "train_time_sec": 38.32940009999584,
+          "mu_W_shape": [
+            64,
+            5,
+            27
+          ],
+          "total_wall_sec": 64.2161871999997
+        },
+        "cem_em_transductive": {
+          "median_trace_WWT": 5.000000953674316,
+          "median_eff_rank_WWT": 3.68825101852417,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 1.0855158567428589,
+          "cosine_to_ref_median": 0.3644976747291013,
+          "train_time_sec": 91.44034690000262,
+          "jgp_elapsed_sec": 10.202486399997724,
+          "best_outer": 5,
+          "total_wall_sec": 101.71299590000126
+        },
+        "lmjgp_supervised": {
+          "train_time_sec": 39.13560570000118,
+          "best_loss": 0.6785433888435364,
+          "train_mc": 2,
+          "kl_weight": 0.001,
+          "pred_var_floor": 0.05,
+          "local_gp_lengthscale": [
+            0.6311241388320923,
+            0.6793799996376038,
+            0.6910388469696045,
+            0.6608657240867615,
+            0.7565816640853882
+          ],
+          "local_gp_signal_var": 0.6054028868675232,
+          "local_gp_noise_var": 0.09172583371400833,
+          "history": [
+            {
+              "step": 1.0,
+              "loss": 3.098503589630127,
+              "pred_nll": 2.9342219829559326,
+              "kl_v_per_anchor": 164.2816925048828
+            },
+            {
+              "step": 50.0,
+              "loss": 2.9121079444885254,
+              "pred_nll": 2.8708810806274414,
+              "kl_v_per_anchor": 41.226890563964844
+            },
+            {
+              "step": 100.0,
+              "loss": 1.5052697658538818,
+              "pred_nll": 1.4917871952056885,
+              "kl_v_per_anchor": 13.482535362243652
+            },
+            {
+              "step": 150.0,
+              "loss": 0.8816949129104614,
+              "pred_nll": 0.8766778707504272,
+              "kl_v_per_anchor": 5.017061233520508
+            },
+            {
+              "step": 200.0,
+              "loss": 0.90915447473526,
+              "pred_nll": 0.9071218371391296,
+              "kl_v_per_anchor": 2.032658338546753
+            }
+          ],
+          "strict_leave_one_anchor_objective": true,
+          "kl_scaled_by_n_anchors": true,
+          "anchor_label_used_as_region_observation": false,
+          "training_neighbor_pool": "D_base",
+          "gradient_check": {
+            "predictive_only_loss_before": 2.8559346199035645,
+            "predictive_only_loss_after_one_step": 2.8434319496154785,
+            "predictive_only_loss_decreased": true,
+            "mu_V_grad_norm": 1.284249810851179e-05,
+            "sigma_V_grad_norm": 1.4039905349427784e-10,
+            "Z_grad_norm": 4.455884118215181e-05,
+            "has_qV_gradient": true
+          },
+          "mu_W_shape": [
+            64,
+            5,
+            27
+          ],
+          "total_wall_sec": 65.23279029999685
+        },
+        "cem_em_supervised": {
+          "median_trace_WWT": 5.000000953674316,
+          "median_eff_rank_WWT": 3.856374502182007,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 1.279426097869873,
+          "cosine_to_ref_median": 0.3527869955418834,
+          "train_time_sec": 152.69681429999764,
+          "jgp_elapsed_sec": 24.45019450000109,
+          "best_outer": 5,
+          "coeff_gp_lengthscale": 6.673778057098389,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.052792198956012726,
+          "total_wall_sec": 177.30468819999805
+        }
+      }
+    }
+  }
+}

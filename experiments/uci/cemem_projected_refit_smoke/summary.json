@@ -1,0 +1,196 @@
+{
+  "args": {
+    "num_exp": 1,
+    "datasets": "Wine Quality",
+    "methods": "cemem_small_current,cemem_large_raw_final,cemem_large_projected_final,cluster_anchor_projected_final",
+    "max_total_train": 80,
+    "max_test_anchors": 12,
+    "train_subject_frac": 0.8,
+    "Q": null,
+    "n_final": null,
+    "n_final_auto": 1,
+    "n_candidate": 20,
+    "n_clusters": 8,
+    "n_pls": 5,
+    "n_pca": 5,
+    "n_random": 0,
+    "n_outer": 1,
+    "n_m_steps": 2,
+    "lr": 0.01,
+    "lambda_gate": 0.1,
+    "lambda_smooth": 0.01,
+    "lambda_scale": 0.0,
+    "init_C_scale": 0.0,
+    "coeff_scale": 1.0,
+    "row_normalize_W": 1,
+    "normalize_smoothness": 1,
+    "track_best_W": 1,
+    "parkinsons_standardize_x": -1,
+    "parkinsons_standardize_y": -1,
+    "out_dir": "experiments\\uci\\cemem_projected_refit_smoke"
+  },
+  "metrics": [
+    {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cemem_small_current",
+      "Q": 3,
+      "n_final": 25,
+      "n_candidate": 20,
+      "standardize_x": true,
+      "standardize_y": false,
+      "split_type": "random_row",
+      "rmse": 1.0970743972921702,
+      "mean_crps": 0.7080447673797607,
+      "wall_sec": 3.029178699973272,
+      "coverage_90": 0.5833333333333334,
+      "width_90": 1.4290269207851782,
+      "coverage_95": 0.5833333333333334,
+      "width_95": 1.7027906020234316
+    },
+    {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cemem_large_raw_final",
+      "Q": 3,
+      "n_final": 25,
+      "n_candidate": 20,
+      "standardize_x": true,
+      "standardize_y": false,
+      "split_type": "random_row",
+      "rmse": 1.02663140017502,
+      "mean_crps": 0.6198012232780457,
+      "wall_sec": 2.8275573999853805,
+      "coverage_90": 0.5,
+      "width_90": 1.5541798018697766,
+      "coverage_95": 0.5833333333333334,
+      "width_95": 1.8519194579094478
+    },
+    {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cemem_large_projected_final",
+      "Q": 3,
+      "n_final": 25,
+      "n_candidate": 20,
+      "standardize_x": true,
+      "standardize_y": false,
+      "split_type": "random_row",
+      "rmse": 0.901879026395118,
+      "mean_crps": 0.5444925427436829,
+      "wall_sec": 2.6674302000028547,
+      "coverage_90": 0.5833333333333334,
+      "width_90": 1.2504817979812264,
+      "coverage_95": 0.5833333333333334,
+      "width_95": 1.490040966081904
+    },
+    {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cluster_anchor_projected_final",
+      "Q": 3,
+      "n_final": 25,
+      "n_candidate": 20,
+      "standardize_x": true,
+      "standardize_y": false,
+      "split_type": "random_row",
+      "rmse": 1.190638597569975,
+      "mean_crps": 0.7988340258598328,
+      "wall_sec": 1.0691871999879368,
+      "coverage_90": 0.4166666666666667,
+      "width_90": 0.8593992902464621,
+      "coverage_95": 0.5,
+      "width_95": 1.0240374156235146
+    }
+  ],
+  "diagnostics": [
+    {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cemem_small_current",
+      "diagnostics": {
+        "V_basis": {
+          "n_pls": 5,
+          "n_pca": 5,
+          "n_random": 0,
+          "Rv": 10,
+          "source_per_column": [
+            "pls",
+            "pls",
+            "pls",
+            "pls",
+            "pls",
+            "pca",
+            "pca",
+            "pca",
+            "pca",
+            "pca"
+          ],
+          "V_tilde_frob": 3.1622776601683777
+        },
+        "W": {
+          "median_trace_WWT": 3.0,
+          "median_eff_rank_WWT": 2.9810333251953125,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.09196349233388901,
+          "cosine_to_ref_median": 0.5761595773886452
+        },
+        "train_time_sec": 3.196155000012368,
+        "best_outer": 1,
+        "best_metric_value": 17.381927490234375
+      }
+    },
+    {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cemem_large_raw_final",
+      "diagnostics": {}
+    },
+    {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cemem_large_projected_final",
+      "diagnostics": {}
+    },
+    {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "method": "cluster_anchor_projected_final",
+      "diagnostics": {
+        "V_basis": {
+          "n_pls": 5,
+          "n_pca": 5,
+          "n_random": 0,
+          "Rv": 10,
+          "source_per_column": [
+            "pls",
+            "pls",
+            "pls",
+            "pls",
+            "pls",
+            "pca",
+            "pca",
+            "pca",
+            "pca",
+            "pca"
+          ],
+          "V_tilde_frob": 3.1622776601683777
+        },
+        "W": {
+          "median_trace_WWT": 3.0,
+          "median_eff_rank_WWT": 2.9921793937683105,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.0817643404006958,
+          "cosine_to_ref_median": 0.5755010057082803
+        },
+        "train_time_sec": 0.971755700011272,
+        "best_outer": 1,
+        "best_metric_value": 11.857084274291992,
+        "n_clusters": 8,
+        "n_clusters_used_by_test": 5,
+        "max_test_per_cluster": 8,
+        "min_nonempty_test_per_cluster": 1
+      }
+    }
+  ]
+}

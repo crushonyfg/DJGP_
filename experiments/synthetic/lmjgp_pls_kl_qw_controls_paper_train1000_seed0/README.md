@@ -1,0 +1,32 @@
+# PLS-KL LMJGP q(W) Controls on Paper Synthetic Data
+
+This trains the PLS-KL LMJGP variant once per paper-synthetic setting and
+evaluates whether the learned projection samples outperform controls that
+destroy feature alignment, anchor assignment, or the learned mean.
+
+```json
+{
+  "args": {
+    "settings": "l2_q2_train1000,lh_q5_train1000",
+    "seed": 0,
+    "m1": 2,
+    "m2": 40,
+    "lmjgp_steps": 300,
+    "MC_num": 3,
+    "lr": 0.01,
+    "out_dir": "experiments\\synthetic\\lmjgp_pls_kl_qw_controls_paper_train1000_seed0"
+  },
+  "device": "cuda",
+  "controls": [
+    "pls_kl_learned_qw",
+    "prior_qw",
+    "moment_matched_isotropic",
+    "feature_permuted_learned_qw",
+    "anchor_shuffled_learned_qw",
+    "global_mean_learned_qw",
+    "zero_mean_learned_sigma",
+    "frozen_pls_static"
+  ],
+  "n_rows": 16
+}
+```

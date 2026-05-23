@@ -1,0 +1,59 @@
+{
+  "dataset_folder": "data\\processed\\pdebench_burgers_shockjump",
+  "result_row": [
+    "rmse",
+    "mean_crps",
+    "wall_sec",
+    "coverage_90",
+    "width_90",
+    "coverage_95",
+    "width_95"
+  ],
+  "runs": {
+    "0": {
+      "seed": 0,
+      "n_train": 1600,
+      "n_test": 400,
+      "split_counts": {
+        "all": 400,
+        "near_threshold": 6,
+        "far_from_threshold": 394
+      },
+      "metrics": {
+        "lmjgp_predict_vi": {
+          "all": [
+            0.7701722979545593,
+            0.2361612319946289,
+            968.1320554999984,
+            0.8475,
+            0.9645705928986491,
+            0.9125,
+            1.1493567522671575
+          ],
+          "n_all": 400,
+          "near_threshold": [
+            1.3742307424545288,
+            0.7434583306312561,
+            968.1320554999984,
+            0.6666666666666666,
+            3.386415058687659,
+            0.6666666666666666,
+            4.035162425992403
+          ],
+          "n_near_threshold": 6,
+          "far_from_threshold": [
+            0.7572577595710754,
+            0.22843588888645172,
+            968.1320554999984,
+            0.850253807106599,
+            0.9276897127089688,
+            0.916243654822335,
+            1.1054104729718492
+          ],
+          "n_far_from_threshold": 394
+        }
+      },
+      "near_threshold_delta": 0.05
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "args": {
+    "dataset": "Parkinsons Telemonitoring",
+    "train_sizes": "80",
+    "seed": 0,
+    "max_test_anchors": 20,
+    "train_subject_frac": 0.8,
+    "epochs": 3,
+    "batch_size": 1024,
+    "lr": 0.02,
+    "d_hidden": 64,
+    "d_latent": 4,
+    "num_inducing": 128,
+    "out_dir": "experiments\\uci\\dkl_sanity_smoke"
+  },
+  "device": "cuda",
+  "diagnostics_csv": "diagnostics.csv",
+  "note": "Feature scalers are fit on training rows only; DKL y-standardization is internal and train-only."
+}

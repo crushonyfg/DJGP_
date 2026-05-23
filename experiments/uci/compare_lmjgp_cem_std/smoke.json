@@ -1,0 +1,124 @@
+{
+  "_meta": {
+    "seed": 0,
+    "max_anchors": 48,
+    "n": 35,
+    "lmjgp_steps": 50,
+    "MC_num": 3,
+    "modes": [
+      "raw",
+      "std_x",
+      "std_xy"
+    ]
+  },
+  "Wine Quality": {
+    "raw": {
+      "mode": "raw",
+      "standardize_x": false,
+      "standardize_y": false,
+      "K": 3,
+      "lmjgp": {
+        "metrics_7": [
+          0.7458947831981896,
+          0.41513416171073914,
+          14.332849700000224,
+          0.875,
+          2.090287620074376,
+          0.9375,
+          2.490731324384641
+        ],
+        "train_time_sec": 4.600915999999415,
+        "predict_wall_sec": 14.332849700000224,
+        "total_wall_sec": 19.02897160000066,
+        "metrics_on_original_y_scale": false
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          0.7565030449685067,
+          0.44472625851631165,
+          4.2736808999979985,
+          0.7916666666666666,
+          1.835512264341378,
+          0.8541666666666666,
+          2.1871477633898917
+        ],
+        "train_time_sec": 11.791892400000506,
+        "predict_wall_sec": 4.2736808999979985,
+        "total_wall_sec": 16.26243710000199,
+        "metrics_on_original_y_scale": false
+      }
+    },
+    "std_x": {
+      "mode": "std_x",
+      "standardize_x": true,
+      "standardize_y": false,
+      "K": 3,
+      "lmjgp": {
+        "metrics_7": [
+          0.7115317213527592,
+          0.4068267047405243,
+          12.949908700000378,
+          0.8125,
+          1.911124470735609,
+          0.9375,
+          2.2772452644052055
+        ],
+        "train_time_sec": 3.5255144000002474,
+        "predict_wall_sec": 12.949908700000378,
+        "total_wall_sec": 16.524470700001984,
+        "metrics_on_original_y_scale": false
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          0.7864979083433439,
+          0.48008236289024353,
+          4.949387900000147,
+          0.6458333333333334,
+          1.3271211539926817,
+          0.75,
+          1.5813623913561952
+        ],
+        "train_time_sec": 11.792539100002614,
+        "predict_wall_sec": 4.949387900000147,
+        "total_wall_sec": 16.79907920000187,
+        "metrics_on_original_y_scale": false
+      }
+    },
+    "std_xy": {
+      "mode": "std_xy",
+      "standardize_x": true,
+      "standardize_y": true,
+      "K": 3,
+      "lmjgp": {
+        "metrics_7": [
+          0.7126553832221816,
+          0.42188724875450134,
+          11.425599799997144,
+          0.8541666666666666,
+          1.821435647552346,
+          0.8958333333333334,
+          2.170374439929002
+        ],
+        "train_time_sec": 3.609995800001343,
+        "predict_wall_sec": 11.425599799997144,
+        "total_wall_sec": 15.147042999997211,
+        "metrics_on_original_y_scale": true
+      },
+      "cem_em_coeff": {
+        "metrics_7": [
+          0.8179683858813698,
+          0.485503226518631,
+          4.917245500000718,
+          0.625,
+          1.3677270919476594,
+          0.7083333333333334,
+          1.6297473507508657
+        ],
+        "train_time_sec": 12.409646599997359,
+        "predict_wall_sec": 4.917245500000718,
+        "total_wall_sec": 17.36691409999912,
+        "metrics_on_original_y_scale": true
+      }
+    }
+  }
+}

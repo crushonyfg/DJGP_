@@ -1,0 +1,2 @@
+setting,seed,method,N_train,N_test,Q,D,rmse,mean_crps,wall_sec,coverage_90,mean_width_90,coverage_95,mean_width_95,train_sec,predict_sec,oof_folds,m_u,m_v,steps1,steps2,W_mean_norm_mean,W_var_mean,status,oof_train_sec,lr
+lh_q5_train1000,0,deep_mahalanobis_gp_bundle,1000,200,5,30,617.7363839509163,302.93458325223276,418.0029619,0.765,677.6204504647053,0.78,807.4345682418666,416.1193494,1.8836125000000266,3,50,25,300,700,0.3730271277809938,0.0028393491360275192,ok,1068.2000725,0.01

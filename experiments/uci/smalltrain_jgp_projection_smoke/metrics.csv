@@ -1,0 +1,3 @@
+train_size,dataset,seed,method,split_type,standardize_y,n,status,rmse,mean_crps,wall_sec,coverage_90,mean_width_90,coverage_95,mean_width_95
+80,Wine Quality,0,jgp_pca,random_row,False,25,ok,0.7058688664331279,0.41591328382492065,1.5170801999920513,0.7,1.682253052248172,0.85,2.004528148440694
+80,Wine Quality,0,jgp_sir,random_row,False,25,ok,0.5984525742860549,0.34034591913223267,1.419871999998577,0.85,1.467887227446131,0.9,1.7490955134366195
