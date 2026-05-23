@@ -1,0 +1,46 @@
+{
+  "args": {
+    "data_dir": "experiments\\synthetic\\deep_mahalanobis_gp_paper_train1000_seed0",
+    "out_dir": "experiments\\synthetic\\deep_mahalanobis_gp_smoke",
+    "settings": "l2_q2_train1000",
+    "seed": 0,
+    "Q": 0,
+    "m_u": 50,
+    "m_v": 25,
+    "steps1": 1,
+    "steps2": 1,
+    "lr": 0.01,
+    "initial_noise_var": 0.01,
+    "w_samples": 1
+  },
+  "rows": [
+    {
+      "setting": "l2_q2_train1000",
+      "seed": 0,
+      "method": "deep_mahalanobis_gp",
+      "N_train": 1000,
+      "N_test": 200,
+      "Q": 2,
+      "D": 20,
+      "rmse": 3.8792912166769287,
+      "mean_crps": 2.0949320010794206,
+      "wall_sec": 7.572884499999999,
+      "coverage_90": 0.76,
+      "mean_width_90": 7.654245924820631,
+      "coverage_95": 0.825,
+      "mean_width_95": 9.120596565948125,
+      "train_sec": 6.4224592000000005,
+      "predict_sec": 1.1504252999999984,
+      "m_u": 50,
+      "m_v": 25,
+      "steps1": 1,
+      "steps2": 1,
+      "lr": 0.01,
+      "y_standardized": true,
+      "W_mean_norm_mean": 0.7235878869304067,
+      "W_mean_anchor_frob_std": 0.21560352183698356,
+      "W_var_mean": 0.5552643700973227
+    }
+  ],
+  "external_repo": "C:\\Users\\yxu59\\files\\spring2026\\park\\external\\DeepMahalanobisGP"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "phase": "refine",
+    "step": 1,
+    "reward_mean_over_samples": -0.5461428783253425,
+    "reward_std_over_samples": 0.017356958062788495,
+    "reward_range_over_samples": 0.04717585162903426,
+    "reward_spread_mean_over_anchors": 0.08932536922574891,
+    "top_anchor_count": 15
+  },
+  {
+    "phase": "refine",
+    "step": 2,
+    "reward_mean_over_samples": -0.5348547291633607,
+    "reward_std_over_samples": 0.004025894360347382,
+    "reward_range_over_samples": 0.011697479864198668,
+    "reward_spread_mean_over_anchors": 0.07555708257315147,
+    "top_anchor_count": 15
+  },
+  {
+    "phase": "refine",
+    "step": 3,
+    "reward_mean_over_samples": -0.5286376206821827,
+    "reward_std_over_samples": 0.011549158911796809,
+    "reward_range_over_samples": 0.033102098000137636,
+    "reward_spread_mean_over_anchors": 0.08097721463946472,
+    "top_anchor_count": 15
+  },
+  {
+    "phase": "refine",
+    "step": 4,
+    "reward_mean_over_samples": -0.5638368156223821,
+    "reward_std_over_samples": 0.028853156822761697,
+    "reward_range_over_samples": 0.08692442333841177,
+    "reward_spread_mean_over_anchors": 0.1426199962493136,
+    "top_anchor_count": 15
+  },
+  {
+    "phase": "refine",
+    "step": 5,
+    "reward_mean_over_samples": -0.5446218890845701,
+    "reward_std_over_samples": 0.024390348495915516,
+    "reward_range_over_samples": 0.06602731391272121,
+    "reward_spread_mean_over_anchors": 0.09470528395270042,
+    "top_anchor_count": 15
+  },
+  {
+    "phase": "refine",
+    "step": 6,
+    "reward_mean_over_samples": -0.5460503009435742,
+    "reward_std_over_samples": 0.025856936570311753,
+    "reward_range_over_samples": 0.06655167651259086,
+    "reward_spread_mean_over_anchors": 0.11400795616828496,
+    "top_anchor_count": 15
+  },
+  {
+    "phase": "refine",
+    "step": 7,
+    "reward_mean_over_samples": -0.5577733141608545,
+    "reward_std_over_samples": 0.018972494037667025,
+    "reward_range_over_samples": 0.04940929596211896,
+    "reward_spread_mean_over_anchors": 0.13378811346562045,
+    "top_anchor_count": 15
+  },
+  {
+    "phase": "refine",
+    "step": 8,
+    "reward_mean_over_samples": -0.5495426124301248,
+    "reward_std_over_samples": 0.022821790731556955,
+    "reward_range_over_samples": 0.05973115766461856,
+    "reward_spread_mean_over_anchors": 0.11710736243524737,
+    "top_anchor_count": 15
+  }
+]

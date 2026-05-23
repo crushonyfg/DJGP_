@@ -1,0 +1,4 @@
+dataset,train_size,subset,best_rmse_method,best_rmse,best_crps_method,best_crps,dmgp_rmse_delta_vs_best,dmgp_crps_delta_vs_best
+PDEBench Burgers ShockJump,80,all,lmjgp_predict_vi,0.9950951337814331,lmjgp_predict_vi,0.4117574095726013,0.19034792003781975,0.1689225890076239
+PDEBench Burgers ShockJump,80,far_from_threshold,dkl_svgp,0.9874863028526306,lmjgp_predict_vi,0.36871883273124695,0.017373618204734376,0.09951858972307126
+PDEBench Burgers ShockJump,80,near_threshold,lmjgp_predict_vi,0.922594428062439,lmjgp_predict_vi,0.48348844051361084,0.5142405852045049,0.2845958516097927

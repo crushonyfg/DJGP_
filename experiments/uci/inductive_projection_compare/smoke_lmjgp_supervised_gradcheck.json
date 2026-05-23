@@ -1,0 +1,143 @@
+{
+  "_meta": {
+    "methods": [
+      "lmjgp_supervised"
+    ],
+    "num_exp": 1,
+    "datasets": [
+      "Wine Quality"
+    ],
+    "max_test_anchors": 6,
+    "max_train_anchors": 8,
+    "neighbor_pool": "base",
+    "scaling_preset": "uci_empirical",
+    "standardize_x": true,
+    "standardize_y": true,
+    "n": 6,
+    "m1": 2,
+    "m2": 10,
+    "MC_num": 1,
+    "lmjgp_supervised_train_mc": 1,
+    "lmjgp_supervised_kl_weight": 0.001,
+    "lmjgp_supervised_pred_var_floor": 0.05,
+    "lmjgp_supervised_grad_check": true,
+    "cem_em": {
+      "n_outer": 5,
+      "n_m_steps": 80,
+      "lr": 0.01,
+      "lambda_gate": 0.1,
+      "lambda_smooth": 0.01,
+      "lambda_scale": 0.0,
+      "lambda_anchor_pred": 1.0,
+      "anchor_pred_var_floor": 0.05,
+      "target_row_norm_sq": 1.0,
+      "normalize_smoothness": true,
+      "grad_clip": 10.0,
+      "anchor_kernel_lengthscale": null,
+      "snapshot_after_each_outer": false,
+      "cem_progress": false,
+      "verbose": true,
+      "track_best_W": true,
+      "best_metric_key": "loss"
+    }
+  },
+  "Wine Quality": {
+    "0": {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "Q": 3,
+      "D": 11,
+      "split": {
+        "n_base": 5839,
+        "n_anchor": 8,
+        "base_anchor_disjoint": true,
+        "n_test": 6,
+        "test_indices": [
+          131,
+          306,
+          336,
+          391,
+          531,
+          548
+        ]
+      },
+      "scaling": {
+        "standardize_x": true,
+        "standardize_y": false
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601683844
+      },
+      "metrics": {
+        "lmjgp_supervised": [
+          0.42866058148419006,
+          0.2434343695640564,
+          0.33130769999843324,
+          0.8333333333333334,
+          0.8694508861208275,
+          0.8333333333333334,
+          1.0360146308468654
+        ]
+      },
+      "diagnostics": {
+        "lmjgp_supervised": {
+          "train_time_sec": 0.230988499999512,
+          "best_loss": 0.14580050110816956,
+          "train_mc": 1,
+          "kl_weight": 0.001,
+          "pred_var_floor": 0.05,
+          "local_gp_lengthscale": [
+            0.9817391633987427,
+            0.9768044948577881,
+            0.9744935035705566
+          ],
+          "local_gp_signal_var": 0.2934558689594269,
+          "local_gp_noise_var": 0.013920535333454609,
+          "history": [
+            {
+              "step": 1.0,
+              "loss": 0.1497628092765808,
+              "pred_nll": 0.0682770386338234,
+              "kl_v_per_anchor": 81.48575592041016
+            }
+          ],
+          "strict_leave_one_anchor_objective": true,
+          "kl_scaled_by_n_anchors": true,
+          "anchor_label_used_as_region_observation": false,
+          "training_neighbor_pool": "D_base",
+          "gradient_check": {
+            "predictive_only_loss_before": 2.4255917072296143,
+            "predictive_only_loss_after_one_step": 2.3797519207000732,
+            "predictive_only_loss_decreased": true,
+            "mu_V_grad_norm": 0.11340630799531937,
+            "sigma_V_grad_norm": 0.0004210583574604243,
+            "Z_grad_norm": 0.23228976130485535,
+            "has_qV_gradient": true
+          },
+          "mu_W_shape": [
+            6,
+            3,
+            11
+          ],
+          "total_wall_sec": 1.4119995000000927
+        }
+      }
+    }
+  }
+}

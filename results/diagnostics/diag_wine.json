@@ -1,0 +1,3062 @@
+{
+  "label": "uci:Wine Quality",
+  "train_time_sec": 88.94843819999915,
+  "predict_time_sec": 40.049833600000056,
+  "rmse": 0.7031207084655762,
+  "mean_crps": 0.36886537075042725,
+  "hyper": {
+    "Q": 3,
+    "m1": 2,
+    "m2": 40,
+    "n_neighbors": 20,
+    "num_steps": 500,
+    "max_anchors_if_subsampled": 64,
+    "mc_samples_projection": 32
+  },
+  "EW_raw": {
+    "median_frob": 0.0,
+    "median_kappa": 742.614501953125,
+    "median_eff_rank": null
+  },
+  "metric_E_WtW": {
+    "median_trace_E_WtW": 3.3000001907348633,
+    "median_eff_rank_A": 11.000000953674316,
+    "median_eff_rank_B": 3.000000238418579,
+    "median_top_eig_B": 1.100000023841858,
+    "median_min_eig_B_positive": 1.100000023841858
+  },
+  "kernel_metric_A": {
+    "median_kappa_K": 2.1868375743397888e+18,
+    "median_kappa_K_jitter": 2935332.125,
+    "median_kappa_K_plus_noise": 9.881601333618164,
+    "note": "RBF from sq Mahalanobis delta^T E[W^T W] delta (not from E[W] projection alone)."
+  },
+  "sampled_W_row_normalized": {
+    "median_frob": 1.7320507764816284,
+    "median_kappa": 1.6505356431007385,
+    "median_eff_rank": 2.607253313064575,
+    "M": 32
+  },
+  "kernel_sampled_row_normalized": {
+    "median_kappa_K": 3.1538450629876777e+18,
+    "median_kappa_K_jitter": 4098234.75,
+    "median_kappa_K_plus_noise": 14.082475662231445
+  },
+  "per_anchor": [
+    {
+      "anchor": 0,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.005553242554761e+18,
+        "cond_K_jitter": 3725001.75,
+        "cond_K_plus_noise": 13.022171974182129
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 14.542488098144531
+      },
+      "abs_error": 0.00022649765014648438
+    },
+    {
+      "anchor": 1,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.2718596317265265e+18,
+        "cond_K_jitter": 4302120.0,
+        "cond_K_plus_noise": 14.087409973144531
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 17.779251098632812
+      },
+      "abs_error": 0.16666650772094727
+    },
+    {
+      "anchor": 2,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.967557694111613e+18,
+        "cond_K_jitter": 3213308.0,
+        "cond_K_plus_noise": 12.870207786560059
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 12.967446327209473
+      },
+      "abs_error": 9.5367431640625e-07
+    },
+    {
+      "anchor": 3,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 4.0000002121049047e+18,
+        "cond_K_jitter": 5009683.0,
+        "cond_K_plus_noise": 16.999969482421875
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 17.1731538772583
+      },
+      "abs_error": 1.2972650527954102
+    },
+    {
+      "anchor": 4,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.1537732668277391e+18,
+        "cond_K_jitter": 2422957.75,
+        "cond_K_plus_noise": 9.614899635314941
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 80.99822235107422
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 16.60060214996338
+      },
+      "abs_error": 0.16846704483032227
+    },
+    {
+      "anchor": 5,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0095235260164342e+18,
+        "cond_K_jitter": 2110509.5,
+        "cond_K_plus_noise": 1.1242058277130127
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 2.2420594692230225
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 1.1242064833641052
+      },
+      "abs_error": 0.05399799346923828
+    },
+    {
+      "anchor": 6,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 84773512.0,
+        "cond_K_jitter": 2118184.25,
+        "cond_K_plus_noise": 9.010591506958008
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 9.136630058288574
+      },
+      "abs_error": 0.4312553405761719
+    },
+    {
+      "anchor": 7,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 1.999999968613499e+18,
+        "cond_K_jitter": 2182705.0,
+        "cond_K_plus_noise": 1.137020468711853
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 2.370210886001587
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 1.1370424032211304
+      },
+      "abs_error": 0.19037914276123047
+    },
+    {
+      "anchor": 8,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 31424176.0,
+        "cond_K_jitter": 2308825.0,
+        "cond_K_plus_noise": 9.105881690979004
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.643414497375488
+      },
+      "abs_error": 0.614713191986084
+    },
+    {
+      "anchor": 9,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.4836123240704246e+18,
+        "cond_K_jitter": 2908482.0,
+        "cond_K_plus_noise": 10.934426307678223
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 14.976953506469727
+      },
+      "abs_error": 0.33330821990966797
+    },
+    {
+      "anchor": 10,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 5.047589052526625e+18,
+        "cond_K_jitter": 9311506.0,
+        "cond_K_plus_noise": 21.1903133392334
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 25.729687690734863
+      },
+      "abs_error": 0.8645939826965332
+    },
+    {
+      "anchor": 11,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 4.000169536895582e+18,
+        "cond_K_jitter": 4584061.0,
+        "cond_K_plus_noise": 17.000642776489258
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 17.75269603729248
+      },
+      "abs_error": 0.2941560745239258
+    },
+    {
+      "anchor": 12,
+      "EW_raw": {
+        "frob": 1.5782806173092467e-09,
+        "kappa": 1551.6214599609375,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 58.209468841552734,
+        "eff_rank": 2.0005898475646973
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.299917697906494,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0449249142127985e+18,
+        "cond_K_jitter": 2075069.5,
+        "cond_K_plus_noise": 9.17967414855957
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 12.913726329803467
+      },
+      "abs_error": 0.10070037841796875
+    },
+    {
+      "anchor": 13,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 67511024.0,
+        "cond_K_jitter": 2109035.0,
+        "cond_K_plus_noise": 1.1487886905670166
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 2.4730446338653564
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 1.1570634841918945
+      },
+      "abs_error": 0.1408219337463379
+    },
+    {
+      "anchor": 14,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.000011376046637e+18,
+        "cond_K_jitter": 3054332.5,
+        "cond_K_plus_noise": 1.1210392713546753
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 2.210383415222168
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 1.1222137808799744
+      },
+      "abs_error": 1.0017285346984863
+    },
+    {
+      "anchor": 15,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.99999883771537e+18,
+        "cond_K_jitter": 6391319.0,
+        "cond_K_plus_noise": 1.2192015647888184
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 2.096006393432617
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 1.2192018032073975
+      },
+      "abs_error": 0.3642702102661133
+    },
+    {
+      "anchor": 16,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0927385517361725e+18,
+        "cond_K_jitter": 2383640.0,
+        "cond_K_plus_noise": 9.37092113494873
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 11.763728618621826
+      },
+      "abs_error": 0.3203458786010742
+    },
+    {
+      "anchor": 17,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0061656175052063e+18,
+        "cond_K_jitter": 2466938.5,
+        "cond_K_plus_noise": 9.024637222290039
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 11.296775341033936
+      },
+      "abs_error": 0.19999933242797852
+    },
+    {
+      "anchor": 18,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 1205601792.0,
+        "cond_K_jitter": 2352255.5,
+        "cond_K_plus_noise": 10.501330375671387
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 17.444329261779785
+      },
+      "abs_error": 0.4425992965698242
+    },
+    {
+      "anchor": 19,
+      "EW_raw": {
+        "frob": 3.5100574790475347e-12,
+        "kappa": 3.4231085777282715,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 42.85299301147461,
+        "eff_rank": 1.098744511604309
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.349233036580618e+18,
+        "cond_K_jitter": 4827651.5,
+        "cond_K_plus_noise": 10.396778106689453
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 80.99913024902344
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 14.83893632888794
+      },
+      "abs_error": 9.202957153320312e-05
+    },
+    {
+      "anchor": 20,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.0087814086939116e+18,
+        "cond_K_jitter": 4693429.0,
+        "cond_K_plus_noise": 13.035094261169434
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 14.720778465270996
+      },
+      "abs_error": 0.0
+    },
+    {
+      "anchor": 21,
+      "EW_raw": {
+        "frob": 7.442620408859568e-10,
+        "kappa": 742.614501953125,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 450.731689453125,
+        "eff_rank": 1.0406049489974976
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 176003840.0,
+        "cond_K_jitter": 3275630.5,
+        "cond_K_plus_noise": 11.463330268859863
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 19.320985794067383
+      },
+      "abs_error": 1.4893856048583984
+    },
+    {
+      "anchor": 22,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.2931777347733422e+18,
+        "cond_K_jitter": 2766243.5,
+        "cond_K_plus_noise": 10.172679901123047
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 15.972041130065918
+      },
+      "abs_error": 0.1400761604309082
+    },
+    {
+      "anchor": 23,
+      "EW_raw": {
+        "frob": 2.727685714042546e-19,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 272444.03125,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.714390521917997e+18,
+        "cond_K_jitter": 4619783.0,
+        "cond_K_plus_noise": 15.85754680633545
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 16.454386711120605
+      },
+      "abs_error": 0.1693716049194336
+    },
+    {
+      "anchor": 24,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.419638064641999e+18,
+        "cond_K_jitter": 2619199.5,
+        "cond_K_plus_noise": 10.67851448059082
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 15.981007099151611
+      },
+      "abs_error": 0.8814816474914551
+    },
+    {
+      "anchor": 25,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 34233764.0,
+        "cond_K_jitter": 2490107.5,
+        "cond_K_plus_noise": 9.186416625976562
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 12.65103816986084
+      },
+      "abs_error": 0.2815227508544922
+    },
+    {
+      "anchor": 26,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 4.0026668026801684e+18,
+        "cond_K_jitter": 5040666.5,
+        "cond_K_plus_noise": 17.010650634765625
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 18.472819328308105
+      },
+      "abs_error": 0.1333332061767578
+    },
+    {
+      "anchor": 27,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.000449859334439e+18,
+        "cond_K_jitter": 3899961.5,
+        "cond_K_plus_noise": 13.001765251159668
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.10866403579712
+      },
+      "abs_error": 0.0762033462524414
+    },
+    {
+      "anchor": 28,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.0000012585903063e+18,
+        "cond_K_jitter": 5198116.0,
+        "cond_K_plus_noise": 12.999974250793457
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.253553867340088
+      },
+      "abs_error": 0.2876901626586914
+    },
+    {
+      "anchor": 29,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 4.5273927841176617e+18,
+        "cond_K_jitter": 5395571.5,
+        "cond_K_plus_noise": 19.109527587890625
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 25.4454345703125
+      },
+      "abs_error": 0.3333768844604492
+    },
+    {
+      "anchor": 30,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.068772496785539e+18,
+        "cond_K_jitter": 2095937.75,
+        "cond_K_plus_noise": 9.27506160736084
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.414095878601074
+      },
+      "abs_error": 1.3039512634277344
+    },
+    {
+      "anchor": 31,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.648135272591524e+18,
+        "cond_K_jitter": 3025835.5,
+        "cond_K_plus_noise": 11.592506408691406
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 15.237576007843018
+      },
+      "abs_error": 0.8068923950195312
+    },
+    {
+      "anchor": 32,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.104246315310383e+18,
+        "cond_K_jitter": 2299511.5,
+        "cond_K_plus_noise": 9.41694450378418
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.694337368011475
+      },
+      "abs_error": 1.2479395866394043
+    },
+    {
+      "anchor": 33,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 122130176.0,
+        "cond_K_jitter": 2960428.0,
+        "cond_K_plus_noise": 9.08931827545166
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 11.713370323181152
+      },
+      "abs_error": 1.7658004760742188
+    },
+    {
+      "anchor": 34,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2616810752.0,
+        "cond_K_jitter": 3319214.0,
+        "cond_K_plus_noise": 9.770679473876953
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 15.975733280181885
+      },
+      "abs_error": 0.5766453742980957
+    },
+    {
+      "anchor": 35,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.1159283514775962e+18,
+        "cond_K_jitter": 4283960.0,
+        "cond_K_plus_noise": 9.463415145874023
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 80.99738311767578
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 10.945323944091797
+      },
+      "abs_error": 0.08470630645751953
+    },
+    {
+      "anchor": 36,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0874544362920346e+18,
+        "cond_K_jitter": 2965380.5,
+        "cond_K_plus_noise": 9.34974193572998
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 80.99958038330078
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 10.01151704788208
+      },
+      "abs_error": 0.012018203735351562
+    },
+    {
+      "anchor": 37,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.002061278037672e+18,
+        "cond_K_jitter": 2210382.0,
+        "cond_K_plus_noise": 9.008216857910156
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 10.693864822387695
+      },
+      "abs_error": 0.7227869033813477
+    },
+    {
+      "anchor": 38,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.1780580427114742e+18,
+        "cond_K_jitter": 2304370.0,
+        "cond_K_plus_noise": 9.712209701538086
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 11.507004737854004
+      },
+      "abs_error": 2.15000057220459
+    },
+    {
+      "anchor": 39,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 4.255923912975581e+18,
+        "cond_K_jitter": 4588313.5,
+        "cond_K_plus_noise": 18.023649215698242
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 25.72910213470459
+      },
+      "abs_error": 0.5584945678710938
+    },
+    {
+      "anchor": 40,
+      "EW_raw": {
+        "frob": 1.0184976447872536e-17,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 155.4352264404297,
+        "eff_rank": 1.00054931640625
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.3021835596385485e+18,
+        "cond_K_jitter": 2572591.5,
+        "cond_K_plus_noise": 10.208719253540039
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 17.018383026123047
+      },
+      "abs_error": 0.006083488464355469
+    },
+    {
+      "anchor": 41,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 1.8914756774902344,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.369100112182903e+18,
+        "cond_K_jitter": 2646911.25,
+        "cond_K_plus_noise": 10.476365089416504
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 15.202574253082275
+      },
+      "abs_error": 0.125
+    },
+    {
+      "anchor": 42,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.0000053817589105e+18,
+        "cond_K_jitter": 7314552.0,
+        "cond_K_plus_noise": 12.999985694885254
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 14.821695327758789
+      },
+      "abs_error": 0.0
+    },
+    {
+      "anchor": 43,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0059787005284844e+18,
+        "cond_K_jitter": 5812814.0,
+        "cond_K_plus_noise": 9.023882865905762
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.1282320022583
+      },
+      "abs_error": 0.511904239654541
+    },
+    {
+      "anchor": 44,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 4.0000002121049047e+18,
+        "cond_K_jitter": 5562410.0,
+        "cond_K_plus_noise": 16.99999237060547
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 17.001042366027832
+      },
+      "abs_error": 1.430511474609375e-06
+    },
+    {
+      "anchor": 45,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0191306463030804e+18,
+        "cond_K_jitter": 2554448.5,
+        "cond_K_plus_noise": 9.076508522033691
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 12.557347774505615
+      },
+      "abs_error": 0.08367919921875
+    },
+    {
+      "anchor": 46,
+      "EW_raw": {
+        "frob": 5.917019376987288e-20,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 58549.1640625,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 17116404.0,
+        "cond_K_jitter": 3498180.0,
+        "cond_K_plus_noise": 9.163871765136719
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 10.539988994598389
+      },
+      "abs_error": 1.6323480606079102
+    },
+    {
+      "anchor": 47,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.99999883771537e+18,
+        "cond_K_jitter": 6391319.0,
+        "cond_K_plus_noise": 1.236708641052246
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 2.183544874191284
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 1.2367278933525085
+      },
+      "abs_error": 0.6316041946411133
+    },
+    {
+      "anchor": 48,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0233236338956042e+18,
+        "cond_K_jitter": 3265739.0,
+        "cond_K_plus_noise": 9.093265533447266
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.333223819732666
+      },
+      "abs_error": 0.12051248550415039
+    },
+    {
+      "anchor": 49,
+      "EW_raw": {
+        "frob": 3.448089148537495e-17,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 121.93161010742188,
+        "eff_rank": 1.0143711566925049
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.428861592809505e+18,
+        "cond_K_jitter": 2910236.25,
+        "cond_K_plus_noise": 10.71541976928711
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 16.691040992736816
+      },
+      "abs_error": 0.3126678466796875
+    },
+    {
+      "anchor": 50,
+      "EW_raw": {
+        "frob": 9.93315537245118e-17,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 124.27861785888672,
+        "eff_rank": 1.0136289596557617
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.382631801785942e+18,
+        "cond_K_jitter": 3979066.25,
+        "cond_K_plus_noise": 10.530495643615723
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 16.92061424255371
+      },
+      "abs_error": 1.286330223083496
+    },
+    {
+      "anchor": 51,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0750383386743276e+18,
+        "cond_K_jitter": 2664370.5,
+        "cond_K_plus_noise": 9.300135612487793
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 12.748794078826904
+      },
+      "abs_error": 0.5541791915893555
+    },
+    {
+      "anchor": 52,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 218834912.0,
+        "cond_K_jitter": 4296846.0,
+        "cond_K_plus_noise": 14.334360122680664
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 22.304512977600098
+      },
+      "abs_error": 0.5295605659484863
+    },
+    {
+      "anchor": 53,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.2882100038000968e+18,
+        "cond_K_jitter": 2653910.75,
+        "cond_K_plus_noise": 10.152811050415039
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 16.515151023864746
+      },
+      "abs_error": 0.08333349227905273
+    },
+    {
+      "anchor": 54,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.000006153366405e+18,
+        "cond_K_jitter": 2397639.75,
+        "cond_K_plus_noise": 8.999975204467773
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 9.57451868057251
+      },
+      "abs_error": 0.039264678955078125
+    },
+    {
+      "anchor": 55,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0183066997770158e+18,
+        "cond_K_jitter": 2419522.25,
+        "cond_K_plus_noise": 1.1297154426574707
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 2.2853896617889404
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 1.1298906207084656
+      },
+      "abs_error": 1.0650138854980469
+    },
+    {
+      "anchor": 56,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.1956171059681034e+18,
+        "cond_K_jitter": 2457221.75,
+        "cond_K_plus_noise": 9.782435417175293
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 14.805166721343994
+      },
+      "abs_error": 0.9426841735839844
+    },
+    {
+      "anchor": 57,
+      "EW_raw": {
+        "frob": 9.526384740191247e-16,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 150.2855682373047,
+        "eff_rank": 1.0006773471832275
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.2691668747238769e+18,
+        "cond_K_jitter": 2465415.25,
+        "cond_K_plus_noise": 10.076554298400879
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 80.99895477294922
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 16.833563804626465
+      },
+      "abs_error": 0.3353848457336426
+    },
+    {
+      "anchor": 58,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.1040882605138903e+18,
+        "cond_K_jitter": 2289524.0,
+        "cond_K_plus_noise": 9.416114807128906
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 80.99854278564453
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.233176708221436
+      },
+      "abs_error": 0.04899454116821289
+    },
+    {
+      "anchor": 59,
+      "EW_raw": {
+        "frob": 2.651023389525775e-14,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": 1039.2071533203125,
+        "eff_rank": 1.0010159015655518
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.0826307413420278e+18,
+        "cond_K_jitter": 2452689.5,
+        "cond_K_plus_noise": 9.33040714263916
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 80.99887084960938
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.120048999786377
+      },
+      "abs_error": 0.7240543365478516
+    },
+    {
+      "anchor": 60,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.0292100598600827e+18,
+        "cond_K_jitter": 4673805.5,
+        "cond_K_plus_noise": 13.116817474365234
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 20.41067886352539
+      },
+      "abs_error": 1.1779451370239258
+    },
+    {
+      "anchor": 61,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.2451969714825462e+18,
+        "cond_K_jitter": 2531050.75,
+        "cond_K_plus_noise": 9.980767250061035
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 17.416927337646484
+      },
+      "abs_error": 0.3327202796936035
+    },
+    {
+      "anchor": 62,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 2.1178744870587597e+18,
+        "cond_K_jitter": 2428564.0,
+        "cond_K_plus_noise": 9.471477508544922
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 13.222492694854736
+      },
+      "abs_error": 0.6876506805419922
+    },
+    {
+      "anchor": 63,
+      "EW_raw": {
+        "frob": 0.0,
+        "kappa": null,
+        "eff_rank": null,
+        "tr_Var_W": 3.3000001907348633,
+        "rel_uncertainty": 3300000190734.8633
+      },
+      "EW_row_normalized_like_predict_vi": {
+        "kappa": null,
+        "eff_rank": null
+      },
+      "metric_moment_matrices": {
+        "trace_E_WtW_A": 3.3000001907348633,
+        "eff_rank_A": 11.000000953674316,
+        "trace_E_WWt_B": 3.3000001907348633,
+        "eff_rank_B": 3.000000238418579,
+        "top_eig_B": 1.100000023841858,
+        "min_eig_B_positive": 1.100000023841858
+      },
+      "kernel_metric_A_expected_sqdist": {
+        "cond_K": 3.1218950417909023e+18,
+        "cond_K_jitter": 4377729.5,
+        "cond_K_plus_noise": 13.487550735473633
+      },
+      "kernel_projected_Z_from_EW_only": {
+        "cond_K": 1.9999999961012896e+19,
+        "cond_K_jitter": 2.000000216003615e+19,
+        "cond_K_plus_noise": 81.00022888183594
+      },
+      "kernel_sampled_row_normalized_local": {
+        "median_kappa_K_plus_noise_over_mc": 17.028718948364258
+      },
+      "abs_error": 0.5833334922790527
+    }
+  ],
+  "notes": {
+    "EW_raw": "If frob\u22480, kappa/eff_rank are nan \u2014 not evidence that metric E[W^T W] is zero.",
+    "kernel_blocks": "kernel_metric_A uses delta^T E[W^T W] delta. kernel_projected_Z_from_EW_only uses Z=X E[W]^T (can degenerate when E[W]\u22480).",
+    "prediction_aligned": "sampled_W_row_normalized + kernel_sampled_row_normalized match predict_vi."
+  },
+  "per_anchor_flat": [
+    {
+      "anchor": 0,
+      "abs_error": 0.00022649765014648438,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 13.022171974182129,
+      "kappa_K_sampled_norm_plus_noise": 14.542488098144531,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 1,
+      "abs_error": 0.16666650772094727,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 14.087409973144531,
+      "kappa_K_sampled_norm_plus_noise": 17.779251098632812,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 2,
+      "abs_error": 9.5367431640625e-07,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 12.870207786560059,
+      "kappa_K_sampled_norm_plus_noise": 12.967446327209473,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 3,
+      "abs_error": 1.2972650527954102,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 16.999969482421875,
+      "kappa_K_sampled_norm_plus_noise": 17.1731538772583,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 4,
+      "abs_error": 0.16846704483032227,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.614899635314941,
+      "kappa_K_sampled_norm_plus_noise": 16.60060214996338,
+      "kappa_K_EW_Z_plus_noise": 80.99822235107422
+    },
+    {
+      "anchor": 5,
+      "abs_error": 0.05399799346923828,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 1.1242058277130127,
+      "kappa_K_sampled_norm_plus_noise": 1.1242064833641052,
+      "kappa_K_EW_Z_plus_noise": 2.2420594692230225
+    },
+    {
+      "anchor": 6,
+      "abs_error": 0.4312553405761719,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.010591506958008,
+      "kappa_K_sampled_norm_plus_noise": 9.136630058288574,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 7,
+      "abs_error": 0.19037914276123047,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 1.137020468711853,
+      "kappa_K_sampled_norm_plus_noise": 1.1370424032211304,
+      "kappa_K_EW_Z_plus_noise": 2.370210886001587
+    },
+    {
+      "anchor": 8,
+      "abs_error": 0.614713191986084,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.105881690979004,
+      "kappa_K_sampled_norm_plus_noise": 13.643414497375488,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 9,
+      "abs_error": 0.33330821990966797,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.934426307678223,
+      "kappa_K_sampled_norm_plus_noise": 14.976953506469727,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 10,
+      "abs_error": 0.8645939826965332,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 21.1903133392334,
+      "kappa_K_sampled_norm_plus_noise": 25.729687690734863,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 11,
+      "abs_error": 0.2941560745239258,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 17.000642776489258,
+      "kappa_K_sampled_norm_plus_noise": 17.75269603729248,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 12,
+      "abs_error": 0.10070037841796875,
+      "kappa_EW_raw": 1551.6214599609375,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.299917697906494,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.17967414855957,
+      "kappa_K_sampled_norm_plus_noise": 12.913726329803467,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 13,
+      "abs_error": 0.1408219337463379,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 1.1487886905670166,
+      "kappa_K_sampled_norm_plus_noise": 1.1570634841918945,
+      "kappa_K_EW_Z_plus_noise": 2.4730446338653564
+    },
+    {
+      "anchor": 14,
+      "abs_error": 1.0017285346984863,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 1.1210392713546753,
+      "kappa_K_sampled_norm_plus_noise": 1.1222137808799744,
+      "kappa_K_EW_Z_plus_noise": 2.210383415222168
+    },
+    {
+      "anchor": 15,
+      "abs_error": 0.3642702102661133,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 1.2192015647888184,
+      "kappa_K_sampled_norm_plus_noise": 1.2192018032073975,
+      "kappa_K_EW_Z_plus_noise": 2.096006393432617
+    },
+    {
+      "anchor": 16,
+      "abs_error": 0.3203458786010742,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.37092113494873,
+      "kappa_K_sampled_norm_plus_noise": 11.763728618621826,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 17,
+      "abs_error": 0.19999933242797852,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.024637222290039,
+      "kappa_K_sampled_norm_plus_noise": 11.296775341033936,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 18,
+      "abs_error": 0.4425992965698242,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.501330375671387,
+      "kappa_K_sampled_norm_plus_noise": 17.444329261779785,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 19,
+      "abs_error": 9.202957153320312e-05,
+      "kappa_EW_raw": 3.4231085777282715,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.396778106689453,
+      "kappa_K_sampled_norm_plus_noise": 14.83893632888794,
+      "kappa_K_EW_Z_plus_noise": 80.99913024902344
+    },
+    {
+      "anchor": 20,
+      "abs_error": 0.0,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 13.035094261169434,
+      "kappa_K_sampled_norm_plus_noise": 14.720778465270996,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 21,
+      "abs_error": 1.4893856048583984,
+      "kappa_EW_raw": 742.614501953125,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 11.463330268859863,
+      "kappa_K_sampled_norm_plus_noise": 19.320985794067383,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 22,
+      "abs_error": 0.1400761604309082,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.172679901123047,
+      "kappa_K_sampled_norm_plus_noise": 15.972041130065918,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 23,
+      "abs_error": 0.1693716049194336,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 15.85754680633545,
+      "kappa_K_sampled_norm_plus_noise": 16.454386711120605,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 24,
+      "abs_error": 0.8814816474914551,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.67851448059082,
+      "kappa_K_sampled_norm_plus_noise": 15.981007099151611,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 25,
+      "abs_error": 0.2815227508544922,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.186416625976562,
+      "kappa_K_sampled_norm_plus_noise": 12.65103816986084,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 26,
+      "abs_error": 0.1333332061767578,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 17.010650634765625,
+      "kappa_K_sampled_norm_plus_noise": 18.472819328308105,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 27,
+      "abs_error": 0.0762033462524414,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 13.001765251159668,
+      "kappa_K_sampled_norm_plus_noise": 13.10866403579712,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 28,
+      "abs_error": 0.2876901626586914,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 12.999974250793457,
+      "kappa_K_sampled_norm_plus_noise": 13.253553867340088,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 29,
+      "abs_error": 0.3333768844604492,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 19.109527587890625,
+      "kappa_K_sampled_norm_plus_noise": 25.4454345703125,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 30,
+      "abs_error": 1.3039512634277344,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.27506160736084,
+      "kappa_K_sampled_norm_plus_noise": 13.414095878601074,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 31,
+      "abs_error": 0.8068923950195312,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 11.592506408691406,
+      "kappa_K_sampled_norm_plus_noise": 15.237576007843018,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 32,
+      "abs_error": 1.2479395866394043,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.41694450378418,
+      "kappa_K_sampled_norm_plus_noise": 13.694337368011475,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 33,
+      "abs_error": 1.7658004760742188,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.08931827545166,
+      "kappa_K_sampled_norm_plus_noise": 11.713370323181152,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 34,
+      "abs_error": 0.5766453742980957,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.770679473876953,
+      "kappa_K_sampled_norm_plus_noise": 15.975733280181885,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 35,
+      "abs_error": 0.08470630645751953,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.463415145874023,
+      "kappa_K_sampled_norm_plus_noise": 10.945323944091797,
+      "kappa_K_EW_Z_plus_noise": 80.99738311767578
+    },
+    {
+      "anchor": 36,
+      "abs_error": 0.012018203735351562,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.34974193572998,
+      "kappa_K_sampled_norm_plus_noise": 10.01151704788208,
+      "kappa_K_EW_Z_plus_noise": 80.99958038330078
+    },
+    {
+      "anchor": 37,
+      "abs_error": 0.7227869033813477,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.008216857910156,
+      "kappa_K_sampled_norm_plus_noise": 10.693864822387695,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 38,
+      "abs_error": 2.15000057220459,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.712209701538086,
+      "kappa_K_sampled_norm_plus_noise": 11.507004737854004,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 39,
+      "abs_error": 0.5584945678710938,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 18.023649215698242,
+      "kappa_K_sampled_norm_plus_noise": 25.72910213470459,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 40,
+      "abs_error": 0.006083488464355469,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.208719253540039,
+      "kappa_K_sampled_norm_plus_noise": 17.018383026123047,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 41,
+      "abs_error": 0.125,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.476365089416504,
+      "kappa_K_sampled_norm_plus_noise": 15.202574253082275,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 42,
+      "abs_error": 0.0,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 12.999985694885254,
+      "kappa_K_sampled_norm_plus_noise": 14.821695327758789,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 43,
+      "abs_error": 0.511904239654541,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.023882865905762,
+      "kappa_K_sampled_norm_plus_noise": 13.1282320022583,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 44,
+      "abs_error": 1.430511474609375e-06,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 16.99999237060547,
+      "kappa_K_sampled_norm_plus_noise": 17.001042366027832,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 45,
+      "abs_error": 0.08367919921875,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.076508522033691,
+      "kappa_K_sampled_norm_plus_noise": 12.557347774505615,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 46,
+      "abs_error": 1.6323480606079102,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.163871765136719,
+      "kappa_K_sampled_norm_plus_noise": 10.539988994598389,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 47,
+      "abs_error": 0.6316041946411133,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 1.236708641052246,
+      "kappa_K_sampled_norm_plus_noise": 1.2367278933525085,
+      "kappa_K_EW_Z_plus_noise": 2.183544874191284
+    },
+    {
+      "anchor": 48,
+      "abs_error": 0.12051248550415039,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.093265533447266,
+      "kappa_K_sampled_norm_plus_noise": 13.333223819732666,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 49,
+      "abs_error": 0.3126678466796875,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.71541976928711,
+      "kappa_K_sampled_norm_plus_noise": 16.691040992736816,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 50,
+      "abs_error": 1.286330223083496,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.530495643615723,
+      "kappa_K_sampled_norm_plus_noise": 16.92061424255371,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 51,
+      "abs_error": 0.5541791915893555,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.300135612487793,
+      "kappa_K_sampled_norm_plus_noise": 12.748794078826904,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 52,
+      "abs_error": 0.5295605659484863,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 14.334360122680664,
+      "kappa_K_sampled_norm_plus_noise": 22.304512977600098,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 53,
+      "abs_error": 0.08333349227905273,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.152811050415039,
+      "kappa_K_sampled_norm_plus_noise": 16.515151023864746,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 54,
+      "abs_error": 0.039264678955078125,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 8.999975204467773,
+      "kappa_K_sampled_norm_plus_noise": 9.57451868057251,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 55,
+      "abs_error": 1.0650138854980469,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 1.1297154426574707,
+      "kappa_K_sampled_norm_plus_noise": 1.1298906207084656,
+      "kappa_K_EW_Z_plus_noise": 2.2853896617889404
+    },
+    {
+      "anchor": 56,
+      "abs_error": 0.9426841735839844,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.782435417175293,
+      "kappa_K_sampled_norm_plus_noise": 14.805166721343994,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 57,
+      "abs_error": 0.3353848457336426,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 10.076554298400879,
+      "kappa_K_sampled_norm_plus_noise": 16.833563804626465,
+      "kappa_K_EW_Z_plus_noise": 80.99895477294922
+    },
+    {
+      "anchor": 58,
+      "abs_error": 0.04899454116821289,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.416114807128906,
+      "kappa_K_sampled_norm_plus_noise": 13.233176708221436,
+      "kappa_K_EW_Z_plus_noise": 80.99854278564453
+    },
+    {
+      "anchor": 59,
+      "abs_error": 0.7240543365478516,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.33040714263916,
+      "kappa_K_sampled_norm_plus_noise": 13.120048999786377,
+      "kappa_K_EW_Z_plus_noise": 80.99887084960938
+    },
+    {
+      "anchor": 60,
+      "abs_error": 1.1779451370239258,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 13.116817474365234,
+      "kappa_K_sampled_norm_plus_noise": 20.41067886352539,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 61,
+      "abs_error": 0.3327202796936035,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.980767250061035,
+      "kappa_K_sampled_norm_plus_noise": 17.416927337646484,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 62,
+      "abs_error": 0.6876506805419922,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 9.471477508544922,
+      "kappa_K_sampled_norm_plus_noise": 13.222492694854736,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    },
+    {
+      "anchor": 63,
+      "abs_error": 0.5833334922790527,
+      "kappa_EW_raw": null,
+      "eff_rank_EW_raw": null,
+      "trace_E_WtW_A": 3.3000001907348633,
+      "eff_rank_E_WWt_B": 3.000000238418579,
+      "kappa_K_metric_plus_noise": 13.487550735473633,
+      "kappa_K_sampled_norm_plus_noise": 17.028718948364258,
+      "kappa_K_EW_Z_plus_noise": 81.00022888183594
+    }
+  ]
+}

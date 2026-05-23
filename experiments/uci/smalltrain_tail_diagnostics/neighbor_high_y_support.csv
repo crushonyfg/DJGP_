@@ -1,0 +1,13 @@
+dataset,method,neighbors,q90_train_y,n_high_test,mean_high_train_neighbors_all,mean_high_train_neighbors_high_test,median_high_train_neighbors_high_test,frac_high_test_zero_high_neighbors,corr_high_neighbor_count_abs_error
+Appliances Energy Prediction,xgboost,25,201.9999999999999,20,2.155,2.1,2.0,0.05,0.010004713506264947
+Appliances Energy Prediction,lmjgp_n35_s300,25,201.9999999999999,20,2.155,2.1,2.0,0.05,-0.03880196943156798
+Appliances Energy Prediction,xgboost,35,201.9999999999999,20,3.06,2.85,3.0,0.05,0.0026722094472829
+Appliances Energy Prediction,lmjgp_n35_s300,35,201.9999999999999,20,3.06,2.85,3.0,0.05,-0.05098266289116861
+Parkinsons Telemonitoring,xgboost,25,31.7409,20,2.675,3.55,4.0,0.0,0.1571654163179302
+Parkinsons Telemonitoring,lmjgp_n25_s300,25,31.7409,20,2.675,3.55,4.0,0.0,0.1400378192201391
+Parkinsons Telemonitoring,xgboost,35,31.7409,20,3.695,4.85,6.0,0.0,0.11254853342618731
+Parkinsons Telemonitoring,lmjgp_n25_s300,35,31.7409,20,3.695,4.85,6.0,0.0,0.09381194405418504
+Wine Quality,xgboost,25,7.0,4,0.465,0.5,0.5,0.5,0.14349179737166595
+Wine Quality,lmjgp_n25_s300,25,7.0,4,0.465,0.5,0.5,0.5,0.1109569073204399
+Wine Quality,xgboost,35,7.0,4,0.755,1.5,2.0,0.25,0.13454505014207535
+Wine Quality,lmjgp_n25_s300,35,7.0,4,0.755,1.5,2.0,0.25,0.12570956387572907

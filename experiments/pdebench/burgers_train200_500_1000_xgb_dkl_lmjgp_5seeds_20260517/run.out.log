@@ -1,0 +1,124 @@
+Using device: cuda
+device=cuda
+PDEBench train=200 seed=0
+[Step 1/300] ELBO=-186.1863, LR=1.00e-02
+[Step 60/300] ELBO=-62.6775, LR=1.00e-02
+[Step 120/300] ELBO=-25.2468, LR=1.00e-02
+[Step 180/300] ELBO=-11.9880, LR=1.00e-02
+[Step 240/300] ELBO=-7.3621, LR=1.00e-02
+[Step 300/300] ELBO=-5.3452, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=200 seed=1
+[Step 1/300] ELBO=-194.3313, LR=1.00e-02
+[Step 60/300] ELBO=-66.6937, LR=1.00e-02
+[Step 120/300] ELBO=-26.6085, LR=1.00e-02
+[Step 180/300] ELBO=-12.4957, LR=1.00e-02
+[Step 240/300] ELBO=-7.4296, LR=1.00e-02
+[Step 300/300] ELBO=-5.2462, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=200 seed=2
+[Step 1/300] ELBO=-197.1050, LR=1.00e-02
+[Step 60/300] ELBO=-69.4261, LR=1.00e-02
+[Step 120/300] ELBO=-28.2486, LR=1.00e-02
+[Step 180/300] ELBO=-12.9552, LR=1.00e-02
+[Step 240/300] ELBO=-7.5875, LR=1.00e-02
+[Step 300/300] ELBO=-5.4090, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=200 seed=3
+[Step 1/300] ELBO=-194.2189, LR=1.00e-02
+[Step 60/300] ELBO=-66.1422, LR=1.00e-02
+[Step 120/300] ELBO=-27.5032, LR=1.00e-02
+[Step 180/300] ELBO=-13.4535, LR=1.00e-02
+[Step 240/300] ELBO=-8.0565, LR=1.00e-02
+[Step 300/300] ELBO=-5.6508, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=200 seed=4
+[Step 1/300] ELBO=-190.8747, LR=1.00e-02
+[Step 60/300] ELBO=-64.5526, LR=1.00e-02
+[Step 120/300] ELBO=-26.0830, LR=1.00e-02
+[Step 180/300] ELBO=-12.7390, LR=1.00e-02
+[Step 240/300] ELBO=-7.8618, LR=1.00e-02
+[Step 300/300] ELBO=-5.6126, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=500 seed=0
+[Step 1/300] ELBO=-199.7268, LR=1.00e-02
+[Step 60/300] ELBO=-68.3210, LR=1.00e-02
+[Step 120/300] ELBO=-27.0705, LR=1.00e-02
+[Step 180/300] ELBO=-12.8628, LR=1.00e-02
+[Step 240/300] ELBO=-7.8872, LR=1.00e-02
+[Step 300/300] ELBO=-5.7480, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=500 seed=1
+[Step 1/300] ELBO=-193.4244, LR=1.00e-02
+[Step 60/300] ELBO=-64.7352, LR=1.00e-02
+[Step 120/300] ELBO=-25.5725, LR=1.00e-02
+[Step 180/300] ELBO=-11.7687, LR=1.00e-02
+[Step 240/300] ELBO=-6.9910, LR=1.00e-02
+[Step 300/300] ELBO=-5.0122, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=500 seed=2
+[Step 1/300] ELBO=-199.5226, LR=1.00e-02
+[Step 60/300] ELBO=-68.7887, LR=1.00e-02
+[Step 120/300] ELBO=-27.7002, LR=1.00e-02
+[Step 180/300] ELBO=-13.0028, LR=1.00e-02
+[Step 240/300] ELBO=-7.6223, LR=1.00e-02
+[Step 300/300] ELBO=-5.5365, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=500 seed=3
+[Step 1/300] ELBO=-202.7732, LR=1.00e-02
+[Step 60/300] ELBO=-69.6596, LR=1.00e-02
+[Step 120/300] ELBO=-27.7226, LR=1.00e-02
+[Step 180/300] ELBO=-12.8775, LR=1.00e-02
+[Step 240/300] ELBO=-7.3782, LR=1.00e-02
+[Step 300/300] ELBO=1.6847, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=500 seed=4
+[Step 1/300] ELBO=-201.1544, LR=1.00e-02
+[Step 60/300] ELBO=-69.2842, LR=1.00e-02
+[Step 120/300] ELBO=-27.8151, LR=1.00e-02
+[Step 180/300] ELBO=-13.0179, LR=1.00e-02
+[Step 240/300] ELBO=-7.7050, LR=1.00e-02
+[Step 300/300] ELBO=-5.5801, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=1000 seed=0
+[Step 1/300] ELBO=-198.3940, LR=1.00e-02
+[Step 60/300] ELBO=-66.5024, LR=1.00e-02
+[Step 120/300] ELBO=-26.2203, LR=1.00e-02
+[Step 180/300] ELBO=-12.2816, LR=1.00e-02
+[Step 240/300] ELBO=-7.4325, LR=1.00e-02
+[Step 300/300] ELBO=-5.3831, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=1000 seed=1
+[Step 1/300] ELBO=-197.5267, LR=1.00e-02
+[Step 60/300] ELBO=-64.8924, LR=1.00e-02
+[Step 120/300] ELBO=-24.7386, LR=1.00e-02
+[Step 180/300] ELBO=-11.3975, LR=1.00e-02
+[Step 240/300] ELBO=-6.9803, LR=1.00e-02
+[Step 300/300] ELBO=-5.0218, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=1000 seed=2
+[Step 1/300] ELBO=-204.5098, LR=1.00e-02
+[Step 60/300] ELBO=-70.3254, LR=1.00e-02
+[Step 120/300] ELBO=-27.6909, LR=1.00e-02
+[Step 180/300] ELBO=-12.6612, LR=1.00e-02
+[Step 240/300] ELBO=-7.4504, LR=1.00e-02
+[Step 300/300] ELBO=-5.2903, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=1000 seed=3
+[Step 1/300] ELBO=-207.2336, LR=1.00e-02
+[Step 60/300] ELBO=-71.6985, LR=1.00e-02
+[Step 120/300] ELBO=-28.9846, LR=1.00e-02
+[Step 180/300] ELBO=-13.5261, LR=1.00e-02
+[Step 240/300] ELBO=-7.7246, LR=1.00e-02
+[Step 300/300] ELBO=-2.6197, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+PDEBench train=1000 seed=4
+[Step 1/300] ELBO=-198.6666, LR=1.00e-02
+[Step 60/300] ELBO=-66.0058, LR=1.00e-02
+[Step 120/300] ELBO=-26.0280, LR=1.00e-02
+[Step 180/300] ELBO=-12.2919, LR=1.00e-02
+[Step 240/300] ELBO=-7.3808, LR=1.00e-02
+[Step 300/300] ELBO=-5.2977, LR=1.00e-02
+partial artifacts saved to experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+Saved artifacts -> experiments\pdebench\burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517
+

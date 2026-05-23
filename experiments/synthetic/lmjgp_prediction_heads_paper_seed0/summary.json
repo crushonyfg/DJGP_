@@ -1,0 +1,14 @@
+{
+  "args": {
+    "settings": "l2_q2_train500,lh_q5_train500",
+    "seed": 0,
+    "m1": 2,
+    "m2": 40,
+    "lmjgp_steps": 300,
+    "MC_num": 3,
+    "lr": 0.01,
+    "out_dir": "experiments\\synthetic\\lmjgp_prediction_heads_paper_seed0"
+  },
+  "device": "cuda",
+  "n_rows": 4
+}

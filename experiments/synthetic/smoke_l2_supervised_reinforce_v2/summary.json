@@ -1,0 +1,10 @@
+{
+  "setting": "l2_q2_train500",
+  "seed": 0,
+  "device": "cuda",
+  "Q": 2,
+  "n_test": 24,
+  "reward_anchor_count": 30,
+  "final_rmse": 2.86269338776113,
+  "baseline_rmse": 2.852044491838503
+}

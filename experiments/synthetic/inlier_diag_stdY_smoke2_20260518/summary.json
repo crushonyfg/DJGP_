@@ -1,0 +1,20 @@
+{
+  "args": {
+    "setting": "lh_q5_train500",
+    "seed": 0,
+    "max_test": 40,
+    "num_steps": 150,
+    "eval_every": 75,
+    "lr": 0.01,
+    "m1": 2,
+    "m2": 40,
+    "modes": "pure_inlier,fixedW_inlier,oracle_local_mean",
+    "lambda_s": 0.1,
+    "no_ab": false,
+    "run_jumpgp": false,
+    "standardize_y": true,
+    "local_center_y": false,
+    "out_dir": "experiments/synthetic/inlier_diag_stdY_smoke2_20260518"
+  },
+  "n_records": 5
+}

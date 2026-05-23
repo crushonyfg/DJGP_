@@ -1,0 +1,289 @@
+{
+  "dataset_folder": "data\\processed\\pdebench_burgers_shockjump_balanced_delta01_n2000",
+  "result_row": [
+    "rmse",
+    "mean_crps",
+    "wall_sec",
+    "coverage_90",
+    "width_90",
+    "coverage_95",
+    "width_95"
+  ],
+  "runs": {
+    "0": {
+      "seed": 0,
+      "n_train": 1600,
+      "n_test": 400,
+      "split_counts": {
+        "all": 400,
+        "near_threshold": 106,
+        "far_from_threshold": 294
+      },
+      "metrics": {
+        "jgp_pca": {
+          "all": [
+            1.0249600477858958,
+            0.40371501445770264,
+            27.3160518000077,
+            0.7075,
+            0.7578877985190254,
+            0.7525,
+            0.9030790126734257
+          ],
+          "n_all": 400,
+          "near_threshold": [
+            1.4213907848308747,
+            0.8126705288887024,
+            27.3160518000077,
+            0.5943396226415094,
+            1.49872218376672,
+            0.6320754716981132,
+            1.7858376300985312
+          ],
+          "n_near_threshold": 106,
+          "far_from_threshold": [
+            0.8371882665310594,
+            0.2562684714794159,
+            27.3160518000077,
+            0.7482993197278912,
+            0.4907842446542104,
+            0.7959183673469388,
+            0.584805497547367
+          ],
+          "n_far_from_threshold": 294
+        }
+      },
+      "near_threshold_delta": 0.1,
+      "diagnostics": {
+        "jgp_pca": {
+          "projection": "pca",
+          "projection_fit": "train_only",
+          "Q": 3,
+          "n": 25,
+          "explained_variance_sum": 0.9632732028789295,
+          "n_negative_or_nonfinite_sig2": 0
+        }
+      }
+    },
+    "1": {
+      "seed": 1,
+      "n_train": 1600,
+      "n_test": 400,
+      "split_counts": {
+        "all": 400,
+        "near_threshold": 106,
+        "far_from_threshold": 294
+      },
+      "metrics": {
+        "jgp_pca": {
+          "all": [
+            1.0249600477858958,
+            0.40371501445770264,
+            29.096536400000332,
+            0.7075,
+            0.7578877985190254,
+            0.7525,
+            0.9030790126734257
+          ],
+          "n_all": 400,
+          "near_threshold": [
+            1.4213907848308747,
+            0.8126705288887024,
+            29.096536400000332,
+            0.5943396226415094,
+            1.49872218376672,
+            0.6320754716981132,
+            1.7858376300985312
+          ],
+          "n_near_threshold": 106,
+          "far_from_threshold": [
+            0.8371882665310594,
+            0.2562684714794159,
+            29.096536400000332,
+            0.7482993197278912,
+            0.4907842446542104,
+            0.7959183673469388,
+            0.584805497547367
+          ],
+          "n_far_from_threshold": 294
+        }
+      },
+      "near_threshold_delta": 0.1,
+      "diagnostics": {
+        "jgp_pca": {
+          "projection": "pca",
+          "projection_fit": "train_only",
+          "Q": 3,
+          "n": 25,
+          "explained_variance_sum": 0.9632732028789295,
+          "n_negative_or_nonfinite_sig2": 0
+        }
+      }
+    },
+    "2": {
+      "seed": 2,
+      "n_train": 1600,
+      "n_test": 400,
+      "split_counts": {
+        "all": 400,
+        "near_threshold": 106,
+        "far_from_threshold": 294
+      },
+      "metrics": {
+        "jgp_pca": {
+          "all": [
+            1.0249600477858958,
+            0.40371501445770264,
+            29.084079499996733,
+            0.7075,
+            0.7578877985190254,
+            0.7525,
+            0.9030790126734257
+          ],
+          "n_all": 400,
+          "near_threshold": [
+            1.4213907848308747,
+            0.8126705288887024,
+            29.084079499996733,
+            0.5943396226415094,
+            1.49872218376672,
+            0.6320754716981132,
+            1.7858376300985312
+          ],
+          "n_near_threshold": 106,
+          "far_from_threshold": [
+            0.8371882665310594,
+            0.2562684714794159,
+            29.084079499996733,
+            0.7482993197278912,
+            0.4907842446542104,
+            0.7959183673469388,
+            0.584805497547367
+          ],
+          "n_far_from_threshold": 294
+        }
+      },
+      "near_threshold_delta": 0.1,
+      "diagnostics": {
+        "jgp_pca": {
+          "projection": "pca",
+          "projection_fit": "train_only",
+          "Q": 3,
+          "n": 25,
+          "explained_variance_sum": 0.9632732028789295,
+          "n_negative_or_nonfinite_sig2": 0
+        }
+      }
+    },
+    "3": {
+      "seed": 3,
+      "n_train": 1600,
+      "n_test": 400,
+      "split_counts": {
+        "all": 400,
+        "near_threshold": 106,
+        "far_from_threshold": 294
+      },
+      "metrics": {
+        "jgp_pca": {
+          "all": [
+            1.0249600477858958,
+            0.40371501445770264,
+            32.54852400001255,
+            0.7075,
+            0.7578877985190254,
+            0.7525,
+            0.9030790126734257
+          ],
+          "n_all": 400,
+          "near_threshold": [
+            1.4213907848308747,
+            0.8126705288887024,
+            32.54852400001255,
+            0.5943396226415094,
+            1.49872218376672,
+            0.6320754716981132,
+            1.7858376300985312
+          ],
+          "n_near_threshold": 106,
+          "far_from_threshold": [
+            0.8371882665310594,
+            0.2562684714794159,
+            32.54852400001255,
+            0.7482993197278912,
+            0.4907842446542104,
+            0.7959183673469388,
+            0.584805497547367
+          ],
+          "n_far_from_threshold": 294
+        }
+      },
+      "near_threshold_delta": 0.1,
+      "diagnostics": {
+        "jgp_pca": {
+          "projection": "pca",
+          "projection_fit": "train_only",
+          "Q": 3,
+          "n": 25,
+          "explained_variance_sum": 0.9632732028789295,
+          "n_negative_or_nonfinite_sig2": 0
+        }
+      }
+    },
+    "4": {
+      "seed": 4,
+      "n_train": 1600,
+      "n_test": 400,
+      "split_counts": {
+        "all": 400,
+        "near_threshold": 106,
+        "far_from_threshold": 294
+      },
+      "metrics": {
+        "jgp_pca": {
+          "all": [
+            1.0249600477858958,
+            0.40371501445770264,
+            30.359247899992624,
+            0.7075,
+            0.7578877985190254,
+            0.7525,
+            0.9030790126734257
+          ],
+          "n_all": 400,
+          "near_threshold": [
+            1.4213907848308747,
+            0.8126705288887024,
+            30.359247899992624,
+            0.5943396226415094,
+            1.49872218376672,
+            0.6320754716981132,
+            1.7858376300985312
+          ],
+          "n_near_threshold": 106,
+          "far_from_threshold": [
+            0.8371882665310594,
+            0.2562684714794159,
+            30.359247899992624,
+            0.7482993197278912,
+            0.4907842446542104,
+            0.7959183673469388,
+            0.584805497547367
+          ],
+          "n_far_from_threshold": 294
+        }
+      },
+      "near_threshold_delta": 0.1,
+      "diagnostics": {
+        "jgp_pca": {
+          "projection": "pca",
+          "projection_fit": "train_only",
+          "Q": 3,
+          "n": 25,
+          "explained_variance_sum": 0.9632732028789295,
+          "n_negative_or_nonfinite_sig2": 0
+        }
+      }
+    }
+  }
+}

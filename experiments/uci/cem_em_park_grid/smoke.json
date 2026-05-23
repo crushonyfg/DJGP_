@@ -1,0 +1,179 @@
+{
+  "Parkinsons Telemonitoring": {
+    "0": {
+      "label": "uci:Parkinsons Telemonitoring",
+      "dataset": "Parkinsons Telemonitoring",
+      "seed": 0,
+      "Q": 5,
+      "Rv": 10,
+      "D": 18,
+      "max_anchors_if_subsampled": 64,
+      "n_test_anchors_used": 64,
+      "metrics": {
+        "pls_only": [
+          7.4188960363861645,
+          4.234329700469971,
+          8.39884770000208,
+          0.5625,
+          10.56933456679064,
+          0.65625,
+          12.59413892642684
+        ],
+        "cem_em_coeff": [
+          7.628323722781798,
+          4.427901744842529,
+          3.9521363000021665,
+          0.921875,
+          24.746255071143494,
+          1.0,
+          29.486981635912983
+        ]
+      },
+      "diagnostics": {
+        "V_basis": {
+          "n_pls": 5,
+          "n_pca": 5,
+          "n_random": 0,
+          "Rv": 10,
+          "source_per_column": [
+            "pls",
+            "pls",
+            "pls",
+            "pls",
+            "pls",
+            "pca",
+            "pca",
+            "pca",
+            "pca",
+            "pca"
+          ],
+          "V_tilde_frob": 21417.40788398356
+        },
+        "Q": 5,
+        "D": 18,
+        "pls_only": {
+          "median_trace_WWT": 327058560.0,
+          "median_eff_rank_WWT": 1.0002156496047974,
+          "median_frob_W": 18084.76171875,
+          "anchor_dispersion_frob": 0.0020133808720856905,
+          "cosine_to_ref_median": 0.999892134243611,
+          "jgp_elapsed_sec": 8.39884770000208
+        },
+        "cem_em_coeff": {
+          "median_trace_WWT": 5.0,
+          "median_eff_rank_WWT": 1.0011138916015625,
+          "median_frob_W": 2.2360680103302,
+          "anchor_dispersion_frob": 7.630332220287528e-06,
+          "cosine_to_ref_median": 0.9996413527884661,
+          "train_time_sec": 41.644603700002335,
+          "num_trainable_params": 3290,
+          "snapshots": [
+            {
+              "label": "cem_em_coeff",
+              "step": 0.0,
+              "median_trace_WWT": 4.999999523162842,
+              "median_eff_rank_WWT": 1.0011032819747925,
+              "median_row_norm_sq_W": 0.9999999403953552,
+              "median_frob_W": 2.2360680103302,
+              "anchor_dispersion_frob": 2.9816573032803717e-07,
+              "median_frob_C": 0.0,
+              "frob_W0": 18084.76171875,
+              "smoothness_value": 0.0
+            },
+            {
+              "label": "cem_em_coeff",
+              "step": 1.0,
+              "median_trace_WWT": 4.999999523162842,
+              "median_eff_rank_WWT": 1.0011035203933716,
+              "median_row_norm_sq_W": 1.0,
+              "median_frob_W": 2.2360680103302,
+              "anchor_dispersion_frob": 6.216423003024829e-07,
+              "median_frob_C": 0.052125509828329086,
+              "frob_W0": 18084.7578125,
+              "smoothness_value": 1.2936413895658916e-06
+            },
+            {
+              "label": "cem_em_coeff",
+              "step": 2.0,
+              "median_trace_WWT": 5.0,
+              "median_eff_rank_WWT": 1.001107096672058,
+              "median_row_norm_sq_W": 0.9999999403953552,
+              "median_frob_W": 2.2360680103302,
+              "anchor_dispersion_frob": 3.26716485687939e-06,
+              "median_frob_C": 1.3514578342437744,
+              "frob_W0": 18084.45703125,
+              "smoothness_value": 5.174256148166023e-05
+            },
+            {
+              "label": "cem_em_coeff",
+              "step": 3.0,
+              "median_trace_WWT": 5.0,
+              "median_eff_rank_WWT": 1.0011138916015625,
+              "median_row_norm_sq_W": 0.9999999403953552,
+              "median_frob_W": 2.2360680103302,
+              "anchor_dispersion_frob": 7.630332220287528e-06,
+              "median_frob_C": 3.7459359169006348,
+              "frob_W0": 18083.76953125,
+              "smoothness_value": 8.717341552255675e-05
+            }
+          ],
+          "history": [
+            {
+              "gp_ll_mean": -119.61699676513672,
+              "gate_bce_mean": 0.31411123275756836,
+              "smoothness": 1.4452408549914253e-06,
+              "row_norm": 0.0,
+              "loss": 119.64840698242188,
+              "n_gp": 64,
+              "n_gate": 64,
+              "n_skip": 0,
+              "outer": 1.0,
+              "n_cem_success": 64.0
+            },
+            {
+              "gp_ll_mean": -119.61699676513672,
+              "gate_bce_mean": 0.3164840340614319,
+              "smoothness": 5.1519607950467616e-05,
+              "row_norm": 0.0,
+              "loss": 119.64864349365234,
+              "n_gp": 64,
+              "n_gate": 64,
+              "n_skip": 0,
+              "outer": 2.0,
+              "n_cem_success": 64.0
+            },
+            {
+              "gp_ll_mean": -119.61699676513672,
+              "gate_bce_mean": 0.3101702332496643,
+              "smoothness": 8.709575195098296e-05,
+              "row_norm": 0.0,
+              "loss": 119.64801025390625,
+              "n_gp": 64,
+              "n_gate": 64,
+              "n_skip": 0,
+              "outer": 3.0,
+              "n_cem_success": 64.0
+            }
+          ],
+          "jgp_elapsed_sec": 3.9521363000021665,
+          "best_outer": 3,
+          "best_metric_value": 119.64801025390625,
+          "coeff_scale": 3.0,
+          "row_normalize_W": true
+        }
+      },
+      "W_per_variant_shapes": {
+        "pls_only": [
+          64,
+          5,
+          18
+        ],
+        "cem_em_coeff": [
+          64,
+          5,
+          18
+        ]
+      }
+    }
+  }
+}

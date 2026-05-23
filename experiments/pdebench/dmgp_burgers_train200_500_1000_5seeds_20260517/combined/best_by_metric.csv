@@ -1,0 +1,10 @@
+dataset,train_size,subset,best_rmse_method,best_rmse,best_crps_method,best_crps,dmgp_rmse_delta_vs_best,dmgp_crps_delta_vs_best
+PDEBench Burgers ShockJump,1000,all,deep_mahalanobis_gp,0.7000047931298466,lmjgp_predict_vi,0.26231627762317655,0.0,0.039545234535002693
+PDEBench Burgers ShockJump,1000,far_from_threshold,xgb_bootstrap,0.6336317363835743,lmjgp_predict_vi,0.2037339597940445,0.03703306902194825,0.07405913291760222
+PDEBench Burgers ShockJump,1000,near_threshold,deep_mahalanobis_gp,0.7753855112178436,deep_mahalanobis_gp,0.36861731703818457,0.0,0.0
+PDEBench Burgers ShockJump,200,all,deep_mahalanobis_gp,0.829666741144498,lmjgp_predict_vi,0.3517411291599274,0.0,0.03983937839340501
+PDEBench Burgers ShockJump,200,far_from_threshold,lmjgp_predict_vi,0.6899495244026184,lmjgp_predict_vi,0.22104865908622742,0.011452328443805948,0.09879333640955876
+PDEBench Burgers ShockJump,200,near_threshold,deep_mahalanobis_gp,1.1040656251911936,xgb_bootstrap,0.5842842102050781,0.0,0.006269151545599705
+PDEBench Burgers ShockJump,500,all,xgb_bootstrap,0.7241912110219431,lmjgp_predict_vi,0.2934047937393188,0.006600393672662186,0.026832297902535884
+PDEBench Burgers ShockJump,500,far_from_threshold,xgb_bootstrap,0.6444122409747399,lmjgp_predict_vi,0.20383312106132506,0.0526948955948231,0.09073039419576706
+PDEBench Burgers ShockJump,500,near_threshold,deep_mahalanobis_gp,0.8153747427705254,deep_mahalanobis_gp,0.3914449355769508,0.0,0.0

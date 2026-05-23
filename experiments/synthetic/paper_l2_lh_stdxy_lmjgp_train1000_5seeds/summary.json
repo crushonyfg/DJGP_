@@ -1,0 +1,13 @@
+{
+  "args": {
+    "settings": "l2_q2_train1000,lh_q5_train1000",
+    "num_exp": 5,
+    "methods": "lmjgp_baseline,lmjgp_pls_kl",
+    "lmjgp_steps": 300,
+    "MC_num": 3,
+    "out_dir": "experiments\\synthetic\\paper_l2_lh_stdxy_lmjgp_train1000_5seeds",
+    "resume": false
+  },
+  "device": "cuda",
+  "n_rows": 20
+}

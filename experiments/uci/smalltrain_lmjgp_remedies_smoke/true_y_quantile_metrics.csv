@@ -1,0 +1,25 @@
+dataset,seed,method,group,n,y_min,y_max,rmse,mean_crps,coverage_90,mean_width_90,mean_sigma
+Wine Quality,0,xgboost,y<=q50,16,5.0,6.0,0.5973447811492811,0.35315820574760437,0.75,1.629287399941171,0.49526820297099894
+Wine Quality,0,xgboost,q50<y<=q90,4,7.0,7.0,1.0112211296713698,0.710908830165863,0.5,1.8583373179921536,0.5648944342349618
+Wine Quality,0,xgboost,y>q90,0,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,0,lmjgp_supervised_base,y<=q50,16,5.0,6.0,0.6230430174212607,0.35484957695007324,0.875,1.9512463369663209,0.5931367706507444
+Wine Quality,0,lmjgp_supervised_base,q50<y<=q90,4,7.0,7.0,1.1481066412517622,0.8302985429763794,0.5,1.7340926012138063,0.5271267220377922
+Wine Quality,0,lmjgp_supervised_base,y>q90,0,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,0,lmjgp_supervised_localgp_rbf,y<=q50,16,5.0,6.0,0.6638935070823824,0.38314831256866455,0.5625,1.1730166809927987,0.3565717525780201
+Wine Quality,0,lmjgp_supervised_localgp_rbf,q50<y<=q90,4,7.0,7.0,1.2764998905153568,0.9722210764884949,0.25,1.5304767534533936,0.46523189917206764
+Wine Quality,0,lmjgp_supervised_localgp_rbf,y>q90,0,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,0,lmjgp_supervised_localgp_matern32,y<=q50,16,5.0,6.0,0.6187718842111664,0.3407827615737915,0.8125,1.3985835099688444,0.4251391999423504
+Wine Quality,0,lmjgp_supervised_localgp_matern32,q50<y<=q90,4,7.0,7.0,1.1398588110613592,0.8392077684402466,0.25,1.8601921412691758,0.5654582604765892
+Wine Quality,0,lmjgp_supervised_localgp_matern32,y>q90,0,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,0,lmjgp_supervised_localgp_matern52,y<=q50,16,5.0,6.0,0.6343219255920638,0.35628044605255127,0.6875,1.3019955602041127,0.3957785479724407
+Wine Quality,0,lmjgp_supervised_localgp_matern52,q50<y<=q90,4,7.0,7.0,1.1926411815188678,0.8956449627876282,0.25,1.795917938239794,0.5459202900528908
+Wine Quality,0,lmjgp_supervised_localgp_matern52,y>q90,0,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,0,lmjgp_supervised_hybrid_pls,y<=q50,16,5.0,6.0,0.6180975791616172,0.354218989610672,0.875,1.710854544978618,0.520062854513526
+Wine Quality,0,lmjgp_supervised_hybrid_pls,q50<y<=q90,4,7.0,7.0,0.9807148032862706,0.639076292514801,0.5,2.0537869206128563,0.62430689483881
+Wine Quality,0,lmjgp_supervised_hybrid_pls,y>q90,0,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,0,lmjgp_supervised_residual_ridge,y<=q50,16,5.0,6.0,0.5931143748598905,0.31662115454673767,0.9375,1.6219495961175798,0.49303766898810863
+Wine Quality,0,lmjgp_supervised_residual_ridge,q50<y<=q90,4,7.0,7.0,0.7793914850717976,0.5216535329818726,0.75,1.756741744048401,0.534011572599411
+Wine Quality,0,lmjgp_supervised_residual_ridge,y>q90,0,nan,nan,nan,nan,nan,nan,nan
+Wine Quality,0,lmjgp_supervised_hybrid_residual_ridge,y<=q50,16,5.0,6.0,0.5723434912210563,0.3222024440765381,0.8125,1.7015586852185878,0.517237113788724
+Wine Quality,0,lmjgp_supervised_hybrid_residual_ridge,q50<y<=q90,4,7.0,7.0,0.8198589679007543,0.5289514660835266,0.5,2.361290121702173,0.7177812308073044
+Wine Quality,0,lmjgp_supervised_hybrid_residual_ridge,y>q90,0,nan,nan,nan,nan,nan,nan,nan

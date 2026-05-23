@@ -1,0 +1,22 @@
+{
+  "args": {
+    "setting": "lh_q5_train500",
+    "seed": 0,
+    "max_test": 40,
+    "num_steps": 200,
+    "eval_every": 100,
+    "lr": 0.01,
+    "m1": 2,
+    "m2": 40,
+    "modes": "pure_inlier_mj,fixedW_inlier_mj,mixture_mj,oracle_local_mean",
+    "lambda_s": 0.1,
+    "no_ab": false,
+    "run_jumpgp": false,
+    "standardize_y": false,
+    "local_center_y": false,
+    "mj_init": "mean",
+    "no_learn_mj": false,
+    "out_dir": "experiments/synthetic/inlier_mj_raw_smoke_20260518"
+  },
+  "n_records": 7
+}

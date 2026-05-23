@@ -1,0 +1,10 @@
+Using device: cuda
+run setting=lh_q5_train1000 seed=0 variant=original_meanw_jumpgp_cem
+run setting=lh_q5_train1000 seed=0 variant=qr_alt_wknn_refresh10_self_cem2_nstd0.1_kcov0.1
+run setting=lh_q5_train1000 seed=0 variant=qr_alt_wknn_refresh10_self_cem2_nstd0.1_rank0.01_kcov0.1
+run setting=lh_q5_train1000 seed=0 variant=qr_alt_wknn_refresh10_self_cem2_nstd0.1_rank0.05_kcov0.1
+run setting=lh_q5_train1000 seed=0 variant=qr_alt_wknn_refresh10_self_cem2_nstd0.1_rank0.1_kcov0.1
+run setting=lh_q5_train1000 seed=0 variant=qr_alt_wknn_refresh10_self_cem2_nstd0.1_qrprior_kcov0.1
+run setting=lh_q5_train1000 seed=0 variant=qr_alt_wknn_refresh10_self_cem2_nstd0.1_qrshuf_kcov0.1
+run setting=lh_q5_train1000 seed=0 variant=self_cem2_nstd0.1_kcov0.1
+Saved results to experiments\synthetic\uncertain_w_cem_qr_retrieval_lh_seed0_20260515

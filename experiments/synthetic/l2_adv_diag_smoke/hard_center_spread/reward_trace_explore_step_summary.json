@@ -1,0 +1,38 @@
+[
+  {
+    "phase": "explore",
+    "step": 1,
+    "reward_mean_over_samples": -0.7344576958343609,
+    "reward_std_over_samples": 0.024046194168750784,
+    "reward_range_over_samples": 0.07382803120618575,
+    "reward_spread_mean_over_anchors": 0.16709960629784076,
+    "delta_reward_mean": -0.008820981535459922,
+    "delta_reward_best_mean": 0.05635120725918027,
+    "frac_delta_positive": 0.5333333333333333,
+    "top_anchor_count": 4
+  },
+  {
+    "phase": "explore",
+    "step": 2,
+    "reward_mean_over_samples": -0.7063970465898655,
+    "reward_std_over_samples": 0.025386041126029914,
+    "reward_range_over_samples": 0.0674568000970388,
+    "reward_spread_mean_over_anchors": 0.13140735812596877,
+    "delta_reward_mean": 0.008810601275610234,
+    "delta_reward_best_mean": 0.05965940341476941,
+    "frac_delta_positive": 0.5733333333333334,
+    "top_anchor_count": 4
+  },
+  {
+    "phase": "explore",
+    "step": 3,
+    "reward_mean_over_samples": -0.7184635292820035,
+    "reward_std_over_samples": 0.013998157216139803,
+    "reward_range_over_samples": 0.039276268081182786,
+    "reward_spread_mean_over_anchors": 0.1104431243161943,
+    "delta_reward_mean": 0.007117435700269375,
+    "delta_reward_best_mean": 0.0785445127224511,
+    "frac_delta_positive": 0.44,
+    "top_anchor_count": 4
+  }
+]

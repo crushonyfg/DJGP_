@@ -1,0 +1,398 @@
+{
+  "lh_q5_train200_seed0": {
+    "file": "/sessions/elegant-eloquent-carson/mnt/DJGP/experiments/synthetic/deep_mahalanobis_gp_paper_train200_500_5seeds/lh_q5_train200_seed0.npz",
+    "shapes": {
+      "z_train": [
+        200,
+        5
+      ],
+      "z_test": [
+        200,
+        5
+      ],
+      "X_train": [
+        200,
+        30
+      ],
+      "X_test": [
+        200,
+        30
+      ]
+    },
+    "test_to_train_k35": {
+      "k": 35,
+      "anchors": 200,
+      "train_pool": 200,
+      "mean": 27.085,
+      "std": 2.576387975441587,
+      "median": 27.0,
+      "min": 17,
+      "max": 32,
+      "frac_mean": 0.7738571428571429,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        0,
+        4,
+        39,
+        149,
+        8
+      ]
+    },
+    "within_train_k35": {
+      "k": 35,
+      "anchors": 200,
+      "mean": 25.92,
+      "std": 3.002265811016739,
+      "median": 26.0,
+      "min": 13,
+      "max": 32,
+      "frac_mean": 0.7405714285714287
+    }
+  },
+  "lh_q5_train500_seed0": {
+    "file": "/sessions/elegant-eloquent-carson/mnt/DJGP/experiments/synthetic/deep_mahalanobis_gp_paper_train200_500_5seeds/lh_q5_train500_seed0.npz",
+    "shapes": {
+      "z_train": [
+        500,
+        5
+      ],
+      "z_test": [
+        200,
+        5
+      ],
+      "X_train": [
+        500,
+        30
+      ],
+      "X_test": [
+        200,
+        30
+      ]
+    },
+    "test_to_train_k35": {
+      "k": 35,
+      "anchors": 200,
+      "train_pool": 500,
+      "mean": 24.98,
+      "std": 2.4371294590152575,
+      "median": 25.0,
+      "min": 19,
+      "max": 32,
+      "frac_mean": 0.7137142857142857,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        0,
+        5,
+        118,
+        74,
+        3
+      ]
+    },
+    "within_train_k35": {
+      "k": 35,
+      "anchors": 500,
+      "mean": 25.216,
+      "std": 2.735935671758384,
+      "median": 25.0,
+      "min": 13,
+      "max": 32,
+      "frac_mean": 0.7204571428571429
+    }
+  },
+  "lh_q5_train1000_seed0": {
+    "file": "/sessions/elegant-eloquent-carson/mnt/DJGP/experiments/synthetic/deep_mahalanobis_gp_paper_train1000_seed0/lh_q5_train1000_seed0.npz",
+    "shapes": {
+      "z_train": [
+        1000,
+        5
+      ],
+      "z_test": [
+        200,
+        5
+      ],
+      "X_train": [
+        1000,
+        30
+      ],
+      "X_test": [
+        200,
+        30
+      ]
+    },
+    "test_to_train_k35": {
+      "k": 35,
+      "anchors": 200,
+      "train_pool": 1000,
+      "mean": 24.62,
+      "std": 2.489096221522985,
+      "median": 24.5,
+      "min": 18,
+      "max": 31,
+      "frac_mean": 0.7034285714285714,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        0,
+        11,
+        114,
+        72,
+        3
+      ]
+    },
+    "within_train_k35": {
+      "k": 35,
+      "anchors": 1000,
+      "mean": 25.418,
+      "std": 2.7424944849534336,
+      "median": 26.0,
+      "min": 15,
+      "max": 33,
+      "frac_mean": 0.7262285714285714
+    }
+  },
+  "l2_q2_train200_seed0": {
+    "file": "/sessions/elegant-eloquent-carson/mnt/DJGP/experiments/synthetic/deep_mahalanobis_gp_paper_train200_500_5seeds/l2_q2_train200_seed0.npz",
+    "shapes": {
+      "z_train": [
+        200,
+        2
+      ],
+      "z_test": [
+        200,
+        2
+      ],
+      "X_train": [
+        200,
+        20
+      ],
+      "X_test": [
+        200,
+        20
+      ]
+    },
+    "test_to_train_k35": {
+      "k": 35,
+      "anchors": 200,
+      "train_pool": 200,
+      "mean": 30.92,
+      "std": 2.028201173453955,
+      "median": 31.0,
+      "min": 26,
+      "max": 35,
+      "frac_mean": 0.8834285714285715,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        85,
+        115
+      ]
+    },
+    "within_train_k35": {
+      "k": 35,
+      "anchors": 200,
+      "mean": 30.845,
+      "std": 2.100232130027536,
+      "median": 31.0,
+      "min": 23,
+      "max": 35,
+      "frac_mean": 0.8812857142857142
+    },
+    "test_to_train_k25": {
+      "k": 25,
+      "anchors": 200,
+      "train_pool": 200,
+      "mean": 22.115,
+      "std": 1.7921425724534306,
+      "median": 22.0,
+      "min": 17,
+      "max": 25,
+      "frac_mean": 0.8845999999999999,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        0,
+        33,
+        167,
+        0,
+        0
+      ]
+    },
+    "within_train_k25": {
+      "k": 25,
+      "anchors": 200,
+      "mean": 22.02,
+      "std": 1.8680471086136987,
+      "median": 22.0,
+      "min": 15,
+      "max": 25,
+      "frac_mean": 0.8808
+    }
+  },
+  "l2_q2_train500_seed0": {
+    "file": "/sessions/elegant-eloquent-carson/mnt/DJGP/experiments/synthetic/deep_mahalanobis_gp_paper_train200_500_5seeds/l2_q2_train500_seed0.npz",
+    "shapes": {
+      "z_train": [
+        500,
+        2
+      ],
+      "z_test": [
+        200,
+        2
+      ],
+      "X_train": [
+        500,
+        20
+      ],
+      "X_test": [
+        200,
+        20
+      ]
+    },
+    "test_to_train_k35": {
+      "k": 35,
+      "anchors": 200,
+      "train_pool": 500,
+      "mean": 29.065,
+      "std": 2.6154875262558606,
+      "median": 29.0,
+      "min": 20,
+      "max": 34,
+      "frac_mean": 0.8304285714285715,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        0,
+        1,
+        18,
+        121,
+        60
+      ]
+    },
+    "within_train_k35": {
+      "k": 35,
+      "anchors": 500,
+      "mean": 29.01,
+      "std": 2.635507541252728,
+      "median": 29.0,
+      "min": 21,
+      "max": 34,
+      "frac_mean": 0.8288571428571428
+    },
+    "test_to_train_k25": {
+      "k": 25,
+      "anchors": 200,
+      "train_pool": 500,
+      "mean": 20.675,
+      "std": 2.068665028466426,
+      "median": 21.0,
+      "min": 15,
+      "max": 25,
+      "frac_mean": 0.8270000000000001,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        3,
+        87,
+        110,
+        0,
+        0
+      ]
+    },
+    "within_train_k25": {
+      "k": 25,
+      "anchors": 500,
+      "mean": 20.796,
+      "std": 2.0165277087111892,
+      "median": 21.0,
+      "min": 13,
+      "max": 25,
+      "frac_mean": 0.83184
+    }
+  },
+  "l2_q2_train1000_seed0": {
+    "file": "/sessions/elegant-eloquent-carson/mnt/DJGP/experiments/synthetic/deep_mahalanobis_gp_paper_train1000_seed0/l2_q2_train1000_seed0.npz",
+    "shapes": {
+      "z_train": [
+        1000,
+        2
+      ],
+      "z_test": [
+        200,
+        2
+      ],
+      "X_train": [
+        1000,
+        20
+      ],
+      "X_test": [
+        200,
+        20
+      ]
+    },
+    "test_to_train_k35": {
+      "k": 35,
+      "anchors": 200,
+      "train_pool": 1000,
+      "mean": 32.635,
+      "std": 1.3571201125913654,
+      "median": 33.0,
+      "min": 28,
+      "max": 35,
+      "frac_mean": 0.9324285714285714,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        14,
+        186
+      ]
+    },
+    "within_train_k35": {
+      "k": 35,
+      "anchors": 1000,
+      "mean": 32.73,
+      "std": 1.431467778191322,
+      "median": 33.0,
+      "min": 26,
+      "max": 35,
+      "frac_mean": 0.935142857142857
+    },
+    "test_to_train_k25": {
+      "k": 25,
+      "anchors": 200,
+      "train_pool": 1000,
+      "mean": 23.39,
+      "std": 1.0899082530194915,
+      "median": 24.0,
+      "min": 21,
+      "max": 25,
+      "frac_mean": 0.9356,
+      "hist_buckets_le5_le10_le15_le20_le25_le30_le35": [
+        0,
+        0,
+        0,
+        0,
+        200,
+        0,
+        0
+      ]
+    },
+    "within_train_k25": {
+      "k": 25,
+      "anchors": 1000,
+      "mean": 23.297,
+      "std": 1.200329538085271,
+      "median": 23.0,
+      "min": 18,
+      "max": 25,
+      "frac_mean": 0.93188
+    }
+  }
+}

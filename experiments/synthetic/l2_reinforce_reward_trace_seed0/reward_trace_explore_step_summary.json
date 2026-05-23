@@ -1,0 +1,122 @@
+[
+  {
+    "phase": "explore",
+    "step": 1,
+    "reward_mean_over_samples": -0.8012987463767152,
+    "reward_std_over_samples": 0.024136290749927642,
+    "reward_range_over_samples": 0.05531070720677078,
+    "reward_spread_mean_over_anchors": 0.21673010906015383
+  },
+  {
+    "phase": "explore",
+    "step": 2,
+    "reward_mean_over_samples": -0.7991860623137074,
+    "reward_std_over_samples": 0.07028324994951264,
+    "reward_range_over_samples": 0.19100752293774648,
+    "reward_spread_mean_over_anchors": 0.3307117523611526
+  },
+  {
+    "phase": "explore",
+    "step": 3,
+    "reward_mean_over_samples": -0.893976809575409,
+    "reward_std_over_samples": 0.07291230268679574,
+    "reward_range_over_samples": 0.17001527925663862,
+    "reward_spread_mean_over_anchors": 0.3961468355756476
+  },
+  {
+    "phase": "explore",
+    "step": 4,
+    "reward_mean_over_samples": -0.8839973881099471,
+    "reward_std_over_samples": 0.15195652770624882,
+    "reward_range_over_samples": 0.3692365169896542,
+    "reward_spread_mean_over_anchors": 0.4827716808803718
+  },
+  {
+    "phase": "explore",
+    "step": 5,
+    "reward_mean_over_samples": -0.8825138511239402,
+    "reward_std_over_samples": 0.11410879395481456,
+    "reward_range_over_samples": 0.28269546494135456,
+    "reward_spread_mean_over_anchors": 0.38275709698464366
+  },
+  {
+    "phase": "explore",
+    "step": 6,
+    "reward_mean_over_samples": -0.8358099601284728,
+    "reward_std_over_samples": 0.03576067955310995,
+    "reward_range_over_samples": 0.09217655232369193,
+    "reward_spread_mean_over_anchors": 0.25699810371123155
+  },
+  {
+    "phase": "explore",
+    "step": 7,
+    "reward_mean_over_samples": -0.8050659280515573,
+    "reward_std_over_samples": 0.046205593559585215,
+    "reward_range_over_samples": 0.12202342558183454,
+    "reward_spread_mean_over_anchors": 0.27406482680417693
+  },
+  {
+    "phase": "explore",
+    "step": 8,
+    "reward_mean_over_samples": -0.7854353083038867,
+    "reward_std_over_samples": 0.03612249973507239,
+    "reward_range_over_samples": 0.11330666169916237,
+    "reward_spread_mean_over_anchors": 0.2025929234231861
+  },
+  {
+    "phase": "explore",
+    "step": 9,
+    "reward_mean_over_samples": -0.8332134063201548,
+    "reward_std_over_samples": 0.06439724491602303,
+    "reward_range_over_samples": 0.178585933920417,
+    "reward_spread_mean_over_anchors": 0.2712874019920038
+  },
+  {
+    "phase": "explore",
+    "step": 10,
+    "reward_mean_over_samples": -0.8105326491255014,
+    "reward_std_over_samples": 0.06278739551519022,
+    "reward_range_over_samples": 0.16744848085460418,
+    "reward_spread_mean_over_anchors": 0.29230973523478465
+  },
+  {
+    "phase": "explore",
+    "step": 11,
+    "reward_mean_over_samples": -0.8155723724093946,
+    "reward_std_over_samples": 0.07333208210921371,
+    "reward_range_over_samples": 0.20746492932724425,
+    "reward_spread_mean_over_anchors": 0.3584168973314423
+  },
+  {
+    "phase": "explore",
+    "step": 12,
+    "reward_mean_over_samples": -0.7756588413761436,
+    "reward_std_over_samples": 0.0268120963569439,
+    "reward_range_over_samples": 0.07582601757084695,
+    "reward_spread_mean_over_anchors": 0.17097113662362007
+  },
+  {
+    "phase": "explore",
+    "step": 13,
+    "reward_mean_over_samples": -0.7750288164588717,
+    "reward_std_over_samples": 0.03316719620318296,
+    "reward_range_over_samples": 0.1002659753070484,
+    "reward_spread_mean_over_anchors": 0.21659778772990856
+  },
+  {
+    "phase": "explore",
+    "step": 14,
+    "reward_mean_over_samples": -0.7972614624794498,
+    "reward_std_over_samples": 0.03945780690824258,
+    "reward_range_over_samples": 0.1094575394585634,
+    "reward_spread_mean_over_anchors": 0.23889398250016236
+  },
+  {
+    "phase": "explore",
+    "step": 15,
+    "reward_mean_over_samples": -0.7627612476751228,
+    "reward_std_over_samples": 0.03017060950374939,
+    "reward_range_over_samples": 0.08601270073846146,
+    "reward_spread_mean_over_anchors": 0.14325246985684328
+  }
+]

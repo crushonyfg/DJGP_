@@ -1,0 +1,5 @@
+{
+  "baseline": "experiments/pdebench/burgers_train200_500_1000_xgb_dkl_lmjgp_5seeds_20260517/aggregate.csv",
+  "dmgp": "experiments/pdebench/dmgp_burgers_train200_500_1000_5seeds_20260517/aggregate.csv",
+  "n_rows": 36
+}

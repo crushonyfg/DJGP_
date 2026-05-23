@@ -1,0 +1,103 @@
+# L2/LH Seven Projection Remedies
+
+This run implements the seven proposed projection remedies as concrete methods
+under one paper-style L2/LH protocol.
+
+Files:
+
+- `metrics.csv`: one row per setting/seed/method.
+- `aggregate.csv`: mean/std over successful rows.
+- `summary.json`: exact runner arguments and setting metadata.
+
+```json
+{
+  "args": {
+    "settings": "l2_q2_train1000,lh_q5_train1000",
+    "methods": "p1_exact_vem,p2_soft_vem,p3_norm_gate_vem,p4_fixed_nuisance_vem,p5_whitened_kl,p6_pairwise_boundary,p7_global_wx",
+    "seed_start": 0,
+    "num_exp": 1,
+    "max_anchors": 40,
+    "n_final": 25,
+    "n_candidate": 60,
+    "n_vem": 40,
+    "pair_neighbors": 40,
+    "m1": 2,
+    "m2": 40,
+    "n_pls": 5,
+    "n_pca": 5,
+    "n_random": 0,
+    "steps": 40,
+    "lr": 0.01,
+    "mc_train": 1,
+    "mc_gamma": 1,
+    "eval_mc": 1,
+    "vem_posterior_head": true,
+    "coeff_scale": 1.0,
+    "init_log_std": -3.0,
+    "kl_weight": 0.05,
+    "kl_warmup_steps": 40,
+    "lambda_smooth": 0.01,
+    "lambda_coeff": 0.0001,
+    "lambda_pair": 1.0,
+    "pair_margin": 1.0,
+    "init_lengthscale": 1.0,
+    "init_amp": 1.0,
+    "init_noise_var": 0.1,
+    "wx_hidden": 64,
+    "wx_weight_decay": 0.0001,
+    "log_interval": 20,
+    "resume": false,
+    "verbose": false,
+    "out_dir": "experiments\\synthetic\\l2_lh_7remedies_20260514"
+  },
+  "device": "cuda",
+  "settings": {
+    "l2_q2_train1000": {
+      "family": "L2_phantom",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 2,
+      "H": 20,
+      "Q_true": 2,
+      "Q": 2,
+      "n": 25,
+      "caseno": 6,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "rff",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0
+    },
+    "lh_q5_train1000": {
+      "family": "LH",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 5,
+      "H": 30,
+      "Q_true": 5,
+      "Q": 5,
+      "n": 35,
+      "caseno": 0,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "rff",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0
+    }
+  },
+  "methods": [
+    "p1_exact_vem",
+    "p2_soft_vem",
+    "p3_norm_gate_vem",
+    "p4_fixed_nuisance_vem",
+    "p5_whitened_kl",
+    "p6_pairwise_boundary",
+    "p7_global_wx"
+  ],
+  "outputs": {
+    "metrics": "metrics.csv",
+    "aggregate": "aggregate.csv",
+    "readme": "README.md"
+  }
+}
+```

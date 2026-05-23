@@ -1,0 +1,6 @@
+GRID START 2026-05-09T01:49:33.0534439-07:00
+START pdebench_burgers_lmjgp_cemem_q3_n25_seed0 2026-05-09T01:49:33.0645502-07:00
+END pdebench_burgers_lmjgp_cemem_q3_n25_seed0 exit=0 2026-05-09T02:30:19.0662971-07:00
+START pdebench_burgers_lmjgp_cemem_q3_n35_seed0 2026-05-09T02:30:19.0683039-07:00
+END pdebench_burgers_lmjgp_cemem_q3_n35_seed0 exit=0 2026-05-09T02:49:12.7682134-07:00
+START pdebench_burgers_lmjgp_cemem_q5_n25_seed0 2026-05-09T02:49:12.7702193-07:00

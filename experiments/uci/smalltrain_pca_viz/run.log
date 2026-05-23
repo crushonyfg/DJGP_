@@ -1,0 +1,151 @@
+Using device: cuda
+device=cuda
+
+========================================================================
+Wine Quality
+========================================================================
+[Wine Quality] running xgboost
+  xgboost rmse=0.7283 crps=0.4328
+[Wine Quality] running lmjgp_supervised n=25 steps=200
+[LMJGP supervised step 1/200] loss=5.5358 pred_nll=5.5158 kl/T=20.0049
+[LMJGP supervised step 50/200] loss=2.4514 pred_nll=2.4417 kl/T=9.7337
+[LMJGP supervised step 100/200] loss=1.6643 pred_nll=1.6569 kl/T=7.4115
+[LMJGP supervised step 150/200] loss=1.4700 pred_nll=1.4637 kl/T=6.2549
+[LMJGP supervised step 200/200] loss=1.4047 pred_nll=1.3991 kl/T=5.5599
+  lmjgp n=25 steps=200 rmse=0.7779 crps=0.4364
+[Wine Quality] running lmjgp_supervised n=25 steps=300
+[LMJGP supervised step 1/300] loss=5.5358 pred_nll=5.5158 kl/T=20.0049
+[LMJGP supervised step 75/300] loss=2.0206 pred_nll=2.0122 kl/T=8.3491
+[LMJGP supervised step 150/300] loss=1.4700 pred_nll=1.4637 kl/T=6.2549
+[LMJGP supervised step 225/300] loss=1.3440 pred_nll=1.3387 kl/T=5.2956
+[LMJGP supervised step 300/300] loss=1.4435 pred_nll=1.4387 kl/T=4.8928
+  lmjgp n=25 steps=300 rmse=0.7513 crps=0.4205
+[Wine Quality] running lmjgp_supervised n=25 steps=500
+[LMJGP supervised step 1/500] loss=5.5358 pred_nll=5.5158 kl/T=20.0049
+[LMJGP supervised step 125/500] loss=1.5100 pred_nll=1.5033 kl/T=6.7507
+[LMJGP supervised step 250/500] loss=1.2434 pred_nll=1.2383 kl/T=5.1121
+[LMJGP supervised step 375/500] loss=1.2468 pred_nll=1.2424 kl/T=4.4630
+[LMJGP supervised step 500/500] loss=1.2065 pred_nll=1.2025 kl/T=3.9657
+  lmjgp n=25 steps=500 rmse=0.7667 crps=0.4312
+[Wine Quality] running lmjgp_supervised n=35 steps=200
+[LMJGP supervised step 1/200] loss=5.0336 pred_nll=5.0138 kl/T=19.8293
+[LMJGP supervised step 50/200] loss=2.3779 pred_nll=2.3690 kl/T=8.8912
+[LMJGP supervised step 100/200] loss=1.5765 pred_nll=1.5699 kl/T=6.5959
+[LMJGP supervised step 150/200] loss=1.3911 pred_nll=1.3857 kl/T=5.4483
+[LMJGP supervised step 200/200] loss=1.3772 pred_nll=1.3724 kl/T=4.8645
+  lmjgp n=35 steps=200 rmse=0.7685 crps=0.4319
+[Wine Quality] running lmjgp_supervised n=35 steps=300
+[LMJGP supervised step 1/300] loss=5.0336 pred_nll=5.0138 kl/T=19.8293
+[LMJGP supervised step 75/300] loss=1.9088 pred_nll=1.9013 kl/T=7.4850
+[LMJGP supervised step 150/300] loss=1.3911 pred_nll=1.3857 kl/T=5.4483
+[LMJGP supervised step 225/300] loss=1.2943 pred_nll=1.2897 kl/T=4.5929
+[LMJGP supervised step 300/300] loss=1.3825 pred_nll=1.3785 kl/T=3.9627
+  lmjgp n=35 steps=300 rmse=0.7930 crps=0.4438
+[Wine Quality] running lmjgp_supervised n=35 steps=500
+[LMJGP supervised step 1/500] loss=5.0336 pred_nll=5.0138 kl/T=19.8293
+[LMJGP supervised step 125/500] loss=1.4251 pred_nll=1.4192 kl/T=5.9382
+[LMJGP supervised step 250/500] loss=1.3054 pred_nll=1.3011 kl/T=4.3184
+[LMJGP supervised step 375/500] loss=1.2267 pred_nll=1.2232 kl/T=3.5433
+[LMJGP supervised step 500/500] loss=1.1932 pred_nll=1.1900 kl/T=3.1236
+  lmjgp n=35 steps=500 rmse=0.7670 crps=0.4290
+
+========================================================================
+Parkinsons Telemonitoring
+========================================================================
+[Parkinsons Telemonitoring] running xgboost
+  xgboost rmse=5.5585 crps=3.3935
+[Parkinsons Telemonitoring] running lmjgp_supervised n=25 steps=200
+[LMJGP supervised step 1/200] loss=3.5949 pred_nll=3.5403 kl/T=54.5758
+[LMJGP supervised step 50/200] loss=3.4751 pred_nll=3.4609 kl/T=14.2450
+[LMJGP supervised step 100/200] loss=3.4918 pred_nll=3.4865 kl/T=5.2800
+[LMJGP supervised step 150/200] loss=3.4701 pred_nll=3.4676 kl/T=2.4339
+[LMJGP supervised step 200/200] loss=3.4997 pred_nll=3.4984 kl/T=1.3811
+  lmjgp n=25 steps=200 rmse=7.8281 crps=4.4812
+[Parkinsons Telemonitoring] running lmjgp_supervised n=25 steps=300
+[LMJGP supervised step 1/300] loss=3.5949 pred_nll=3.5403 kl/T=54.5758
+[LMJGP supervised step 75/300] loss=3.4822 pred_nll=3.4737 kl/T=8.4144
+[LMJGP supervised step 150/300] loss=3.4701 pred_nll=3.4676 kl/T=2.4339
+[LMJGP supervised step 225/300] loss=3.4647 pred_nll=3.4636 kl/T=1.0910
+[LMJGP supervised step 300/300] loss=3.4644 pred_nll=3.4638 kl/T=0.6910
+  lmjgp n=25 steps=300 rmse=7.7731 crps=4.3985
+[Parkinsons Telemonitoring] running lmjgp_supervised n=25 steps=500
+[LMJGP supervised step 1/500] loss=3.5949 pred_nll=3.5403 kl/T=54.5758
+[LMJGP supervised step 125/500] loss=3.4838 pred_nll=3.4803 kl/T=3.5017
+[LMJGP supervised step 250/500] loss=3.4661 pred_nll=3.4652 kl/T=0.9069
+[LMJGP supervised step 375/500] loss=3.4707 pred_nll=3.4702 kl/T=0.5185
+[LMJGP supervised step 500/500] loss=3.4640 pred_nll=3.4636 kl/T=0.4033
+  lmjgp n=25 steps=500 rmse=8.0675 crps=4.6459
+[Parkinsons Telemonitoring] running lmjgp_supervised n=35 steps=200
+[LMJGP supervised step 1/200] loss=3.5646 pred_nll=3.5102 kl/T=54.4212
+[LMJGP supervised step 50/200] loss=3.5023 pred_nll=3.4883 kl/T=14.0680
+[LMJGP supervised step 100/200] loss=3.4726 pred_nll=3.4676 kl/T=5.0395
+[LMJGP supervised step 150/200] loss=3.4750 pred_nll=3.4729 kl/T=2.1776
+[LMJGP supervised step 200/200] loss=3.4907 pred_nll=3.4896 kl/T=1.1068
+  lmjgp n=35 steps=200 rmse=8.5744 crps=4.9990
+[Parkinsons Telemonitoring] running lmjgp_supervised n=35 steps=300
+[LMJGP supervised step 1/300] loss=3.5646 pred_nll=3.5102 kl/T=54.4212
+[LMJGP supervised step 75/300] loss=3.4746 pred_nll=3.4663 kl/T=8.2164
+[LMJGP supervised step 150/300] loss=3.4750 pred_nll=3.4729 kl/T=2.1776
+[LMJGP supervised step 225/300] loss=3.4877 pred_nll=3.4869 kl/T=0.8312
+[LMJGP supervised step 300/300] loss=3.4526 pred_nll=3.4521 kl/T=0.4418
+  lmjgp n=35 steps=300 rmse=8.2003 crps=4.7456
+[Parkinsons Telemonitoring] running lmjgp_supervised n=35 steps=500
+[LMJGP supervised step 1/500] loss=3.5646 pred_nll=3.5102 kl/T=54.4212
+[LMJGP supervised step 125/500] loss=3.4519 pred_nll=3.4486 kl/T=3.2415
+[LMJGP supervised step 250/500] loss=3.4647 pred_nll=3.4640 kl/T=0.6506
+[LMJGP supervised step 375/500] loss=3.4963 pred_nll=3.4960 kl/T=0.2994
+[LMJGP supervised step 500/500] loss=3.4841 pred_nll=3.4838 kl/T=0.2513
+  lmjgp n=35 steps=500 rmse=8.1071 crps=4.6604
+
+========================================================================
+Appliances Energy Prediction
+========================================================================
+[Appliances Energy Prediction] running xgboost
+  xgboost rmse=103.2599 crps=41.9003
+[Appliances Energy Prediction] running lmjgp_supervised n=25 steps=200
+[LMJGP supervised step 1/200] loss=2.6711 pred_nll=2.5892 kl/T=81.8223
+[LMJGP supervised step 50/200] loss=1.6274 pred_nll=1.6071 kl/T=20.2445
+[LMJGP supervised step 100/200] loss=1.5655 pred_nll=1.5590 kl/T=6.4219
+[LMJGP supervised step 150/200] loss=1.5484 pred_nll=1.5461 kl/T=2.3218
+[LMJGP supervised step 200/200] loss=1.5497 pred_nll=1.5488 kl/T=0.9191
+  lmjgp n=25 steps=200 rmse=107.2853 crps=40.8690
+[Appliances Energy Prediction] running lmjgp_supervised n=25 steps=300
+[LMJGP supervised step 1/300] loss=2.6711 pred_nll=2.5892 kl/T=81.8223
+[LMJGP supervised step 75/300] loss=1.6735 pred_nll=1.6623 kl/T=11.2049
+[LMJGP supervised step 150/300] loss=1.5484 pred_nll=1.5461 kl/T=2.3218
+[LMJGP supervised step 225/300] loss=1.5055 pred_nll=1.5049 kl/T=0.5885
+[LMJGP supervised step 300/300] loss=1.4562 pred_nll=1.4560 kl/T=0.1594
+  lmjgp n=25 steps=300 rmse=108.5339 crps=41.7255
+[Appliances Energy Prediction] running lmjgp_supervised n=25 steps=500
+[LMJGP supervised step 1/500] loss=2.6711 pred_nll=2.5892 kl/T=81.8223
+[LMJGP supervised step 125/500] loss=1.5752 pred_nll=1.5714 kl/T=3.8060
+[LMJGP supervised step 250/500] loss=1.5086 pred_nll=1.5082 kl/T=0.3793
+[LMJGP supervised step 375/500] loss=1.4664 pred_nll=1.4664 kl/T=0.0435
+[LMJGP supervised step 500/500] loss=1.4670 pred_nll=1.4669 kl/T=0.0047
+  lmjgp n=25 steps=500 rmse=109.0915 crps=42.8234
+[Appliances Energy Prediction] running lmjgp_supervised n=35 steps=200
+[LMJGP supervised step 1/200] loss=3.1249 pred_nll=3.0434 kl/T=81.4897
+[LMJGP supervised step 50/200] loss=1.6973 pred_nll=1.6772 kl/T=20.1217
+[LMJGP supervised step 100/200] loss=1.5495 pred_nll=1.5429 kl/T=6.5563
+[LMJGP supervised step 150/200] loss=1.5373 pred_nll=1.5348 kl/T=2.4591
+[LMJGP supervised step 200/200] loss=1.5222 pred_nll=1.5211 kl/T=1.0162
+  lmjgp n=35 steps=200 rmse=109.8678 crps=42.1332
+[Appliances Energy Prediction] running lmjgp_supervised n=35 steps=300
+[LMJGP supervised step 1/300] loss=3.1249 pred_nll=3.0434 kl/T=81.4897
+[LMJGP supervised step 75/300] loss=1.5653 pred_nll=1.5541 kl/T=11.2620
+[LMJGP supervised step 150/300] loss=1.5373 pred_nll=1.5348 kl/T=2.4591
+[LMJGP supervised step 225/300] loss=1.5125 pred_nll=1.5118 kl/T=0.6689
+[LMJGP supervised step 300/300] loss=1.4474 pred_nll=1.4472 kl/T=0.2029
+  lmjgp n=35 steps=300 rmse=105.0654 crps=40.6220
+[Appliances Energy Prediction] running lmjgp_supervised n=35 steps=500
+[LMJGP supervised step 1/500] loss=3.1249 pred_nll=3.0434 kl/T=81.4897
+[LMJGP supervised step 125/500] loss=1.4989 pred_nll=1.4949 kl/T=3.9555
+[LMJGP supervised step 250/500] loss=1.4663 pred_nll=1.4659 kl/T=0.4460
+[LMJGP supervised step 375/500] loss=1.4631 pred_nll=1.4631 kl/T=0.0645
+[LMJGP supervised step 500/500] loss=1.4505 pred_nll=1.4505 kl/T=0.0102
+  lmjgp n=35 steps=500 rmse=107.9744 crps=42.1623
+
+Saved metrics -> experiments\uci\smalltrain_pca_viz\metrics.csv
+Saved predictions -> experiments\uci\smalltrain_pca_viz\predictions.csv
+Saved summary -> experiments\uci\smalltrain_pca_viz\summary.json
+Saved figures -> experiments\uci\smalltrain_pca_viz\figures

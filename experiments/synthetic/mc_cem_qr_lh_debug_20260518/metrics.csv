@@ -1,0 +1,24 @@
+setting,family,seed,variant,status,cem_updates,N_train,N_test,n_test_eval,Q,observed_dim,latent_dim,n_neighbors,m_inducing,standardize_x,standardize_y_for_head,init_sec,error,expansion,final_ensemble_samples,gate_steps,hyper_steps,mc_samples,mc_steps,qr_w_lengthscale,traceback
+lh_q5_train1000,LH,0,A_uniform,failed,1,1000,200,4,5,30,5,35,40,True,True,0.46394150001287926,RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn,rff,2,1,1,2,1,7.817970815716798,"Traceback (most recent call last):
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\experiments\synthetic\compare_mc_cem_qr_lh.py"", line 533, in main
+    _run_variant(
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\experiments\synthetic\compare_mc_cem_qr_lh.py"", line 341, in _run_variant
+    qr = train_qr_mc_cem_mstep(
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\djgp\projections\uncertain_w_jgp.py"", line 2977, in train_qr_mc_cem_mstep
+    sample_state = run_uncertain_w_self_cem(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\djgp\projections\uncertain_w_jgp.py"", line 1365, in run_uncertain_w_self_cem
+    hp = fit_uncertain_kernel_hyperparams_from_labels(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\djgp\projections\uncertain_w_jgp.py"", line 1005, in fit_uncertain_kernel_hyperparams_from_labels
+    nll.backward()
+  File ""C:\Users\yxu59\AppData\Local\miniconda3\Lib\site-packages\torch\_tensor.py"", line 521, in backward
+    torch.autograd.backward(
+  File ""C:\Users\yxu59\AppData\Local\miniconda3\Lib\site-packages\torch\autograd\__init__.py"", line 289, in backward
+    _engine_run_backward(
+  File ""C:\Users\yxu59\AppData\Local\miniconda3\Lib\site-packages\torch\autograd\graph.py"", line 769, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+"

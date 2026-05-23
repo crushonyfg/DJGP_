@@ -1,0 +1,31 @@
+{
+  "args": {
+    "manifest": "experiments/pdebench/dmgp_burgers_train200_500_1000_5seeds_20260517/manifest.json",
+    "out_dir": "experiments/pdebench/dmgp_burgers_train200_500_1000_5seeds_20260517",
+    "Q": 0,
+    "m_u": 50,
+    "m_v": 25,
+    "steps1": 300,
+    "steps2": 700,
+    "lr": 0.01,
+    "initial_noise_var": 0.01,
+    "save_w": 0,
+    "resume": 1
+  },
+  "manifest_meta": {
+    "benchmark": "pdebench_burgers",
+    "dataset_folder": "data\\processed\\pdebench_burgers_shockjump_balanced_delta01_n2000",
+    "args": {
+      "dataset_folder": "data/processed/pdebench_burgers_shockjump_balanced_delta01_n2000",
+      "train_sizes": "200,500,1000",
+      "num_exp": 5,
+      "seed_start": 0,
+      "max_anchors": null,
+      "Q": 3,
+      "out_dir": "experiments/pdebench/dmgp_burgers_train200_500_1000_5seeds_20260517"
+    }
+  },
+  "external_repo": "C:\\Users\\yxu59\\files\\spring2026\\park\\external\\DeepMahalanobisGP",
+  "n_entries": 15,
+  "n_metric_rows": 45
+}

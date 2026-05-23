@@ -1,0 +1,10 @@
+dataset,train_size,subset,best_rmse_method,best_rmse,best_crps_method,best_crps,dmgp_rmse_delta_vs_best,dmgp_crps_delta_vs_best
+Appliances Energy Prediction,1000,all,xgb_bootstrap,96.24355679461135,lmjgp_transductive_residual_ridge,41.054623413085935,7.417164824172204,2.878571011620785
+Appliances Energy Prediction,200,all,lmjgp_supervised_residual_ridge,102.98099336476318,lmjgp_supervised,44.978877258300784,4.329138654625538,0.4000707686150946
+Appliances Energy Prediction,500,all,xgb_bootstrap,98.47739760927662,lmjgp_supervised,42.0757698059082,6.4899731475052675,2.625064192087315
+Parkinsons Telemonitoring,1000,all,dkl_svgp,7.86002955324782,dkl_svgp,4.926346397399902,1.088830625236188,0.892952269569844
+Parkinsons Telemonitoring,200,all,dkl_svgp,7.814344191376061,dkl_svgp,4.92281584739685,0.8587620483016005,0.5669596414940008
+Parkinsons Telemonitoring,500,all,dkl_svgp,7.860154359214684,dkl_svgp,4.934474849700928,1.168453020330901,0.8972282142256951
+Wine Quality,1000,all,xgb_bootstrap,0.6889652834440315,xgb_bootstrap,0.3968637704849243,0.021598688323580473,0.011297331607816485
+Wine Quality,200,all,deep_mahalanobis_gp,0.7332951700876903,deep_mahalanobis_gp,0.41116640541771854,0.0,0.0
+Wine Quality,500,all,xgb_bootstrap,0.7201957579877588,deep_mahalanobis_gp,0.4148348655281507,0.005379013346764716,0.0

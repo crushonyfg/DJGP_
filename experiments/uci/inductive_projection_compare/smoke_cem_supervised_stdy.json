@@ -1,0 +1,112 @@
+{
+  "_meta": {
+    "methods": [
+      "cem_em_supervised"
+    ],
+    "num_exp": 1,
+    "datasets": [
+      "Wine Quality"
+    ],
+    "max_test_anchors": 12,
+    "max_train_anchors": 24,
+    "neighbor_pool": "base",
+    "standardize_x": true,
+    "standardize_y": true,
+    "n": 12,
+    "m1": 2,
+    "m2": 20,
+    "MC_num": 2,
+    "cem_em": {
+      "n_outer": 2,
+      "n_m_steps": 10,
+      "lr": 0.01,
+      "lambda_gate": 0.1,
+      "lambda_smooth": 0.01,
+      "lambda_scale": 0.0,
+      "lambda_anchor_pred": 1.0,
+      "anchor_pred_var_floor": 0.05,
+      "target_row_norm_sq": 1.0,
+      "normalize_smoothness": true,
+      "grad_clip": 10.0,
+      "anchor_kernel_lengthscale": null,
+      "snapshot_after_each_outer": false,
+      "cem_progress": false,
+      "verbose": true,
+      "track_best_W": true,
+      "best_metric_key": "loss"
+    }
+  },
+  "Wine Quality": {
+    "0": {
+      "dataset": "Wine Quality",
+      "seed": 0,
+      "Q": 3,
+      "D": 11,
+      "split": {
+        "n_base": 5823,
+        "n_anchor": 24,
+        "n_test": 12,
+        "test_indices": [
+          124,
+          130,
+          131,
+          134,
+          192,
+          303,
+          325,
+          333,
+          342,
+          387,
+          526,
+          543
+        ]
+      },
+      "V_basis": {
+        "n_pls": 5,
+        "n_pca": 5,
+        "n_random": 0,
+        "Rv": 10,
+        "source_per_column": [
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pls",
+          "pca",
+          "pca",
+          "pca",
+          "pca",
+          "pca"
+        ],
+        "V_tilde_frob": 3.1622776601683835
+      },
+      "metrics": {
+        "cem_em_supervised": [
+          0.928077217544876,
+          0.4561714828014374,
+          3.4882750999968266,
+          0.75,
+          1.412016527367009,
+          0.75,
+          1.6825214680918847
+        ]
+      },
+      "diagnostics": {
+        "cem_em_supervised": {
+          "median_trace_WWT": 2.999999761581421,
+          "median_eff_rank_WWT": 2.5896096229553223,
+          "median_frob_W": 1.7320507764816284,
+          "anchor_dispersion_frob": 0.409594863653183,
+          "cosine_to_ref_median": 0.5483939248480305,
+          "train_time_sec": 14.105891799998062,
+          "jgp_elapsed_sec": 3.4882750999968266,
+          "best_outer": 2,
+          "coeff_gp_lengthscale": 4.463984489440918,
+          "coeff_gp_ridge": 0.0001,
+          "mean_coeff_gp_var": 0.06501056253910065,
+          "total_wall_sec": 19.092173800003366
+        }
+      }
+    }
+  }
+}

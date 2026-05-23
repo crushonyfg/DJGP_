@@ -1,0 +1,2 @@
+setting,seed,method,N_train,N_test,Q,D,rmse,mean_crps,wall_sec,coverage_90,mean_width_90,coverage_95,mean_width_95,train_sec,predict_sec,m_u,m_v,steps1,steps2,y_standardized,W_mean_norm_mean,W_mean_anchor_frob_std,W_var_mean,lr
+l2_q2_train1000,0,deep_mahalanobis_gp,1000,200,2,20,3.8792912166769287,2.0949320010794206,7.572884499999999,0.76,7.654245924820631,0.825,9.120596565948125,6.4224592000000005,1.1504252999999984,50,25,1,1,True,0.7235878869304067,0.21560352183698356,0.5552643700973227,0.01

@@ -1,0 +1,8 @@
+dataset,seed,method,metric,value
+Wine Quality,0,cem_em_supervised,rmse,0.928077217544876
+Wine Quality,0,cem_em_supervised,mean_crps,0.4561714828014374
+Wine Quality,0,cem_em_supervised,wall_sec,3.4882750999968266
+Wine Quality,0,cem_em_supervised,coverage_90,0.75
+Wine Quality,0,cem_em_supervised,mean_width_90,1.412016527367009
+Wine Quality,0,cem_em_supervised,coverage_95,0.75
+Wine Quality,0,cem_em_supervised,mean_width_95,1.6825214680918847

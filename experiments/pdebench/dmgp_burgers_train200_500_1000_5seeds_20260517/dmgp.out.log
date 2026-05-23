@@ -1,0 +1,17 @@
+[pdebench_burgers_train200 seed=0] DeepVMGP Q=3 D=128 N=200 T=400 m_u=50 m_v=25
+[pdebench_burgers_train200 seed=1] DeepVMGP Q=3 D=128 N=200 T=400 m_u=50 m_v=25
+[pdebench_burgers_train200 seed=2] DeepVMGP Q=3 D=128 N=200 T=400 m_u=50 m_v=25
+[pdebench_burgers_train200 seed=3] DeepVMGP Q=3 D=128 N=200 T=400 m_u=50 m_v=25
+[pdebench_burgers_train200 seed=4] DeepVMGP Q=3 D=128 N=200 T=400 m_u=50 m_v=25
+[pdebench_burgers_train500 seed=0] DeepVMGP Q=3 D=128 N=500 T=400 m_u=50 m_v=25
+[pdebench_burgers_train500 seed=1] DeepVMGP Q=3 D=128 N=500 T=400 m_u=50 m_v=25
+[pdebench_burgers_train500 seed=2] DeepVMGP Q=3 D=128 N=500 T=400 m_u=50 m_v=25
+[pdebench_burgers_train500 seed=3] DeepVMGP Q=3 D=128 N=500 T=400 m_u=50 m_v=25
+[pdebench_burgers_train500 seed=4] DeepVMGP Q=3 D=128 N=500 T=400 m_u=50 m_v=25
+[pdebench_burgers_train1000 seed=0] DeepVMGP Q=3 D=128 N=1000 T=400 m_u=50 m_v=25
+[pdebench_burgers_train1000 seed=1] DeepVMGP Q=3 D=128 N=1000 T=400 m_u=50 m_v=25
+[pdebench_burgers_train1000 seed=2] DeepVMGP Q=3 D=128 N=1000 T=400 m_u=50 m_v=25
+[pdebench_burgers_train1000 seed=3] DeepVMGP Q=3 D=128 N=1000 T=400 m_u=50 m_v=25
+[pdebench_burgers_train1000 seed=4] DeepVMGP Q=3 D=128 N=1000 T=400 m_u=50 m_v=25
+Saved DeepMahalanobisGP artifacts -> experiments\pdebench\dmgp_burgers_train200_500_1000_5seeds_20260517
+

@@ -1,0 +1,8 @@
+dataset,seed,method,metric,value
+Wine Quality,0,lmjgp_supervised,rmse,0.42866058148419006
+Wine Quality,0,lmjgp_supervised,mean_crps,0.2434343695640564
+Wine Quality,0,lmjgp_supervised,wall_sec,0.33130769999843324
+Wine Quality,0,lmjgp_supervised,coverage_90,0.8333333333333334
+Wine Quality,0,lmjgp_supervised,mean_width_90,0.8694508861208275
+Wine Quality,0,lmjgp_supervised,coverage_95,0.8333333333333334
+Wine Quality,0,lmjgp_supervised,mean_width_95,1.0360146308468654

@@ -1,0 +1,10 @@
+{
+  "args": {
+    "data_dir": "experiments\\synthetic\\deep_mahalanobis_gp_paper_train1000_seed0",
+    "settings": "l2_q2_train1000,lh_q5_train1000",
+    "seed": 0,
+    "n": 0
+  },
+  "device": "cuda",
+  "n_rows": 12
+}

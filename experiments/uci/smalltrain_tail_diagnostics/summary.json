@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "viz_dir": "experiments/uci/smalltrain_pca_viz",
+    "out_dir": "experiments/uci/smalltrain_tail_diagnostics",
+    "seed": 0,
+    "max_total_train": 200,
+    "max_test_anchors": 200,
+    "scaling_preset": "uci_empirical",
+    "standardize_x": 1,
+    "standardize_y": 1
+  },
+  "selected_lmjgp": {
+    "Appliances Energy Prediction": {
+      "lmjgp_n": "35",
+      "lmjgp_steps": "300",
+      "lmjgp_rmse": 105.06540368512046,
+      "lmjgp_crps": 40.62202453613281
+    },
+    "Parkinsons Telemonitoring": {
+      "lmjgp_n": "25",
+      "lmjgp_steps": "300",
+      "lmjgp_rmse": 7.773051401403909,
+      "lmjgp_crps": 4.398508071899414
+    },
+    "Wine Quality": {
+      "lmjgp_n": "25",
+      "lmjgp_steps": "300",
+      "lmjgp_rmse": 0.7512873578108514,
+      "lmjgp_crps": 0.4204911291599273
+    }
+  },
+  "datasets": {
+    "Appliances Energy Prediction": {
+      "xgboost_rmse": 103.25991124490986,
+      "lmjgp_best_n": "35",
+      "lmjgp_best_steps": "300",
+      "lmjgp_rmse": 105.06540373317192
+    },
+    "Parkinsons Telemonitoring": {
+      "xgboost_rmse": 5.558470022396831,
+      "lmjgp_best_n": "25",
+      "lmjgp_best_steps": "300",
+      "lmjgp_rmse": 7.773051401403909
+    },
+    "Wine Quality": {
+      "xgboost_rmse": 0.7282766272830983,
+      "lmjgp_best_n": "25",
+      "lmjgp_best_steps": "300",
+      "lmjgp_rmse": 0.7512873578108514
+    }
+  }
+}

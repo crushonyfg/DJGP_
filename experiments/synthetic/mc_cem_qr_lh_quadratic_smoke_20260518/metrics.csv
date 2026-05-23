@@ -1,0 +1,17 @@
+setting,family,seed,variant,status,projection_init,cem_updates,N_train,N_test,n_test_eval,Q,observed_dim,latent_dim,n_neighbors,m_inducing,standardize_x,standardize_y_for_head,init_sec,error,batch_hyperopt,early_stopping,early_stopping_metric,eval_each_step,eval_ensemble_samples,eval_gate_steps,eval_hyper_steps,expansion,final_ensemble_samples,final_gate_steps,final_hyper_steps,gate_steps,hyper_steps,inducing_l2,inducing_lr_mult,learn_inducing,learn_outlier_constant,mc_beta_kl,mc_lr,mc_ortho_weight,mc_reward_mode,mc_samples,mc_steps,outlier_constant_l2,outlier_mode,qr_w_lengthscale,r_init,r_init_resolved,reselect_neighbors_after_train,traceback
+lh_q5_train1000,LH,0,A_uniform,failed,pls,1,1000,200,6,5,30,5,35,40,True,True,0.8201096999982838,NameError: name 'X_anchor_eval' is not defined,True,False,eval_rmse,False,1,,,rff,2,,,1,1,0.0,0.1,False,True,0.05,0.01,0.0,transductive,2,1,5.0,constant,7.817970815716798,pca,pca,none,"Traceback (most recent call last):
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\experiments\synthetic\compare_mc_cem_qr_lh.py"", line 810, in main
+    _run_variant(
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\experiments\synthetic\compare_mc_cem_qr_lh.py"", line 403, in _run_variant
+    X_anchor_pred = X_anchor if X_anchor_eval is None else X_anchor_eval
+                                ^^^^^^^^^^^^^
+NameError: name 'X_anchor_eval' is not defined
+"
+lh_q5_train1000,LH,0,B,failed,pls,1,1000,200,6,5,30,5,35,40,True,True,0.8201096999982838,NameError: name 'X_anchor_eval' is not defined,True,False,eval_rmse,False,1,,,rff,2,,,1,1,0.0,0.1,False,True,0.05,0.01,0.0,transductive,2,1,5.0,constant,7.817970815716798,pca,pca,none,"Traceback (most recent call last):
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\experiments\synthetic\compare_mc_cem_qr_lh.py"", line 810, in main
+    _run_variant(
+  File ""C:\Users\yxu59\files\spring2026\park\DJGP\experiments\synthetic\compare_mc_cem_qr_lh.py"", line 403, in _run_variant
+    X_anchor_pred = X_anchor if X_anchor_eval is None else X_anchor_eval
+                                ^^^^^^^^^^^^^
+NameError: name 'X_anchor_eval' is not defined
+"

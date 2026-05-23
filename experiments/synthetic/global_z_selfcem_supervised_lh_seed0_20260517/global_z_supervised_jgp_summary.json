@@ -1,0 +1,59 @@
+{
+  "args": {
+    "settings": "lh_q5_train1000",
+    "seed": 0,
+    "seeds": "",
+    "variants": "raw_jgp,raw_selfcem,pca_selfcem,pls_selfcem,static_selfcem_supervised,lowrank_selfcem_supervised,lowrank_selfcem_shuffled,lowrank_selfcem_random",
+    "max_test": 200,
+    "n_neighbors": 0,
+    "init_mode": "pls",
+    "lowrank_r": 8,
+    "hidden": 64,
+    "anchor_count": 100,
+    "anchor_strategy": "kmeans_yvar",
+    "anchor_batch": 64,
+    "epochs": 4,
+    "outer_refresh": 10,
+    "inner_steps": 20,
+    "lr_w": 0.001,
+    "lr_gp": 0.01,
+    "weight_decay": 0.0001,
+    "w_l2": 0.0001,
+    "init_ell": 1.0,
+    "init_sf": 1.0,
+    "init_sn": 0.1,
+    "self_cem_updates": 2,
+    "self_cem_hyper_steps": 10,
+    "self_cem_hyper_lr": 0.04,
+    "self_cem_gate_steps": 20,
+    "self_cem_gate_lr": 0.05,
+    "self_cem_gate_l2": 0.001,
+    "self_cem_gate_max_norm": 8.0,
+    "self_cem_gh_points": 20,
+    "self_cem_noise_std_floor": 0.1,
+    "self_cem_kcov": 0.1,
+    "min_inliers": 2,
+    "device": "auto",
+    "out_dir": "experiments\\synthetic\\global_z_selfcem_supervised_lh_seed0_20260517",
+    "verbose": false,
+    "resume": false
+  },
+  "device": "cuda",
+  "n_rows": 8,
+  "settings": [
+    "lh_q5_train1000"
+  ],
+  "seeds": [
+    0
+  ],
+  "variants": [
+    "raw_jgp",
+    "raw_selfcem",
+    "pca_selfcem",
+    "pls_selfcem",
+    "static_selfcem_supervised",
+    "lowrank_selfcem_supervised",
+    "lowrank_selfcem_shuffled",
+    "lowrank_selfcem_random"
+  ]
+}

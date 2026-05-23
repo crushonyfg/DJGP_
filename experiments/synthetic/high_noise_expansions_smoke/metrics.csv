@@ -1,0 +1,2 @@
+setting,family,base_setting,expansion,eta_sigma,seed,method,status,N_train,N_test,latent_dim,observed_dim,Q,n,standardize_x,standardize_y,rmse,mean_crps,wall_sec,coverage_90,mean_width_90,coverage_95,mean_width_95
+l2_linear_noise3_train1000,L2_phantom,l2_q2_train1000,linear_noise,3.0,0,xgb_bootstrap,ok,1000,200,2,20,2,25,True,True,1.0441788085175145,0.5824765563011169,0.7555773999774829,0.77,2.0074450472080905,0.8,2.3920183103242447

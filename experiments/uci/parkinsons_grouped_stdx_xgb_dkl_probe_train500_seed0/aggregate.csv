@@ -1,0 +1,3 @@
+dataset,method,n_seeds,rmse_mean,rmse_std,mean_crps_mean,mean_crps_std,wall_sec_mean,wall_sec_std,coverage_90_mean,coverage_90_std,mean_width_90_mean,mean_width_90_std,coverage_95_mean,coverage_95_std,mean_width_95_mean,mean_width_95_std
+Parkinsons Telemonitoring,dkl_svgp,1,10.055111107000334,0.0,7.9997782707214355,0.0,1.0197225000010803,0.0,0.155,0.0,5.280617298663323,0.0,0.18,0.0,6.292243608752824,0.0
+Parkinsons Telemonitoring,xgb_bootstrap,1,8.438477738345732,0.0,6.11039924621582,0.0,4.009036100003868,0.0,0.31,0.0,7.720720525595169,0.0,0.35,0.0,9.19980593830197,0.0

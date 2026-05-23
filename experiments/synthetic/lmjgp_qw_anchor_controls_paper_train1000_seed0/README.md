@@ -1,0 +1,31 @@
+# LMJGP q(W) Controls on Paper Synthetic Data
+
+This trains transductive LMJGP once per setting and evaluates learned
+projection samples against prior/isotropic/permuted/zero-mean controls using
+the same projected JumpGP-CEM ensemble head.
+
+```json
+{
+  "args": {
+    "settings": "l2_q2_train1000,lh_q5_train1000",
+    "seed": 0,
+    "m1": 2,
+    "m2": 40,
+    "lmjgp_steps": 300,
+    "MC_num": 3,
+    "lr": 0.01,
+    "out_dir": "experiments\\synthetic\\lmjgp_qw_anchor_controls_paper_train1000_seed0"
+  },
+  "device": "cuda",
+  "controls": [
+    "learned_qw",
+    "prior_qw",
+    "moment_matched_isotropic",
+    "feature_permuted_learned_qw",
+    "anchor_shuffled_learned_qw",
+    "global_mean_learned_qw",
+    "zero_mean_learned_sigma"
+  ],
+  "n_rows": 14
+}
+```

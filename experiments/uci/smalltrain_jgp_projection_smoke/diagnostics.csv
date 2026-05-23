@@ -1,0 +1,3 @@
+train_size,dataset,seed,method,split_type,standardize_y,n,status,projection,projection_fit,explained_variance_sum,sir_H,n_negative_or_nonfinite_sig2,pred_sigma_mean,pred_sigma_max,error
+80,Wine Quality,0,jgp_pca,random_row,False,25,ok,pca,train_only,0.6767068672615418,,0,0.5113686180593513,0.6962336034601906,
+80,Wine Quality,0,jgp_sir,random_row,False,25,ok,sir,train_only,,10,0,0.4462060342009502,0.6928196630102046,

@@ -1,0 +1,304 @@
+Using device: cuda
+setting=l2_q2_train200 seed=0 method=xgb_bootstrap
+setting=l2_q2_train200 seed=0 method=dkl_svgp
+setting=l2_q2_train200 seed=0 method=jgp_pca
+setting=l2_q2_train200 seed=0 method=lmjgp_baseline
+[Step 1/300] ELBO=-84.4403, LR=1.00e-02
+[Step 50/300] ELBO=-42.8381, LR=1.00e-02
+[Step 100/300] ELBO=-24.9387, LR=1.00e-02
+[Step 150/300] ELBO=-16.0637, LR=1.00e-02
+[Step 200/300] ELBO=-11.2272, LR=1.00e-02
+[Step 250/300] ELBO=-8.4743, LR=1.00e-02
+[Step 300/300] ELBO=-6.7029, LR=1.00e-02
+setting=l2_q2_train200 seed=0 method=lmjgp_pls_kl
+[step    1] loss=113.1509 elbo/T=-113.1509 betaW=0.017 KL_V_raw/T=8.4655 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=5.1037 elbo/T=-5.1037 betaW=1.000 KL_V_raw/T=1.3320 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train200 seed=0 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train200 seed=1 method=xgb_bootstrap
+setting=l2_q2_train200 seed=1 method=dkl_svgp
+setting=l2_q2_train200 seed=1 method=jgp_pca
+setting=l2_q2_train200 seed=1 method=lmjgp_baseline
+[Step 1/300] ELBO=-88.9156, LR=1.00e-02
+[Step 50/300] ELBO=-44.5194, LR=1.00e-02
+[Step 100/300] ELBO=-25.8655, LR=1.00e-02
+[Step 150/300] ELBO=-16.8621, LR=1.00e-02
+[Step 200/300] ELBO=-11.8701, LR=1.00e-02
+[Step 250/300] ELBO=-8.8630, LR=1.00e-02
+[Step 300/300] ELBO=-6.9372, LR=1.00e-02
+setting=l2_q2_train200 seed=1 method=lmjgp_pls_kl
+[step    1] loss=77.2417 elbo/T=-77.2417 betaW=0.017 KL_V_raw/T=8.6623 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=4.6540 elbo/T=-4.6540 betaW=1.000 KL_V_raw/T=1.1511 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train200 seed=1 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train200 seed=2 method=xgb_bootstrap
+setting=l2_q2_train200 seed=2 method=dkl_svgp
+setting=l2_q2_train200 seed=2 method=jgp_pca
+setting=l2_q2_train200 seed=2 method=lmjgp_baseline
+[Step 1/300] ELBO=-88.1285, LR=1.00e-02
+[Step 50/300] ELBO=-44.0477, LR=1.00e-02
+[Step 100/300] ELBO=-24.6197, LR=1.00e-02
+[Step 150/300] ELBO=-13.3578, LR=1.00e-02
+[Step 200/300] ELBO=-8.2033, LR=1.00e-02
+[Step 250/300] ELBO=-6.2104, LR=1.00e-02
+[Step 300/300] ELBO=-5.0890, LR=1.00e-02
+setting=l2_q2_train200 seed=2 method=lmjgp_pls_kl
+[step    1] loss=66.9996 elbo/T=-66.9996 betaW=0.017 KL_V_raw/T=8.0684 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=4.1982 elbo/T=-4.1982 betaW=1.000 KL_V_raw/T=0.9642 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train200 seed=2 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train200 seed=3 method=xgb_bootstrap
+setting=l2_q2_train200 seed=3 method=dkl_svgp
+setting=l2_q2_train200 seed=3 method=jgp_pca
+setting=l2_q2_train200 seed=3 method=lmjgp_baseline
+[Step 1/300] ELBO=-87.3143, LR=1.00e-02
+[Step 50/300] ELBO=-43.5494, LR=1.00e-02
+[Step 100/300] ELBO=-24.6274, LR=1.00e-02
+[Step 150/300] ELBO=-12.6954, LR=1.00e-02
+[Step 200/300] ELBO=-6.6835, LR=1.00e-02
+[Step 250/300] ELBO=-5.0238, LR=1.00e-02
+[Step 300/300] ELBO=-4.1265, LR=1.00e-02
+setting=l2_q2_train200 seed=3 method=lmjgp_pls_kl
+[step    1] loss=71.1342 elbo/T=-71.1342 betaW=0.017 KL_V_raw/T=10.2587 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=4.4268 elbo/T=-4.4268 betaW=1.000 KL_V_raw/T=1.1191 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train200 seed=3 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train200 seed=4 method=xgb_bootstrap
+setting=l2_q2_train200 seed=4 method=dkl_svgp
+setting=l2_q2_train200 seed=4 method=jgp_pca
+setting=l2_q2_train200 seed=4 method=lmjgp_baseline
+[Step 1/300] ELBO=-89.8961, LR=1.00e-02
+[Step 50/300] ELBO=-43.3165, LR=1.00e-02
+[Step 100/300] ELBO=-24.3674, LR=1.00e-02
+[Step 150/300] ELBO=-15.6874, LR=1.00e-02
+[Step 200/300] ELBO=-11.0581, LR=1.00e-02
+[Step 250/300] ELBO=-8.3835, LR=1.00e-02
+[Step 300/300] ELBO=-6.6276, LR=1.00e-02
+setting=l2_q2_train200 seed=4 method=lmjgp_pls_kl
+[step    1] loss=66.8204 elbo/T=-66.8204 betaW=0.017 KL_V_raw/T=8.1420 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=4.2510 elbo/T=-4.2510 betaW=1.000 KL_V_raw/T=0.9851 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train200 seed=4 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train500 seed=0 method=xgb_bootstrap
+setting=l2_q2_train500 seed=0 method=dkl_svgp
+setting=l2_q2_train500 seed=0 method=jgp_pca
+setting=l2_q2_train500 seed=0 method=lmjgp_baseline
+[Step 1/300] ELBO=-97.3540, LR=1.00e-02
+[Step 50/300] ELBO=-48.2463, LR=1.00e-02
+[Step 100/300] ELBO=-26.1618, LR=1.00e-02
+[Step 150/300] ELBO=-12.6326, LR=1.00e-02
+[Step 200/300] ELBO=-7.6388, LR=1.00e-02
+[Step 250/300] ELBO=-5.7265, LR=1.00e-02
+[Step 300/300] ELBO=-4.6921, LR=1.00e-02
+setting=l2_q2_train500 seed=0 method=lmjgp_pls_kl
+[step    1] loss=114.2751 elbo/T=-114.2751 betaW=0.017 KL_V_raw/T=9.0601 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=5.2345 elbo/T=-5.2345 betaW=1.000 KL_V_raw/T=1.4102 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train500 seed=0 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train500 seed=1 method=xgb_bootstrap
+setting=l2_q2_train500 seed=1 method=dkl_svgp
+setting=l2_q2_train500 seed=1 method=jgp_pca
+setting=l2_q2_train500 seed=1 method=lmjgp_baseline
+[Step 1/300] ELBO=-90.4309, LR=1.00e-02
+[Step 50/300] ELBO=-44.9076, LR=1.00e-02
+[Step 100/300] ELBO=-24.6972, LR=1.00e-02
+[Step 150/300] ELBO=-13.0592, LR=1.00e-02
+[Step 200/300] ELBO=-7.4122, LR=1.00e-02
+[Step 250/300] ELBO=-5.5295, LR=1.00e-02
+[Step 300/300] ELBO=-4.5175, LR=1.00e-02
+setting=l2_q2_train500 seed=1 method=lmjgp_pls_kl
+[step    1] loss=78.1769 elbo/T=-78.1769 betaW=0.017 KL_V_raw/T=9.0716 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=4.8187 elbo/T=-4.8187 betaW=1.000 KL_V_raw/T=1.2954 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train500 seed=1 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train500 seed=2 method=xgb_bootstrap
+setting=l2_q2_train500 seed=2 method=dkl_svgp
+setting=l2_q2_train500 seed=2 method=jgp_pca
+setting=l2_q2_train500 seed=2 method=lmjgp_baseline
+[Step 1/300] ELBO=-94.3811, LR=1.00e-02
+[Step 50/300] ELBO=-46.3337, LR=1.00e-02
+[Step 100/300] ELBO=-23.7956, LR=1.00e-02
+[Step 150/300] ELBO=-11.7963, LR=1.00e-02
+[Step 200/300] ELBO=-7.8602, LR=1.00e-02
+[Step 250/300] ELBO=-6.0413, LR=1.00e-02
+[Step 300/300] ELBO=-4.9153, LR=1.00e-02
+setting=l2_q2_train500 seed=2 method=lmjgp_pls_kl
+[step    1] loss=66.7941 elbo/T=-66.7941 betaW=0.017 KL_V_raw/T=8.8202 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=4.3379 elbo/T=-4.3379 betaW=1.000 KL_V_raw/T=1.0574 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train500 seed=2 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train500 seed=3 method=xgb_bootstrap
+setting=l2_q2_train500 seed=3 method=dkl_svgp
+setting=l2_q2_train500 seed=3 method=jgp_pca
+setting=l2_q2_train500 seed=3 method=lmjgp_baseline
+[Step 1/300] ELBO=-85.7100, LR=1.00e-02
+[Step 50/300] ELBO=-42.1149, LR=1.00e-02
+[Step 100/300] ELBO=-24.0442, LR=1.00e-02
+[Step 150/300] ELBO=-15.5110, LR=1.00e-02
+[Step 200/300] ELBO=-10.9176, LR=1.00e-02
+[Step 250/300] ELBO=-8.2561, LR=1.00e-02
+[Step 300/300] ELBO=-6.5359, LR=1.00e-02
+setting=l2_q2_train500 seed=3 method=lmjgp_pls_kl
+[step    1] loss=70.9338 elbo/T=-70.9338 betaW=0.017 KL_V_raw/T=9.6542 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=4.2976 elbo/T=-4.2976 betaW=1.000 KL_V_raw/T=1.1126 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train500 seed=3 method=cem_em_transductive_vi_fullcov_ensemble
+setting=l2_q2_train500 seed=4 method=xgb_bootstrap
+setting=l2_q2_train500 seed=4 method=dkl_svgp
+setting=l2_q2_train500 seed=4 method=jgp_pca
+setting=l2_q2_train500 seed=4 method=lmjgp_baseline
+[Step 1/300] ELBO=-88.4408, LR=1.00e-02
+[Step 50/300] ELBO=-44.1670, LR=1.00e-02
+[Step 100/300] ELBO=-25.4396, LR=1.00e-02
+[Step 150/300] ELBO=-16.4518, LR=1.00e-02
+[Step 200/300] ELBO=-11.5088, LR=1.00e-02
+[Step 250/300] ELBO=-8.6587, LR=1.00e-02
+[Step 300/300] ELBO=-6.8321, LR=1.00e-02
+setting=l2_q2_train500 seed=4 method=lmjgp_pls_kl
+[step    1] loss=67.3908 elbo/T=-67.3908 betaW=0.017 KL_V_raw/T=7.7604 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=4.3731 elbo/T=-4.3731 betaW=1.000 KL_V_raw/T=1.1121 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=l2_q2_train500 seed=4 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train200 seed=0 method=xgb_bootstrap
+setting=lh_q5_train200 seed=0 method=dkl_svgp
+setting=lh_q5_train200 seed=0 method=jgp_pca
+setting=lh_q5_train200 seed=0 method=lmjgp_baseline
+[Step 1/300] ELBO=-206.3337, LR=1.00e-02
+[Step 50/300] ELBO=-95.2345, LR=1.00e-02
+[Step 100/300] ELBO=-47.7967, LR=1.00e-02
+[Step 150/300] ELBO=-19.8420, LR=1.00e-02
+[Step 200/300] ELBO=-11.0383, LR=1.00e-02
+[Step 250/300] ELBO=-8.5345, LR=1.00e-02
+[Step 300/300] ELBO=-7.0734, LR=1.00e-02
+setting=lh_q5_train200 seed=0 method=lmjgp_pls_kl
+[step    1] loss=130.7588 elbo/T=-130.7588 betaW=0.017 KL_V_raw/T=22.1292 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=8.2672 elbo/T=-8.2672 betaW=1.000 KL_V_raw/T=3.3175 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train200 seed=0 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train200 seed=1 method=xgb_bootstrap
+setting=lh_q5_train200 seed=1 method=dkl_svgp
+setting=lh_q5_train200 seed=1 method=jgp_pca
+setting=lh_q5_train200 seed=1 method=lmjgp_baseline
+[Step 1/300] ELBO=-212.6574, LR=1.00e-02
+[Step 50/300] ELBO=-99.6216, LR=1.00e-02
+[Step 100/300] ELBO=-49.7053, LR=1.00e-02
+[Step 150/300] ELBO=-19.9000, LR=1.00e-02
+[Step 200/300] ELBO=-11.5963, LR=1.00e-02
+[Step 250/300] ELBO=-8.9210, LR=1.00e-02
+[Step 300/300] ELBO=-7.3884, LR=1.00e-02
+setting=lh_q5_train200 seed=1 method=lmjgp_pls_kl
+[step    1] loss=123.3053 elbo/T=-123.3053 betaW=0.017 KL_V_raw/T=22.2077 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.9518 elbo/T=-7.9518 betaW=1.000 KL_V_raw/T=3.0100 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train200 seed=1 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train200 seed=2 method=xgb_bootstrap
+setting=lh_q5_train200 seed=2 method=dkl_svgp
+setting=lh_q5_train200 seed=2 method=jgp_pca
+setting=lh_q5_train200 seed=2 method=lmjgp_baseline
+[Step 1/300] ELBO=-204.6881, LR=1.00e-02
+[Step 50/300] ELBO=-94.2166, LR=1.00e-02
+[Step 100/300] ELBO=-47.3134, LR=1.00e-02
+[Step 150/300] ELBO=-26.4031, LR=1.00e-02
+[Step 200/300] ELBO=-16.6927, LR=1.00e-02
+[Step 250/300] ELBO=-12.1877, LR=1.00e-02
+[Step 300/300] ELBO=-9.5082, LR=1.00e-02
+setting=lh_q5_train200 seed=2 method=lmjgp_pls_kl
+[step    1] loss=127.7621 elbo/T=-127.7621 betaW=0.017 KL_V_raw/T=22.6367 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.6219 elbo/T=-7.6219 betaW=1.000 KL_V_raw/T=2.8678 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train200 seed=2 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train200 seed=3 method=xgb_bootstrap
+setting=lh_q5_train200 seed=3 method=dkl_svgp
+setting=lh_q5_train200 seed=3 method=jgp_pca
+setting=lh_q5_train200 seed=3 method=lmjgp_baseline
+[Step 1/300] ELBO=-215.1374, LR=1.00e-02
+[Step 50/300] ELBO=-100.1725, LR=1.00e-02
+[Step 100/300] ELBO=-50.3344, LR=1.00e-02
+[Step 150/300] ELBO=-28.1210, LR=1.00e-02
+[Step 200/300] ELBO=-17.5150, LR=1.00e-02
+[Step 250/300] ELBO=-12.6742, LR=1.00e-02
+[Step 300/300] ELBO=-9.8125, LR=1.00e-02
+setting=lh_q5_train200 seed=3 method=lmjgp_pls_kl
+[step    1] loss=126.1037 elbo/T=-126.1037 betaW=0.017 KL_V_raw/T=25.0184 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.6841 elbo/T=-7.6841 betaW=1.000 KL_V_raw/T=2.9424 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train200 seed=3 method=cem_em_transductive_vi_fullcov_ensemble
+ERROR setting=lh_q5_train200 seed=3 method=cem_em_transductive_vi_fullcov_ensemble: ValueError: arange: cannot compute length
+setting=lh_q5_train200 seed=4 method=xgb_bootstrap
+setting=lh_q5_train200 seed=4 method=dkl_svgp
+setting=lh_q5_train200 seed=4 method=jgp_pca
+setting=lh_q5_train200 seed=4 method=lmjgp_baseline
+[Step 1/300] ELBO=-212.8071, LR=1.00e-02
+[Step 50/300] ELBO=-97.3096, LR=1.00e-02
+[Step 100/300] ELBO=-47.5895, LR=1.00e-02
+[Step 150/300] ELBO=-26.2116, LR=1.00e-02
+[Step 200/300] ELBO=-16.5711, LR=1.00e-02
+[Step 250/300] ELBO=-12.2225, LR=1.00e-02
+[Step 300/300] ELBO=-9.4964, LR=1.00e-02
+setting=lh_q5_train200 seed=4 method=lmjgp_pls_kl
+[step    1] loss=126.6691 elbo/T=-126.6691 betaW=0.017 KL_V_raw/T=21.2695 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.5922 elbo/T=-7.5922 betaW=1.000 KL_V_raw/T=2.8216 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train200 seed=4 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train500 seed=0 method=xgb_bootstrap
+setting=lh_q5_train500 seed=0 method=dkl_svgp
+setting=lh_q5_train500 seed=0 method=jgp_pca
+setting=lh_q5_train500 seed=0 method=lmjgp_baseline
+[Step 1/300] ELBO=-215.9358, LR=1.00e-02
+[Step 50/300] ELBO=-101.4259, LR=1.00e-02
+[Step 100/300] ELBO=-50.5472, LR=1.00e-02
+[Step 150/300] ELBO=-24.6290, LR=1.00e-02
+[Step 200/300] ELBO=-14.9675, LR=1.00e-02
+[Step 250/300] ELBO=-11.1320, LR=1.00e-02
+[Step 300/300] ELBO=-8.7956, LR=1.00e-02
+setting=lh_q5_train500 seed=0 method=lmjgp_pls_kl
+[step    1] loss=126.4744 elbo/T=-126.4744 betaW=0.017 KL_V_raw/T=22.1492 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.4741 elbo/T=-7.4741 betaW=1.000 KL_V_raw/T=2.8148 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train500 seed=0 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train500 seed=1 method=xgb_bootstrap
+setting=lh_q5_train500 seed=1 method=dkl_svgp
+setting=lh_q5_train500 seed=1 method=jgp_pca
+setting=lh_q5_train500 seed=1 method=lmjgp_baseline
+[Step 1/300] ELBO=-211.9455, LR=1.00e-02
+[Step 50/300] ELBO=-98.9835, LR=1.00e-02
+[Step 100/300] ELBO=-48.9872, LR=1.00e-02
+[Step 150/300] ELBO=-19.5957, LR=1.00e-02
+[Step 200/300] ELBO=-10.7453, LR=1.00e-02
+[Step 250/300] ELBO=-8.1307, LR=1.00e-02
+[Step 300/300] ELBO=-6.7075, LR=1.00e-02
+setting=lh_q5_train500 seed=1 method=lmjgp_pls_kl
+[step    1] loss=127.7264 elbo/T=-127.7264 betaW=0.017 KL_V_raw/T=22.3394 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.7442 elbo/T=-7.7442 betaW=1.000 KL_V_raw/T=2.9872 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train500 seed=1 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train500 seed=2 method=xgb_bootstrap
+setting=lh_q5_train500 seed=2 method=dkl_svgp
+setting=lh_q5_train500 seed=2 method=jgp_pca
+setting=lh_q5_train500 seed=2 method=lmjgp_baseline
+[Step 1/300] ELBO=-207.3065, LR=1.00e-02
+[Step 50/300] ELBO=-96.4317, LR=1.00e-02
+[Step 100/300] ELBO=-49.0572, LR=1.00e-02
+[Step 150/300] ELBO=-27.8748, LR=1.00e-02
+[Step 200/300] ELBO=-17.8328, LR=1.00e-02
+[Step 250/300] ELBO=-11.1120, LR=1.00e-02
+[Step 300/300] ELBO=-8.2820, LR=1.00e-02
+setting=lh_q5_train500 seed=2 method=lmjgp_pls_kl
+[step    1] loss=124.7584 elbo/T=-124.7584 betaW=0.017 KL_V_raw/T=22.4500 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.5279 elbo/T=-7.5279 betaW=1.000 KL_V_raw/T=2.8251 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train500 seed=2 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train500 seed=3 method=xgb_bootstrap
+setting=lh_q5_train500 seed=3 method=dkl_svgp
+setting=lh_q5_train500 seed=3 method=jgp_pca
+setting=lh_q5_train500 seed=3 method=lmjgp_baseline
+[Step 1/300] ELBO=-207.3559, LR=1.00e-02
+[Step 50/300] ELBO=-95.3056, LR=1.00e-02
+[Step 100/300] ELBO=-47.5959, LR=1.00e-02
+[Step 150/300] ELBO=-21.5582, LR=1.00e-02
+[Step 200/300] ELBO=-11.2639, LR=1.00e-02
+[Step 250/300] ELBO=-8.0989, LR=1.00e-02
+[Step 300/300] ELBO=-6.5314, LR=1.00e-02
+setting=lh_q5_train500 seed=3 method=lmjgp_pls_kl
+[step    1] loss=140.2032 elbo/T=-140.2032 betaW=0.017 KL_V_raw/T=25.0608 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.6673 elbo/T=-7.6673 betaW=1.000 KL_V_raw/T=3.0136 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train500 seed=3 method=cem_em_transductive_vi_fullcov_ensemble
+setting=lh_q5_train500 seed=4 method=xgb_bootstrap
+setting=lh_q5_train500 seed=4 method=dkl_svgp
+setting=lh_q5_train500 seed=4 method=jgp_pca
+setting=lh_q5_train500 seed=4 method=lmjgp_baseline
+[Step 1/300] ELBO=-207.5934, LR=1.00e-02
+[Step 50/300] ELBO=-96.0839, LR=1.00e-02
+[Step 100/300] ELBO=-48.0589, LR=1.00e-02
+[Step 150/300] ELBO=-20.7966, LR=1.00e-02
+[Step 200/300] ELBO=-11.2826, LR=1.00e-02
+[Step 250/300] ELBO=-7.8654, LR=1.00e-02
+[Step 300/300] ELBO=-6.2808, LR=1.00e-02
+setting=lh_q5_train500 seed=4 method=lmjgp_pls_kl
+[step    1] loss=128.5521 elbo/T=-128.5521 betaW=0.017 KL_V_raw/T=21.1608 row_norm(sec)=0.0000 aux(A)=0.0000
+[step  300] loss=7.2734 elbo/T=-7.2734 betaW=1.000 KL_V_raw/T=2.6748 row_norm(sec)=0.0000 aux(A)=0.0000
+setting=lh_q5_train500 seed=4 method=cem_em_transductive_vi_fullcov_ensemble
+Saved results to experiments\synthetic\paper_l2_lh_xstd_train200_500_5seeds
+

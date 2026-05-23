@@ -1,0 +1,127 @@
+dataset,mode,method,metric,value,std_x,std_y
+Wine Quality,raw,lmjgp,rmse,0.746760550798012,False,False
+Wine Quality,raw,lmjgp,crps,0.3867753744125366,False,False
+Wine Quality,raw,lmjgp,wall,113.15849790000357,False,False
+Wine Quality,raw,lmjgp,cov90,0.875,False,False
+Wine Quality,raw,lmjgp,w90,2.024481377004136,False,False
+Wine Quality,raw,lmjgp,cov95,0.91,False,False
+Wine Quality,raw,lmjgp,w95,2.412318349356217,False,False
+Wine Quality,raw,cem_em_coeff,rmse,0.7809771831909313,False,False
+Wine Quality,raw,cem_em_coeff,crps,0.39676788449287415,False,False
+Wine Quality,raw,cem_em_coeff,wall,59.931340700000874,False,False
+Wine Quality,raw,cem_em_coeff,cov90,0.765,False,False
+Wine Quality,raw,cem_em_coeff,w90,1.3332222059339882,False,False
+Wine Quality,raw,cem_em_coeff,cov95,0.8,False,False
+Wine Quality,raw,cem_em_coeff,w95,1.5886322431392568,False,False
+Wine Quality,std_x,lmjgp,rmse,0.7074908835368761,True,False
+Wine Quality,std_x,lmjgp,crps,0.37213030457496643,True,False
+Wine Quality,std_x,lmjgp,wall,131.38366820000374,True,False
+Wine Quality,std_x,lmjgp,cov90,0.865,True,False
+Wine Quality,std_x,lmjgp,w90,1.8852865808319839,True,False
+Wine Quality,std_x,lmjgp,cov95,0.905,True,False
+Wine Quality,std_x,lmjgp,w95,2.2464575196370133,True,False
+Wine Quality,std_x,cem_em_coeff,rmse,0.7259178415891236,True,False
+Wine Quality,std_x,cem_em_coeff,crps,0.3782414197921753,True,False
+Wine Quality,std_x,cem_em_coeff,wall,64.29301499999565,True,False
+Wine Quality,std_x,cem_em_coeff,cov90,0.76,True,False
+Wine Quality,std_x,cem_em_coeff,w90,1.147197179119167,True,False
+Wine Quality,std_x,cem_em_coeff,cov95,0.79,True,False
+Wine Quality,std_x,cem_em_coeff,w95,1.3669697518354615,True,False
+Wine Quality,std_xy,lmjgp,rmse,0.6740178018453267,True,True
+Wine Quality,std_xy,lmjgp,crps,0.6668177843093872,True,True
+Wine Quality,std_xy,lmjgp,wall,147.23592859999917,True,True
+Wine Quality,std_xy,lmjgp,cov90,0.835,True,True
+Wine Quality,std_xy,lmjgp,w90,5.995082185005569,True,True
+Wine Quality,std_xy,lmjgp,cov95,0.89,True,True
+Wine Quality,std_xy,lmjgp,w95,7.143581030213622,True,True
+Wine Quality,std_xy,cem_em_coeff,rmse,0.7535434638560623,True,True
+Wine Quality,std_xy,cem_em_coeff,crps,0.42336058616638184,True,True
+Wine Quality,std_xy,cem_em_coeff,wall,60.38601030000427,True,True
+Wine Quality,std_xy,cem_em_coeff,cov90,0.69,True,True
+Wine Quality,std_xy,cem_em_coeff,w90,1.2380491956211457,True,True
+Wine Quality,std_xy,cem_em_coeff,cov95,0.74,True,True
+Wine Quality,std_xy,cem_em_coeff,w95,1.4752266066394606,True,True
+Parkinsons Telemonitoring,raw,lmjgp,rmse,4.172361435604744,False,False
+Parkinsons Telemonitoring,raw,lmjgp,crps,1.5167046785354614,False,False
+Parkinsons Telemonitoring,raw,lmjgp,wall,375.13263970000116,False,False
+Parkinsons Telemonitoring,raw,lmjgp,cov90,0.97,False,False
+Parkinsons Telemonitoring,raw,lmjgp,w90,9.108019001754338,False,False
+Parkinsons Telemonitoring,raw,lmjgp,cov95,0.975,False,False
+Parkinsons Telemonitoring,raw,lmjgp,w95,10.852874031733904,False,False
+Parkinsons Telemonitoring,raw,cem_em_coeff,rmse,3.9584987706162917,False,False
+Parkinsons Telemonitoring,raw,cem_em_coeff,crps,1.0011862516403198,False,False
+Parkinsons Telemonitoring,raw,cem_em_coeff,wall,67.15990379999857,False,False
+Parkinsons Telemonitoring,raw,cem_em_coeff,cov90,0.665,False,False
+Parkinsons Telemonitoring,raw,cem_em_coeff,w90,1.2783978925339516,False,False
+Parkinsons Telemonitoring,raw,cem_em_coeff,cov95,0.735,False,False
+Parkinsons Telemonitoring,raw,cem_em_coeff,w95,1.5233050444265301,False,False
+Parkinsons Telemonitoring,std_x,lmjgp,rmse,5.50590513594645,True,False
+Parkinsons Telemonitoring,std_x,lmjgp,crps,2.8289716243743896,True,False
+Parkinsons Telemonitoring,std_x,lmjgp,wall,105.28571530000045,True,False
+Parkinsons Telemonitoring,std_x,lmjgp,cov90,0.915,True,False
+Parkinsons Telemonitoring,std_x,lmjgp,w90,15.387095431330108,True,False
+Parkinsons Telemonitoring,std_x,lmjgp,cov95,0.94,True,False
+Parkinsons Telemonitoring,std_x,lmjgp,w95,18.334855076425335,True,False
+Parkinsons Telemonitoring,std_x,cem_em_coeff,rmse,5.431580358585572,True,False
+Parkinsons Telemonitoring,std_x,cem_em_coeff,crps,2.5179483890533447,True,False
+Parkinsons Telemonitoring,std_x,cem_em_coeff,wall,39.426072999995085,True,False
+Parkinsons Telemonitoring,std_x,cem_em_coeff,cov90,0.52,True,False
+Parkinsons Telemonitoring,std_x,cem_em_coeff,w90,6.2053306199407965,True,False
+Parkinsons Telemonitoring,std_x,cem_em_coeff,cov95,0.555,True,False
+Parkinsons Telemonitoring,std_x,cem_em_coeff,w95,7.394107492585045,True,False
+Parkinsons Telemonitoring,std_xy,lmjgp,rmse,5.212555823280084,True,True
+Parkinsons Telemonitoring,std_xy,lmjgp,crps,2.646576166152954,True,True
+Parkinsons Telemonitoring,std_xy,lmjgp,wall,100.96242959999654,True,True
+Parkinsons Telemonitoring,std_xy,lmjgp,cov90,0.94,True,True
+Parkinsons Telemonitoring,std_xy,lmjgp,w90,15.828684757387641,True,True
+Parkinsons Telemonitoring,std_xy,lmjgp,cov95,0.95,True,True
+Parkinsons Telemonitoring,std_xy,lmjgp,w95,18.86104121289887,True,True
+Parkinsons Telemonitoring,std_xy,cem_em_coeff,rmse,5.7218705940715635,True,True
+Parkinsons Telemonitoring,std_xy,cem_em_coeff,crps,2.512110471725464,True,True
+Parkinsons Telemonitoring,std_xy,cem_em_coeff,wall,43.482618300004106,True,True
+Parkinsons Telemonitoring,std_xy,cem_em_coeff,cov90,0.48,True,True
+Parkinsons Telemonitoring,std_xy,cem_em_coeff,w90,5.503882813609197,True,True
+Parkinsons Telemonitoring,std_xy,cem_em_coeff,cov95,0.52,True,True
+Parkinsons Telemonitoring,std_xy,cem_em_coeff,w95,6.558280878643352,True,True
+Appliances Energy Prediction,raw,lmjgp,rmse,100.50526439559886,False,False
+Appliances Energy Prediction,raw,lmjgp,crps,38.5359992980957,False,False
+Appliances Energy Prediction,raw,lmjgp,wall,130.99162459999934,False,False
+Appliances Energy Prediction,raw,lmjgp,cov90,0.81,False,False
+Appliances Energy Prediction,raw,lmjgp,w90,153.10360288987596,False,False
+Appliances Energy Prediction,raw,lmjgp,cov95,0.86,False,False
+Appliances Energy Prediction,raw,lmjgp,w95,182.43419514697803,False,False
+Appliances Energy Prediction,raw,cem_em_coeff,rmse,104.38242685763502,False,False
+Appliances Energy Prediction,raw,cem_em_coeff,crps,42.608734130859375,False,False
+Appliances Energy Prediction,raw,cem_em_coeff,wall,58.795457699998224,False,False
+Appliances Energy Prediction,raw,cem_em_coeff,cov90,0.505,False,False
+Appliances Energy Prediction,raw,cem_em_coeff,w90,75.74031823077623,False,False
+Appliances Energy Prediction,raw,cem_em_coeff,cov95,0.57,False,False
+Appliances Energy Prediction,raw,cem_em_coeff,w95,90.25015568409817,False,False
+Appliances Energy Prediction,std_x,lmjgp,rmse,97.12644805637497,True,False
+Appliances Energy Prediction,std_x,lmjgp,crps,32.623069763183594,True,False
+Appliances Energy Prediction,std_x,lmjgp,wall,123.83567929999845,True,False
+Appliances Energy Prediction,std_x,lmjgp,cov90,0.86,True,False
+Appliances Energy Prediction,std_x,lmjgp,w90,98.06749417940468,True,False
+Appliances Energy Prediction,std_x,lmjgp,cov95,0.88,True,False
+Appliances Energy Prediction,std_x,lmjgp,w95,116.8546267560349,True,False
+Appliances Energy Prediction,std_x,cem_em_coeff,rmse,111.10102097537347,True,False
+Appliances Energy Prediction,std_x,cem_em_coeff,crps,42.442447662353516,True,False
+Appliances Energy Prediction,std_x,cem_em_coeff,wall,40.62762599999405,True,False
+Appliances Energy Prediction,std_x,cem_em_coeff,cov90,0.585,True,False
+Appliances Energy Prediction,std_x,cem_em_coeff,w90,58.61939659099384,True,False
+Appliances Energy Prediction,std_x,cem_em_coeff,cov95,0.62,True,False
+Appliances Energy Prediction,std_x,cem_em_coeff,w95,69.84931925326117,True,False
+Appliances Energy Prediction,std_xy,lmjgp,rmse,94.25832928631038,True,True
+Appliances Energy Prediction,std_xy,lmjgp,crps,31.56182098388672,True,True
+Appliances Energy Prediction,std_xy,lmjgp,wall,95.65087219999987,True,True
+Appliances Energy Prediction,std_xy,lmjgp,cov90,0.84,True,True
+Appliances Energy Prediction,std_xy,lmjgp,w90,99.64654944830116,True,True
+Appliances Energy Prediction,std_xy,lmjgp,cov95,0.87,True,True
+Appliances Energy Prediction,std_xy,lmjgp,w95,118.73618716112169,True,True
+Appliances Energy Prediction,std_xy,cem_em_coeff,rmse,92.5428702368368,True,True
+Appliances Energy Prediction,std_xy,cem_em_coeff,crps,34.149314880371094,True,True
+Appliances Energy Prediction,std_xy,cem_em_coeff,wall,39.125698299998476,True,True
+Appliances Energy Prediction,std_xy,cem_em_coeff,cov90,0.555,True,True
+Appliances Energy Prediction,std_xy,cem_em_coeff,w90,56.69028483242857,True,True
+Appliances Energy Prediction,std_xy,cem_em_coeff,cov95,0.65,True,True
+Appliances Energy Prediction,std_xy,cem_em_coeff,w95,67.55064081343657,True,True

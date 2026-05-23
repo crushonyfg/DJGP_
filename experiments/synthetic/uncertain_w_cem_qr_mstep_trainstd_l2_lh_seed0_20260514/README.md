@@ -1,0 +1,105 @@
+# Uncertain-W CEM L2/LH Prediction-Head Ablation
+
+This experiment evaluates the uncertain-W CEM prediction head on paper-style
+L2/LH synthetic data.  It does not train q(R); the mean projection is fixed
+from PLS/PCA and W uncertainty is injected through a controlled covariance.
+
+Files:
+
+- `metrics.csv`: one row per setting/seed/variant.
+- `aggregate.csv`: mean/std over successful rows.
+- `summary.json`: exact runner arguments and setting metadata.
+
+```json
+{
+  "started": "2026-05-14 12:34:20",
+  "finished": "2026-05-14 12:45:58",
+  "device": "cuda",
+  "args": {
+    "settings": "l2_q2_train1000,lh_q5_train1000",
+    "variants": "qr_mstep_self_cem1_kcov0.1",
+    "seed_start": 0,
+    "num_exp": 1,
+    "projection_init": "pls",
+    "max_test": 200,
+    "n_neighbors": null,
+    "m_inducing": 40,
+    "w_var": 0.02,
+    "w_cov_lengthscale": null,
+    "hyper_steps": 30,
+    "hyper_lr": 0.04,
+    "gate_steps": 60,
+    "gate_lr": 0.05,
+    "gate_l2": 0.001,
+    "gate_max_norm": 8.0,
+    "gh_points": 20,
+    "min_inliers": 2,
+    "max_inlier_frac": 0.95,
+    "outlier_sigma_mult": 2.5,
+    "background_scale_mult": 3.0,
+    "min_noise_var": 1e-05,
+    "max_noise_var": 10.0,
+    "min_signal_var": 0.0001,
+    "max_signal_var": 100.0,
+    "min_lengthscale": 0.001,
+    "max_lengthscale": 20.0,
+    "response_seed_frac": 0.25,
+    "response_inlier_frac": 0.7,
+    "qr_steps": 30,
+    "qr_lr": 0.01,
+    "qr_beta_kl": 0.05,
+    "qr_kl_warmup_steps": 20,
+    "qr_composite_temperature": 1.0,
+    "qr_init_log_std": -3.0,
+    "qr_train_log_std": true,
+    "qr_w_lengthscale": null,
+    "qr_w_signal_var": 1.0,
+    "qr_include_residual": true,
+    "qr_grad_clip_norm": 10.0,
+    "qr_log_interval": 10,
+    "include_original": true,
+    "resume": false,
+    "out_dir": "experiments\\synthetic\\uncertain_w_cem_qr_mstep_trainstd_l2_lh_seed0_20260514"
+  },
+  "settings": {
+    "l2_q2_train1000": {
+      "family": "L2_phantom",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 2,
+      "H": 20,
+      "Q_true": 2,
+      "Q": 2,
+      "n": 25,
+      "caseno": 6,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "rff",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0
+    },
+    "lh_q5_train1000": {
+      "family": "LH",
+      "N_train": 1000,
+      "N_test": 200,
+      "d": 5,
+      "H": 30,
+      "Q_true": 5,
+      "Q": 5,
+      "n": 35,
+      "caseno": 0,
+      "noise_std": 2.0,
+      "noise_var": 4.0,
+      "expansion": "rff",
+      "lengthscale": 0.5,
+      "kernel_var": 9.0
+    }
+  },
+  "variants": [
+    "qr_mstep_self_cem1_kcov0.1"
+  ],
+  "n_rows": 4,
+  "n_ok": 4,
+  "n_failed": 0
+}
+```
