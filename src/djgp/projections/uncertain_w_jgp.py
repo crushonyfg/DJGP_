@@ -111,6 +111,7 @@ class FixedLabelGateConfig:
     steps: int = 80
     lr: float = 0.05
     basis: GateBasis = "linear"
+    intercept_only: bool = False
     l2: float = 1e-3
     max_norm: float = 8.0
     gh_points: int = 20
@@ -1533,12 +1534,21 @@ def fit_uncertain_gate_from_labels(
             gate0 = gate0.clone()
             gate0[:, 0] = _init_gate_from_labels(labels_t, Q, basis=cfg.basis)[:, 0]
 
-    gate = gate0.detach().clone().requires_grad_(True)
-    opt = torch.optim.Adam([gate], lr=float(cfg.lr))
+    if bool(cfg.intercept_only):
+        gate0 = gate0.clone()
+        gate0[:, 1:] = 0.0
+        gate0_param = gate0[:, 0].detach().clone().requires_grad_(True)
+        opt = torch.optim.Adam([gate0_param], lr=float(cfg.lr))
+    else:
+        gate = gate0.detach().clone().requires_grad_(True)
+        opt = torch.optim.Adam([gate], lr=float(cfg.lr))
     history: list[dict[str, float]] = []
     y01 = labels_t.clamp(0.0, 1.0)
     for step in range(max(0, int(cfg.steps))):
         opt.zero_grad()
+        if bool(cfg.intercept_only):
+            gate = torch.zeros_like(gate0)
+            gate[:, 0] = gate0_param
         mean, var = _gate_moments_for_mode(
             mode=mode,
             X_anchor=X_anchor_t,
@@ -1556,11 +1566,14 @@ def fit_uncertain_gate_from_labels(
         loss = -loglike + float(cfg.l2) * penalty
         loss.backward()
         opt.step()
-        if float(cfg.max_norm) > 0:
+        if float(cfg.max_norm) > 0 and not bool(cfg.intercept_only):
             with torch.no_grad():
                 norm = torch.linalg.norm(gate, dim=1, keepdim=True).clamp_min(1e-12)
                 scale = (float(cfg.max_norm) / norm).clamp(max=1.0)
                 gate.mul_(scale)
+        elif float(cfg.max_norm) > 0:
+            with torch.no_grad():
+                gate0_param.clamp_(min=-float(cfg.max_norm), max=float(cfg.max_norm))
         if step == 0 or step == int(cfg.steps) - 1:
             history.append({
                 "step": float(step + 1),
@@ -1568,6 +1581,9 @@ def fit_uncertain_gate_from_labels(
                 "loglike": float(loglike.detach().cpu().item()),
                 "gate_norm_mean": float(torch.linalg.norm(gate.detach(), dim=1).mean().cpu().item()),
             })
+    if bool(cfg.intercept_only):
+        gate = torch.zeros_like(gate0)
+        gate[:, 0] = gate0_param.detach()
     return {"gate": gate.detach(), "history": history}
 
 

@@ -152,3 +152,31 @@ For anyone reading pre-reorg code or commits:
 | `from active_djgp_acquisition import X` | `from djgp.active_learning import X` |
 | `from calculate_bias_and_variance import X` | `from djgp.acquisition_metrics import X` |
 | `from new_minibatch_try import X` | `from djgp.minibatch import X` |
+
+## ISM-LMJGP (Identifiable Structured-Metric LMJGP)
+
+Transductive local regressor. For each test anchor `x_t`, fit a JumpGP-style local
+GP in a learned low-dim projected space `z = diag(exp(eta_t/2)) U^T x`, where `U` is a
+global orthonormal subspace (shared) and `eta_t` a per-anchor diagonal log-metric drawn
+from a sparse GP. The **analytic** variant marginalises the projection posterior `q(W)`
+into the local GP in closed form (Bayesian-GPLVM ψ-statistics) — no Monte-Carlo sampling
+of `W` in training. A robust per-neighbour inlier/outlier mixture (collapsed `logsumexp`)
+handles contamination, and an optional **data-driven heteroscedastic observation noise**
+(`obs_noise_prior_mode="data_driven"`) anchors each anchor's noise prior at a
+nearest-neighbour-difference estimate of the local residual scale — this fixes the
+analytic head's undercoverage on datasets where the fixed prior is too tight
+(Wine/Parkinsons/LH); keep `fixed` where coverage already comes from `var_f`
+(L2, Appliances, PDEBench-Burgers). Predict with the analytic head (data-driven noise) or
+the sample-W CEM head; select the best of K subspace inits by unsupervised
+head-disagreement, mix top-1/2/4.
+
+- Method code: `src/djgp/projections/structured_metric_lmjgp.py`
+  (depends on `src/djgp/projections/uncertain_w_jgp.py`).
+- Full method, tricks, and 5-seed results (UCI Wine/Parkinsons/Appliances, synthetic
+  L2/LH, PDEBench Burgers): `docs/ism_lmjgp_analytic.md`.
+- Runners (experiment harnesses; may need experiment-tree import paths wired up):
+  `experiments/synthetic/_exp_uci_hetnoise.py` (UCI),
+  `experiments/synthetic/_exp_pdebench_hetnoise.py` + `_exp_pdebench_baselines_npz.py`
+  (PDEBench), `experiments/synthetic/_exp_u_ensemble_5seed.py` (synthetic L2/LH, with
+  inducing/minibatch/local-m ablation knobs), `experiments/uci/_exp_baselines_npz.py`
+  (XGB/DKL on exported npz).
