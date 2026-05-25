@@ -58,6 +58,7 @@ This repository contains the code used around `docs/papers/DJGP.pdf` and `docs/p
 - The repository should be a single Git repository.
 - Do not add nested `.git` directories.
 - Do not add `__pycache__`, `.pyc`, `.ipynb_checkpoints`, Excel lock files, build artifacts (`build/`, `*.egg-info/`), or generated experiment outputs.
+- **When committing/pushing, only upload source and documentation — i.e. `.py` and `.md` files (plus config like `pyproject.toml`/`.gitignore`). Never upload experiment result files** (`.csv`, `.json`, `.pkl`, `.npz`, `.npy`, `.log`, `.png`, and result/output directories such as `experiments/**/*_seed*/`, `*_smoke*/`, `results/`). Stage files explicitly rather than `git add -A`.
 - Active code lives under `src/`. The repo root should stay flat with only `README.md`, `AGENTS.md`, `pyproject.toml`, `.gitignore`, and the top-level dirs (`src/`, `experiments/`, `scripts/`, `notebooks/`, `tests/`, `docs/`, `data/`, `results/`, `legacy/`).
 
 ## Naming Notes

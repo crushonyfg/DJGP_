@@ -224,7 +224,7 @@ def _generate_paper_data(cfg: dict[str, Any], seed: int, device: torch.device) -
         # data_generate.generate_Y_from_image reads bound*.png from CWD.
         old_cwd = Path.cwd()
         try:
-            os.chdir(PROJECT_ROOT / "JumpGaussianProcess")
+            os.chdir(PROJECT_ROOT / "src" / "JumpGaussianProcess")
             x_train, y_train, x_test, y_test = generate_data_phantom(
                 n_train,
                 n_test,
