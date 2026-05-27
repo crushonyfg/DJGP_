@@ -13,8 +13,12 @@ used; members are selected automatically without access to test labels.
 
 ## Setup
 
+Create and activate the conda environment, then install the package:
+
 ```bash
-conda activate jumpGP        # environment with torch, gpytorch, xgboost, scikit-learn
+conda create -n DJGP python=3.11 -y
+conda activate DJGP
+pip install -r requirements.txt
 pip install -e .             # makes src/* importable as top-level packages
 ```
 
@@ -120,7 +124,7 @@ run_uci.py            # benchmark entry point (UCI)
 ## Smoke tests
 
 ```bash
-conda activate jumpGP
+conda activate DJGP
 python -m pytest tests/test_smoke_ism_lmjgp.py -v   # DJGP smoke test (~1 min)
 python -m pytest tests/test_smoke_jumpgp.py -v       # JumpGP smoke test
 ```

@@ -13,21 +13,15 @@ This repository contains the code used around `docs/papers/DJGP.pdf` and `docs/p
    before re-running anything that may already exist.
 4. Read `docs/five_seed_results_summary.md` when you need the current index of
    all 5-seed / `seeds0to4` result folders and helper artifacts.
-5. For deep-dive on currently-active research directions, read the topic docs
-   in `docs/`:
-   - `docs/cem_em_projection.md` — CEM-aligned EM projection learning
-     (design, fixes, recommended defaults, links to runners).
-   - `docs/projection_methods_math.md` — math/process audit for the
-     repaired LMJGP, CEM-EM ensemble, low-rank residual, and baseline methods
-     used in the recent UCI/synthetic comparisons.
+5. For deep-dive on benchmark results and tuning, read:
    - `docs/uci_smalltrain_summary.md` — 200-train UCI comparison summary,
-     empirical standardization presets, remedy ablations, and Parkinsons
+     empirical standardization presets, hyperparameter notes, and Parkinsons
      grouped-split notes.
 6. Prefer the package modules for new work (all under `src/`, installable via `pip install -e .`):
    - `djgp.variational`
    - `djgp.minibatch`
    - `djgp.active_learning`
-   - `djgp.projections` (CEM-EM + low-rank factorisation projection learners)
+   - `djgp.projections` (projection learners for the DJGP model)
    - `jumpgp` (facade over `JumpGaussianProcess`)
    - `data_gen.synthetic` / `data_gen.highdata` / `data_gen.autoencoder`
    - `shared.utils1`, `shared.djgp_runner`, `shared.jumpgp_runner`
@@ -43,15 +37,9 @@ This repository contains the code used around `docs/papers/DJGP.pdf` and `docs/p
 - `src/djgp/active_learning.py` wraps DJGP fitting/prediction and active-learning acquisition.
 - `src/jumpgp/` is the package facade for the canonical vendored `src/JumpGaussianProcess/` code.
 - `experiments/uci/new_dataset.py` is the late UCI benchmark script.
-- `experiments/uci/plot_uci_pca.py` and `experiments/uci/plot_uci_pca_nonstationary.py` generate UCI PCA diagnostic plots.
-- `experiments/erosion/erosion_exp_alone.py` is a major older experiment harness.
-- `experiments/erosion/erosion_new_dataset.py` is the later erosion/UCI-style K-sensitivity harness.
 - `experiments/synthetic/minibatch_LH.py` and `experiments/synthetic/validation_new_dataset.py` are larger synthetic/LH experiment harnesses.
 - `experiments/synthetic/experiment_new.py`, `experiments/synthetic/compare_K.py`, and `experiments/synthetic/jgp_alone_highdata.py` are additional synthetic sweeps.
 - `experiments/active_learning/run_synth_al4jgp.py`, `experiments/active_learning/run_synth_and_plot_acq.py`, and `experiments/active_learning/run_synth_and_plot_acq_v2.py` are the synthetic active-learning entrypoints.
-- `experiments/erosion/erosion_exp.py`, `experiments/erosion/L2_erosion_exp_alone.py`, and `experiments/synthetic/L2_jgp_alone_highdata.py` are older erosion/L2 variants.
-- `experiments/oht/OHTDataset_analysis.py` and `experiments/oht/OHT_dataset_test.py` are OHT benchmark scripts.
-- `legacy/compat_shims/` contains 22 root-level forwarding shims that used to live at the repo root (e.g. `active_djgp_acquisition.py`, `check_VI_utils_gpu_acc_UZ_qumodified_cor.py`, `new_dataset.py`, `erosion_exp.py`, …). They re-export to `src/djgp.*` or `experiments/<area>/*` and are kept only for old external callers — **do not import from them in new code**.
 
 ## Git Hygiene
 
@@ -70,7 +58,7 @@ This repository contains the code used around `docs/papers/DJGP.pdf` and `docs/p
 ## Safe Change Policy
 
 - Prefer small, documented edits over moving files. After the 2026-05-23 reorg, do not re-introduce root-level shims; if you need a script visible at root, add it to `scripts/` instead.
-- If refactoring imports, compile-check the touched files (`python -m compileall src experiments scripts tests`) and run `python -m unittest tests.test_imports` in the `jumpGP` env.
+- If refactoring imports, compile-check the touched files (`python -m compileall src experiments scripts tests`) and run `python -m unittest tests.test_imports` in the `DJGP` env.
 - After any change to `src/` package structure, run `pip install -e .` again so the editable install picks up new subpackages.
 - Keep generated result files out of commits unless they are explicitly part of a paper artifact. Generated outputs belong under `results/<area>/`.
 
@@ -96,8 +84,7 @@ artifacts can be found and the headline result is captured in one place.
 - For results that warrant a deeper write-up (algorithm description,
   hyperparameter rationale, failure modes), create a topic doc in `docs/`
   and link it from both `AGENTS.md` (Canonical Reading Order) and the
-  matching `experiments_log.md` entry. See `docs/cem_em_projection.md`
-  for the layout to follow.
+  matching `experiments_log.md` entry.
 - When an experiment is superseded by a newer one, mark the old entry
   `status: superseded by <new entry>` rather than deleting it.
 
@@ -152,16 +139,12 @@ artifacts can be found and the headline result is captured in one place.
   base low-dimensional generator, expansion method (`rff`, `poly`,
   `autoencoder`, none, etc.), latent dimension, observed dimension, train/test
   sizes, and whether X/Y standardization was applied.
-- Reflection from 2026-05-12: a previous assistant run used the
-  `lowrank_jump` toy generator while discussing synthetic baselines, without
-  making the distinction from the paper L2/LH generators prominent enough.
-  Treat that as a serious provenance error.  Future agents must verify the
-  generator against the paper-code map before interpreting synthetic results.
+- Always verify the generator against the paper-code map before interpreting synthetic results.
 
 ## Executable Python scripts: header run instructions (English)
 
 - Any **runnable** `.py` file (CLI entrypoint, experiment driver, or `if __name__ == "__main__"` script) MUST keep an **English** module docstring at the **very top** (before imports) that includes:
-  - **How to run** the script: `conda activate jumpGP`, `cd` to repo root, and copy-pastable `python ...` examples.
+  - **How to run** the script: `conda activate DJGP`, `cd` to repo root, and copy-pastable `python ...` examples.
   - The **minimum** examples needed after a change: default invocation plus any new or renamed flags.
 - When you **modify** such a file (CLI args, defaults, or primary workflow), **update that docstring in the same PR/edit** so it stays accurate.
 - For UCI baselines specifically, also keep `experiments/uci/README.md` aligned with the docstring in `experiments/uci/compare_uci_baselines.py` (or note there that the `.py` header is canonical).
