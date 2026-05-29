@@ -28,20 +28,45 @@ pip install -e .             # makes src/* importable as top-level packages
 
 ### Synthetic datasets (L2, LH)
 
+Two latent families — **L2** (2-D latent, jump boundary from a phantom image) and
+**LH** (5-D latent, heteroscedastic jumps) — are each lifted to a `D`-dimensional
+observed space (`--ambient`, default 30) by one of four **expansions** of the
+latent:
+
+| expansion  | observed features `X = f(z)`                                              |
+|------------|---------------------------------------------------------------------------|
+| `rff`      | random Fourier features (smooth, full-rank)                               |
+| `poly`     | random degree-3 polynomial lift, mixed to `D` dims                        |
+| `manifold` | Swiss-roll (constant-curvature) embedding of the latent, mixed to `D` dims |
+| `noise`    | latent rotated together with `D−d` `y`-independent nuisance dimensions    |
+
 ```bash
-# Quick check — seed 0 only (~5–10 min on GPU)
+# Quick check — seed 0, all four expansions on both datasets
 python run_synthetic.py --seeds 0
+
+# A single expansion (fastest sanity check)
+python run_synthetic.py --seeds 0 --expansions rff
 
 # Full 5-seed reproduction
 python run_synthetic.py --seeds 0,1,2,3,4
 ```
 
-This runs **DJGP**, **XGBoost**, and **DKL-SVGP** on the two synthetic benchmarks
-(L2: 2-D latent / 20-D observed; LH: 5-D latent / 30-D observed) and prints a
+This runs **DJGP**, **XGBoost**, and **DKL-SVGP** for every
+`dataset × expansion` combination (train=1000 / test=200) and prints a
 RMSE / CRPS / cov90 table.  Results are saved to `results/synthetic/metrics.csv`.
+Runtime scales with the number of expansions × datasets × seeds × methods, so the
+seed-0 default (8 dataset–expansion cells) takes appreciably longer than a single
+cell; restrict with `--expansions`, `--datasets`, or `--methods` for a fast check.
 
-To also include the DeepGP baseline:
+Useful flags:
 ```bash
+# pick expansions / datasets / ambient dimension
+python run_synthetic.py --seeds 0 --datasets L2 --expansions rff,poly --ambient 30
+
+# LH also supports a 50-D ambient space
+python run_synthetic.py --seeds 0 --datasets LH --ambient 50
+
+# also include the DeepGP baseline
 python run_synthetic.py --seeds 0 --methods DJGP,XGBoost,DKL-SVGP,DeepGP
 ```
 

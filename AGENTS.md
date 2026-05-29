@@ -58,7 +58,8 @@ This repository contains the code used around `docs/papers/DJGP.pdf` and `docs/p
 ## Safe Change Policy
 
 - Prefer small, documented edits over moving files. After the 2026-05-23 reorg, do not re-introduce root-level shims; if you need a script visible at root, add it to `scripts/` instead.
-- If refactoring imports, compile-check the touched files (`python -m compileall src experiments scripts tests`) and run `python -m unittest tests.test_imports` in the `DJGP` env.
+- **Conda env: always run Python in the `jumpGP` conda env** (`conda run -n jumpGP python ...` or `conda activate jumpGP`). The package is `pip install -e .`-installed there; bare `python` or `PYTHONPATH` hacks fail with `ModuleNotFoundError: No module named 'djgp'`. There is **no** `DJGP` conda env — the env is named `jumpGP`.
+- If refactoring imports, compile-check the touched files (`python -m compileall src experiments scripts tests`) and run `python -m unittest tests.test_imports` in the `jumpGP` env.
 - After any change to `src/` package structure, run `pip install -e .` again so the editable install picks up new subpackages.
 - Keep generated result files out of commits unless they are explicitly part of a paper artifact. Generated outputs belong under `results/<area>/`.
 
@@ -144,7 +145,7 @@ artifacts can be found and the headline result is captured in one place.
 ## Executable Python scripts: header run instructions (English)
 
 - Any **runnable** `.py` file (CLI entrypoint, experiment driver, or `if __name__ == "__main__"` script) MUST keep an **English** module docstring at the **very top** (before imports) that includes:
-  - **How to run** the script: `conda activate DJGP`, `cd` to repo root, and copy-pastable `python ...` examples.
+  - **How to run** the script: `conda activate jumpGP` (the env is named `jumpGP`, not `DJGP`), `cd` to repo root, and copy-pastable `python ...` examples.
   - The **minimum** examples needed after a change: default invocation plus any new or renamed flags.
 - When you **modify** such a file (CLI args, defaults, or primary workflow), **update that docstring in the same PR/edit** so it stays accurate.
 - For UCI baselines specifically, also keep `experiments/uci/README.md` aligned with the docstring in `experiments/uci/compare_uci_baselines.py` (or note there that the `.py` header is canonical).

@@ -181,6 +181,38 @@ SETTING_PRESETS: dict[str, dict[str, Any]] = {
 }
 
 
+# --- Main-paper grid: L2 (latent d=2) and LH (latent d=5) lifted to ambient D in
+# {30,50} via four expansions {rff, poly, manifold, noise}.  Registered as named
+# presets ``{l2,lh}_d{D}_{exp}`` so both this baseline runner and the ISM runner
+# (which imports SETTING_PRESETS) can address them.  train=1000 / test=200.
+_GRID_BASE = {
+    "l2": {"family": "L2_phantom", "d": 2, "Q_true": 2, "Q": 2, "n": 25,
+           "caseno": 6, "noise_std": 0.5, "noise_var": 0.25},
+    "lh": {"family": "LH", "d": 5, "Q_true": 5, "Q": 5, "n": 35,
+           "caseno": 0, "noise_std": 2.0, "noise_var": 4.0},
+}
+_GRID_EXPANSIONS = ("rff", "poly", "manifold", "noise")
+_GRID_DIMS = {"l2": (30,), "lh": (30, 50)}
+
+
+def register_grid_presets() -> list[str]:
+    """Add ``{l2,lh}_d{D}_{exp}`` presets to SETTING_PRESETS; return their names."""
+    names: list[str] = []
+    for fam, base in _GRID_BASE.items():
+        for D in _GRID_DIMS[fam]:
+            for exp in _GRID_EXPANSIONS:
+                name = f"{fam}_d{D}_{exp}"
+                SETTING_PRESETS[name] = {
+                    **base, "N_train": 1000, "N_test": 200, "H": int(D),
+                    "expansion": exp, "lengthscale": 0.5, "kernel_var": 9.0,
+                }
+                names.append(name)
+    return names
+
+
+GRID_PRESET_NAMES = register_grid_presets()
+
+
 def _set_seed(seed: int) -> None:
     random.seed(seed)
     np.random.seed(seed)
@@ -201,6 +233,61 @@ def _as_numpy_2d(x: torch.Tensor | np.ndarray) -> np.ndarray:
     if isinstance(x, torch.Tensor):
         return x.detach().cpu().numpy().astype(np.float64)
     return np.asarray(x, dtype=np.float64)
+
+
+def _expand_poly(z_tr: np.ndarray, z_te: np.ndarray, D: int, seed: int,
+                 degree: int = 3, signal_var: float = 9.0) -> tuple[np.ndarray, np.ndarray]:
+    """Random degree-``degree`` polynomial lift of the latent, mixed to ``D`` dims."""
+    from sklearn.preprocessing import PolynomialFeatures
+    rng = np.random.RandomState(int(seed))
+    sc = StandardScaler().fit(z_tr)
+    ztr, zte = sc.transform(z_tr), sc.transform(z_te)
+    pf = PolynomialFeatures(degree=int(degree), include_bias=False)
+    Ptr, Pte = pf.fit_transform(ztr), pf.transform(zte)
+    sc2 = StandardScaler().fit(Ptr)
+    Ptr, Pte = sc2.transform(Ptr), sc2.transform(Pte)
+    W = rng.randn(Ptr.shape[1], int(D)) / np.sqrt(Ptr.shape[1])
+    s = np.sqrt(float(signal_var))
+    return (Ptr @ W) * s, (Pte @ W) * s
+
+
+def _expand_manifold(z_tr: np.ndarray, z_te: np.ndarray, D: int, seed: int,
+                     beta: float = 1.0, signal_var: float = 9.0) -> tuple[np.ndarray, np.ndarray]:
+    """Swiss-roll manifold lift (constant-curvature arc of z0) mixed to ``D`` dims.
+
+    Mirrors the projection stressor from ``_exp_betakappa_oracle._lift`` (swissroll).
+    """
+    rng = np.random.RandomState(int(seed))
+    b = max(float(beta), 1e-8)
+
+    def core(z: np.ndarray) -> np.ndarray:
+        s, h = z[:, 0], z[:, 1]
+        ex = np.sin(b * s) / b
+        ey = (1.0 - np.cos(b * s)) / b
+        extra = [z[:, j] for j in range(2, z.shape[1])]
+        return np.stack([ex, ey, h, *extra], axis=1)
+
+    ctr, cte = core(z_tr), core(z_te)
+    A = rng.randn(ctr.shape[1], int(D)) / np.sqrt(ctr.shape[1])
+    Xtr, Xte = ctr @ A, cte @ A
+    m, sd = Xtr.mean(0), Xtr.std(0) + 1e-8
+    s = np.sqrt(float(signal_var))
+    return ((Xtr - m) / sd) * s, ((Xte - m) / sd) * s
+
+
+def _expand_noise(z_tr: np.ndarray, z_te: np.ndarray, D: int, seed: int,
+                  u_scale: float = 1.0) -> tuple[np.ndarray, np.ndarray]:
+    """X = rotate([z, u]) with u ~ N(0, u_scale^2) filling D-d nuisance dims (y-independent)."""
+    rng = np.random.RandomState(int(seed))
+    sc = StandardScaler().fit(z_tr)
+    ztr, zte = sc.transform(z_tr), sc.transform(z_te)
+    d = ztr.shape[1]
+    n_noise = max(0, int(D) - d)
+    Xtr = np.concatenate([ztr, rng.randn(ztr.shape[0], n_noise) * u_scale], axis=1)
+    Xte = np.concatenate([zte, rng.randn(zte.shape[0], n_noise) * u_scale], axis=1)
+    Drot = Xtr.shape[1]
+    Q_rot, _ = np.linalg.qr(rng.randn(Drot, Drot))
+    return Xtr @ Q_rot, Xte @ Q_rot
 
 
 def _generate_paper_data(cfg: dict[str, Any], seed: int, device: torch.device) -> dict[str, np.ndarray]:
@@ -238,20 +325,32 @@ def _generate_paper_data(cfg: dict[str, Any], seed: int, device: torch.device) -
         raise ValueError(f"Unknown paper synthetic family: {family}")
 
     expansion = str(cfg.get("expansion", "rff"))
-    if expansion != "rff":
-        raise NotImplementedError("This corrected runner currently supports the paper RFF expansion only.")
-
-    omega, phases = sample_rff_params(d, h, float(cfg["lengthscale"]), device)
-    X_train = make_rff_features(x_train.to(device), omega, phases, float(cfg["kernel_var"]))
-    X_test = make_rff_features(x_test.to(device), omega, phases, float(cfg["kernel_var"]))
+    z_train_np = _as_numpy_2d(x_train)
+    z_test_np = _as_numpy_2d(x_test)
+    kvar = float(cfg["kernel_var"])
+    exp_seed = int(seed) * 7919 + 13  # shared train/test expansion params, varies by seed
+    if expansion == "rff":
+        omega, phases = sample_rff_params(d, h, float(cfg["lengthscale"]), device)
+        X_train = _as_numpy_2d(make_rff_features(x_train.to(device), omega, phases, kvar))
+        X_test = _as_numpy_2d(make_rff_features(x_test.to(device), omega, phases, kvar))
+    elif expansion == "poly":
+        X_train, X_test = _expand_poly(z_train_np, z_test_np, h, exp_seed, signal_var=kvar)
+    elif expansion == "manifold":
+        X_train, X_test = _expand_manifold(z_train_np, z_test_np, h, exp_seed,
+                                           beta=float(cfg.get("manifold_beta", 1.0)), signal_var=kvar)
+    elif expansion == "noise":
+        X_train, X_test = _expand_noise(z_train_np, z_test_np, h, exp_seed,
+                                        u_scale=float(cfg.get("noise_u_scale", 1.0)))
+    else:
+        raise NotImplementedError(f"Unknown expansion {expansion!r}; choose from rff/poly/manifold/noise.")
 
     return {
         "X_train": _as_numpy_2d(X_train),
         "y_train": _as_numpy_1d(y_train),
         "X_test": _as_numpy_2d(X_test),
         "y_test": _as_numpy_1d(y_test),
-        "z_train": _as_numpy_2d(x_train),
-        "z_test": _as_numpy_2d(x_test),
+        "z_train": z_train_np,
+        "z_test": z_test_np,
     }
 
 
