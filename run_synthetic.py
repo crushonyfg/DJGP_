@@ -81,7 +81,7 @@ _METRIC_KEYS = ["dataset", "expansion", "seed", "method", "rmse", "crps", "cov90
 def _run_djgp(ds, exp, setting, seed, cfg, device):
     rows = run_setting_seed(
         setting, seed,
-        K=6, steps=cfg["steps"], n_neighbors=cfg["n_neighbors"], n_val=150,
+        K=8, steps=cfg["steps"], n_neighbors=cfg["n_neighbors"], n_val=150,
         device=device, select_by="disagree",
         noise_mode=cfg["noise_mode"], rho_mode="near1")
     for r in rows:
